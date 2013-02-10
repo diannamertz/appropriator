@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Boy with a Basket of Fruit</string>
+		<key>image_top</key>
+		<string>Caravaggio_Fanciullo_top.png</string>
+		<key>link</key>
+		<string>http://en.wikipedia.org/wiki/File:Caravaggio_-_Fanciullo_con_canestro_di_frutta.jpg</string>
+		<key>name</key>
+		<string>Caravaggio</string>
+		<key>image</key>
+		<string>Caravaggio_Fanciullo.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Adam and Eve</string>
+		<key>image_top</key>
+		<string>Cranach_AdamEve_top.png</string>
+		<key>link</key>
+		<string>http://en.wikipedia.org/wiki/File:Lucas_Cranach_the_Elder-Adam_and_Eve_1533.jpg</string>
+		<key>name</key>
+		<string>Lucas Cranach the Elder</string>
+		<key>image</key>
+		<string>Cranach_AdamEve.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Ambassadors</string>
+		<key>image_top</key>
+		<string>Holbein_Ambassadors_top.png</string>
+		<key>link</key>
+		<string>http://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg</string>
+		<key>name</key>
+		<string>Hans Holbein the Younger</string>
+		<key>image</key>
+		<string>Holbein_Ambassadors.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Luncheon on the Grass</string>
+		<key>image_top</key>
+		<string>Manet_Dejeuner_top.png</string>
+		<key>link</key>
+		<string>http://en.wikipedia.org/wiki/File:%C3%89douard_Manet_-_Le_D%C3%A9jeuner_sur_l%27herbe.jpg</string>
+		<key>name</key>
+		<string>Édouard Manet </string>
+		<key>image</key>
+		<string>Manet_Dejeuner.jpg</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Creation of Adam</string>
+		<key>image_top</key>
+		<string>Michelangelo_CreationAdam_top.png</string>
+		<key>link</key>
+		<string>http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1n.jpg</string>
+		<key>name</key>
+		<string>Michelangelo Buonarroti</string>
+		<key>image</key>
+		<string>Michelangelo_CreationAdam.png</string>
+	</dict>
+</array>
+</plist>

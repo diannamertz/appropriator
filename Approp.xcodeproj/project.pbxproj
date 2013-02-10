@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017CFD11644256400F9F4FB /* ToolboxViewController.m */; };
+		604742521660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */; };
+		604742531660E6A700329F03 /* Cranach_AdamEve_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */; };
+		604742541660E6A700329F03 /* Holbein_Ambassadors_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */; };
+		604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */; };
+		604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */; };
+		60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60907AD9166BAF090080B835 /* QuartzCore.framework */; };
+		6098FD08165D2F7100268E40 /* Caravaggio_Fanciullo_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD07165D2F7100268E40 /* Caravaggio_Fanciullo_top.png */; };
+		6098FD0B165D2F8B00268E40 /* Cranach_AdamEve_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD0A165D2F8B00268E40 /* Cranach_AdamEve_top.png */; };
+		6098FD0D165D2F9400268E40 /* Holbein_Ambassadors_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD0C165D2F9400268E40 /* Holbein_Ambassadors_top.png */; };
+		6098FD0F165D2F9B00268E40 /* Manet_Dejeuner_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD0E165D2F9B00268E40 /* Manet_Dejeuner_top.png */; };
+		6098FD11165D2FA300268E40 /* Michelangelo_CreationAdam_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD10165D2FA300268E40 /* Michelangelo_CreationAdam_top.png */; };
+		609D0FB51632949700E08660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB41632949700E08660 /* UIKit.framework */; };
+		609D0FB71632949800E08660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB61632949700E08660 /* Foundation.framework */; };
+		609D0FB91632949800E08660 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB81632949800E08660 /* CoreGraphics.framework */; };
+		609D0FBF1632949800E08660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 609D0FBD1632949800E08660 /* InfoPlist.strings */; };
+		609D0FC11632949800E08660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FC01632949800E08660 /* main.m */; };
+		609D0FC51632949800E08660 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FC41632949800E08660 /* AppDelegate.m */; };
+		609D0FCE1632949800E08660 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609D0FCC1632949800E08660 /* MainStoryboard_iPhone.storyboard */; };
+		609D0FD11632949800E08660 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609D0FCF1632949800E08660 /* MainStoryboard_iPad.storyboard */; };
+		609D0FD41632949800E08660 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FD31632949800E08660 /* CanvasViewController.m */; };
+		609D0FDF1632949800E08660 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FDE1632949800E08660 /* SenTestingKit.framework */; };
+		609D0FE01632949800E08660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB41632949700E08660 /* UIKit.framework */; };
+		609D0FE11632949800E08660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB61632949700E08660 /* Foundation.framework */; };
+		609D0FE91632949800E08660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 609D0FE71632949800E08660 /* InfoPlist.strings */; };
+		609D0FEC1632949800E08660 /* AppropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FEB1632949800E08660 /* AppropTests.m */; };
+		609D0FF6163298C400E08660 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FF5163298C400E08660 /* MobileCoreServices.framework */; };
+		609D0FF8163298CC00E08660 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FF7163298CC00E08660 /* CoreFoundation.framework */; };
+		609D0FFA163298D300E08660 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FF9163298D300E08660 /* Twitter.framework */; };
+		609D0FFC163298DB00E08660 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFB163298DB00E08660 /* CoreLocation.framework */; };
+		609D0FFE163298E400E08660 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFD163298E400E08660 /* CFNetwork.framework */; };
+		609D1000163298F000E08660 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFF163298F000E08660 /* MessageUI.framework */; };
+		609D1002163298F900E08660 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D1001163298F900E08660 /* Security.framework */; };
+		609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D10031632990500E08660 /* SystemConfiguration.framework */; };
+		60B7C6CA16A6F97000F54328 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B7C6C916A6F97000F54328 /* Default-568h@2x.png */; };
+		60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */; };
+		60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */; };
+		60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */; };
+		60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */; };
+		60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */; };
+		60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FBA1635A17D00BFB6D0 /* paintings.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		609D0FE21632949800E08660 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 609D0FA71632949700E08660 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609D0FAF1632949700E08660;
+			remoteInfo = Approp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6017CFD01644256400F9F4FB /* ToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxViewController.h; sourceTree = "<group>"; };
+		6017CFD11644256400F9F4FB /* ToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxViewController.m; sourceTree = "<group>"; };
+		6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Fanciullo_croptop.png; sourceTree = "<group>"; };
+		6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cranach_AdamEve_croptop.png; sourceTree = "<group>"; };
+		6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors_croptop.png; sourceTree = "<group>"; };
+		604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner_croptop.png; sourceTree = "<group>"; };
+		604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_croptop.png; sourceTree = "<group>"; };
+		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6098FD07165D2F7100268E40 /* Caravaggio_Fanciullo_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Fanciullo_top.png; sourceTree = "<group>"; };
+		6098FD0A165D2F8B00268E40 /* Cranach_AdamEve_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cranach_AdamEve_top.png; sourceTree = "<group>"; };
+		6098FD0C165D2F9400268E40 /* Holbein_Ambassadors_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors_top.png; sourceTree = "<group>"; };
+		6098FD0E165D2F9B00268E40 /* Manet_Dejeuner_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner_top.png; sourceTree = "<group>"; };
+		6098FD10165D2FA300268E40 /* Michelangelo_CreationAdam_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_top.png; sourceTree = "<group>"; };
+		609D0FB01632949700E08660 /* Approp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Approp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		609D0FB41632949700E08660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		609D0FB61632949700E08660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		609D0FB81632949800E08660 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		609D0FBC1632949800E08660 /* Approp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Approp-Info.plist"; sourceTree = "<group>"; };
+		609D0FBE1632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		609D0FC01632949800E08660 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		609D0FC21632949800E08660 /* Approp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Approp-Prefix.pch"; sourceTree = "<group>"; };
+		609D0FC31632949800E08660 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		609D0FC41632949800E08660 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		609D0FCD1632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		609D0FD01632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		609D0FD21632949800E08660 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		609D0FD31632949800E08660 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		609D0FDD1632949800E08660 /* AppropTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppropTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		609D0FDE1632949800E08660 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		609D0FE61632949800E08660 /* AppropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppropTests-Info.plist"; sourceTree = "<group>"; };
+		609D0FE81632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		609D0FEA1632949800E08660 /* AppropTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppropTests.h; sourceTree = "<group>"; };
+		609D0FEB1632949800E08660 /* AppropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppropTests.m; sourceTree = "<group>"; };
+		609D0FF5163298C400E08660 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		609D0FF7163298CC00E08660 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		609D0FF9163298D300E08660 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		609D0FFB163298DB00E08660 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		609D0FFD163298E400E08660 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		609D0FFF163298F000E08660 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		609D1001163298F900E08660 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		609D10031632990500E08660 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		60B7C6C916A6F97000F54328 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Caravaggio_Fanciullo.jpg; sourceTree = "<group>"; };
+		60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cranach_AdamEve.jpg; sourceTree = "<group>"; };
+		60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holbein_Ambassadors.jpg; sourceTree = "<group>"; };
+		60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manet_Dejeuner.jpg; sourceTree = "<group>"; };
+		60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam.png; sourceTree = "<group>"; };
+		60E06FBA1635A17D00BFB6D0 /* paintings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paintings.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		609D0FAD1632949700E08660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */,
+				609D0FB91632949800E08660 /* CoreGraphics.framework in Frameworks */,
+				609D0FB71632949800E08660 /* Foundation.framework in Frameworks */,
+				609D0FB51632949700E08660 /* UIKit.framework in Frameworks */,
+				609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */,
+				609D1002163298F900E08660 /* Security.framework in Frameworks */,
+				609D1000163298F000E08660 /* MessageUI.framework in Frameworks */,
+				609D0FFE163298E400E08660 /* CFNetwork.framework in Frameworks */,
+				609D0FFC163298DB00E08660 /* CoreLocation.framework in Frameworks */,
+				609D0FFA163298D300E08660 /* Twitter.framework in Frameworks */,
+				609D0FF8163298CC00E08660 /* CoreFoundation.framework in Frameworks */,
+				609D0FF6163298C400E08660 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609D0FD91632949800E08660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609D0FDF1632949800E08660 /* SenTestingKit.framework in Frameworks */,
+				609D0FE01632949800E08660 /* UIKit.framework in Frameworks */,
+				609D0FE11632949800E08660 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		609D0FA51632949700E08660 = {
+			isa = PBXGroup;
+			children = (
+				609D0FBA1632949800E08660 /* Approp */,
+				609D0FE41632949800E08660 /* AppropTests */,
+				609D0FB31632949700E08660 /* Frameworks */,
+				609D0FB11632949700E08660 /* Products */,
+				60E06FB21635A17C00BFB6D0 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		609D0FB11632949700E08660 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				609D0FB01632949700E08660 /* Approp.app */,
+				609D0FDD1632949800E08660 /* AppropTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		609D0FB31632949700E08660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60907AD9166BAF090080B835 /* QuartzCore.framework */,
+				609D10031632990500E08660 /* SystemConfiguration.framework */,
+				609D1001163298F900E08660 /* Security.framework */,
+				609D0FFF163298F000E08660 /* MessageUI.framework */,
+				609D0FFD163298E400E08660 /* CFNetwork.framework */,
+				609D0FFB163298DB00E08660 /* CoreLocation.framework */,
+				609D0FF9163298D300E08660 /* Twitter.framework */,
+				609D0FF7163298CC00E08660 /* CoreFoundation.framework */,
+				609D0FF5163298C400E08660 /* MobileCoreServices.framework */,
+				609D0FB41632949700E08660 /* UIKit.framework */,
+				609D0FB61632949700E08660 /* Foundation.framework */,
+				609D0FB81632949800E08660 /* CoreGraphics.framework */,
+				609D0FDE1632949800E08660 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		609D0FBA1632949800E08660 /* Approp */ = {
+			isa = PBXGroup;
+			children = (
+				609D0FCC1632949800E08660 /* MainStoryboard_iPhone.storyboard */,
+				609D0FCF1632949800E08660 /* MainStoryboard_iPad.storyboard */,
+				609D0FC31632949800E08660 /* AppDelegate.h */,
+				609D0FC41632949800E08660 /* AppDelegate.m */,
+				6017CFD01644256400F9F4FB /* ToolboxViewController.h */,
+				6017CFD11644256400F9F4FB /* ToolboxViewController.m */,
+				609D0FD21632949800E08660 /* CanvasViewController.h */,
+				609D0FD31632949800E08660 /* CanvasViewController.m */,
+				609D0FBB1632949800E08660 /* Supporting Files */,
+			);
+			path = Approp;
+			sourceTree = "<group>";
+		};
+		609D0FBB1632949800E08660 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				609D0FBC1632949800E08660 /* Approp-Info.plist */,
+				609D0FBD1632949800E08660 /* InfoPlist.strings */,
+				609D0FC01632949800E08660 /* main.m */,
+				609D0FC21632949800E08660 /* Approp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		609D0FE41632949800E08660 /* AppropTests */ = {
+			isa = PBXGroup;
+			children = (
+				609D0FEA1632949800E08660 /* AppropTests.h */,
+				609D0FEB1632949800E08660 /* AppropTests.m */,
+				609D0FE51632949800E08660 /* Supporting Files */,
+			);
+			path = AppropTests;
+			sourceTree = "<group>";
+		};
+		609D0FE51632949800E08660 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				609D0FE61632949800E08660 /* AppropTests-Info.plist */,
+				609D0FE71632949800E08660 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60E06FB21635A17C00BFB6D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60B7C6C916A6F97000F54328 /* Default-568h@2x.png */,
+				6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */,
+				6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */,
+				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
+				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
+				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
+				6098FD0E165D2F9B00268E40 /* Manet_Dejeuner_top.png */,
+				6098FD10165D2FA300268E40 /* Michelangelo_CreationAdam_top.png */,
+				6098FD0C165D2F9400268E40 /* Holbein_Ambassadors_top.png */,
+				6098FD0A165D2F8B00268E40 /* Cranach_AdamEve_top.png */,
+				6098FD07165D2F7100268E40 /* Caravaggio_Fanciullo_top.png */,
+				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
+				60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */,
+				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
+				60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */,
+				60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */,
+				60E06FBA1635A17D00BFB6D0 /* paintings.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		609D0FAF1632949700E08660 /* Approp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609D0FEF1632949800E08660 /* Build configuration list for PBXNativeTarget "Approp" */;
+			buildPhases = (
+				609D0FAC1632949700E08660 /* Sources */,
+				609D0FAD1632949700E08660 /* Frameworks */,
+				609D0FAE1632949700E08660 /* Resources */,
+				612C961BA1D5409B9A0BDC5F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Approp;
+			productName = Approp;
+			productReference = 609D0FB01632949700E08660 /* Approp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		609D0FDC1632949800E08660 /* AppropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609D0FF21632949800E08660 /* Build configuration list for PBXNativeTarget "AppropTests" */;
+			buildPhases = (
+				609D0FD81632949800E08660 /* Sources */,
+				609D0FD91632949800E08660 /* Frameworks */,
+				609D0FDA1632949800E08660 /* Resources */,
+				609D0FDB1632949800E08660 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				609D0FE31632949800E08660 /* PBXTargetDependency */,
+			);
+			name = AppropTests;
+			productName = AppropTests;
+			productReference = 609D0FDD1632949800E08660 /* AppropTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		609D0FA71632949700E08660 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Approp;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Dianna Mertz";
+			};
+			buildConfigurationList = 609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Approp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 609D0FA51632949700E08660;
+			productRefGroup = 609D0FB11632949700E08660 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				609D0FAF1632949700E08660 /* Approp */,
+				609D0FDC1632949800E08660 /* AppropTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		609D0FAE1632949700E08660 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609D0FBF1632949800E08660 /* InfoPlist.strings in Resources */,
+				609D0FCE1632949800E08660 /* MainStoryboard_iPhone.storyboard in Resources */,
+				609D0FD11632949800E08660 /* MainStoryboard_iPad.storyboard in Resources */,
+				60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */,
+				60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */,
+				60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */,
+				60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */,
+				60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */,
+				60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */,
+				6098FD08165D2F7100268E40 /* Caravaggio_Fanciullo_top.png in Resources */,
+				6098FD0B165D2F8B00268E40 /* Cranach_AdamEve_top.png in Resources */,
+				6098FD0D165D2F9400268E40 /* Holbein_Ambassadors_top.png in Resources */,
+				6098FD0F165D2F9B00268E40 /* Manet_Dejeuner_top.png in Resources */,
+				6098FD11165D2FA300268E40 /* Michelangelo_CreationAdam_top.png in Resources */,
+				604742521660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png in Resources */,
+				604742531660E6A700329F03 /* Cranach_AdamEve_croptop.png in Resources */,
+				604742541660E6A700329F03 /* Holbein_Ambassadors_croptop.png in Resources */,
+				604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */,
+				604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */,
+				60B7C6CA16A6F97000F54328 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609D0FDA1632949800E08660 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609D0FE91632949800E08660 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		609D0FDB1632949800E08660 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		612C961BA1D5409B9A0BDC5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		609D0FAC1632949700E08660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609D0FC11632949800E08660 /* main.m in Sources */,
+				609D0FC51632949800E08660 /* AppDelegate.m in Sources */,
+				609D0FD41632949800E08660 /* CanvasViewController.m in Sources */,
+				6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609D0FD81632949800E08660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609D0FEC1632949800E08660 /* AppropTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		609D0FE31632949800E08660 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609D0FAF1632949700E08660 /* Approp */;
+			targetProxy = 609D0FE21632949800E08660 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		609D0FBD1632949800E08660 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609D0FBE1632949800E08660 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		609D0FCC1632949800E08660 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609D0FCD1632949800E08660 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		609D0FCF1632949800E08660 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609D0FD01632949800E08660 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		609D0FE71632949800E08660 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609D0FE81632949800E08660 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		609D0FED1632949800E08660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		609D0FEE1632949800E08660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		609D0FF01632949800E08660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
+				INFOPLIST_FILE = "Approp/Approp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Submodules/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		609D0FF11632949800E08660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
+				INFOPLIST_FILE = "Approp/Approp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Submodules/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		609D0FF31632949800E08660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Approp.app/Approp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
+				INFOPLIST_FILE = "AppropTests/AppropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		609D0FF41632949800E08660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Approp.app/Approp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
+				INFOPLIST_FILE = "AppropTests/AppropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Approp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609D0FED1632949800E08660 /* Debug */,
+				609D0FEE1632949800E08660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609D0FEF1632949800E08660 /* Build configuration list for PBXNativeTarget "Approp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609D0FF01632949800E08660 /* Debug */,
+				609D0FF11632949800E08660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609D0FF21632949800E08660 /* Build configuration list for PBXNativeTarget "AppropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609D0FF31632949800E08660 /* Debug */,
+				609D0FF41632949800E08660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 609D0FA71632949700E08660 /* Project object */;
+}
