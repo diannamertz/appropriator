@@ -112,21 +112,36 @@
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
-
-    CGRect canvasFrame = canvasView.frame;
-    canvasFrame.origin.x = canvasView.bounds.size.width - 40;
     
+    CGPoint canvasCenter = super.view.center;
+    
+    CGRect canvasRight = canvasView.frame;
+    canvasRight.origin.x = canvasView.bounds.size.width - 40;
+
+    if (canvasView.center.x == super.view.center.x) {
+        
     [UIView animateWithDuration:0.5
                           delay:0.0
                         options: UIViewAnimationCurveEaseOut
                      animations:^{
-                         canvasView.frame = canvasFrame;
+                         canvasView.frame = canvasRight;
                      }
                      completion:^(BOOL finished){
-                         NSLog(@"Done!");
+                         NSLog(@"Right!");
                      }];
     
-    
+    } else {
+     
+     [UIView animateWithDuration:0.5
+                           delay:0.0
+                         options: UIViewAnimationCurveEaseOut
+                      animations:^{
+                          canvasView.center = canvasCenter;
+                      }
+                      completion:^(BOOL finished){
+                          NSLog(@"Center!");
+                      }];
+    }
 }
 
 
