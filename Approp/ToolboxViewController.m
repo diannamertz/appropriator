@@ -78,15 +78,15 @@
 }
 
 #pragma Camera Delegate
-
+/*
 - (IBAction)camera:(id)sender;
 {
-    //[self.delegate useCamera];
+    [self.delegate useCamera];
 }
 
 - (IBAction)cameraRoll:(id)sender
 {
     //[self.delegate useCameraRoll:sender];
 }
-
+*/
 @end

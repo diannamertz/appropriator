@@ -38,4 +38,14 @@ UIImagePickerControllerDelegate>
 - (void)handleTap:(UITapGestureRecognizer*)recognizer;
 - (void)handleSwipe:(UISwipeGestureRecognizer*)recognizer;
 
+
+@property (nonatomic, strong) IBOutlet UIButton *cameraButton;
+@property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
+
+- (IBAction)camera:(id)sender;
+- (IBAction)cameraRoll:(id)sender;
+
+
+
+
 @end

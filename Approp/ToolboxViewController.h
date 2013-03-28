@@ -19,11 +19,7 @@ UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *paintingsArray;
-@property (nonatomic, strong) IBOutlet UIBarButtonItem *cameraButton;
-@property (nonatomic, strong) IBOutlet UIBarButtonItem *cameraRollButton;
 
-- (IBAction)camera:(id)sender;
-- (IBAction)cameraRoll:(id)sender;
 
 @end
 

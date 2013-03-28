@@ -8,9 +8,11 @@
 
 #import "CanvasViewController.h"
 
+
 @interface CanvasViewController()
 @end
 @implementation CanvasViewController
+@synthesize canvasView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,9 +28,8 @@
     [self addGestureRecognizersToView:self.viewC];
 	
 	// add slide gesture recognizer to show underlying toolbox view
-	UIPanGestureRecognizer *slideCanvasGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
-	slideCanvasGesture.minimumNumberOfTouches = 1;
-    slideCanvasGesture.maximumNumberOfTouches = 1;
+	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
+	slideCanvasGesture.numberOfTapsRequired = 1;
 	[self.canvasView addGestureRecognizer:slideCanvasGesture];
 	
 	// add a nice shadow to the canvas view
@@ -110,26 +111,22 @@
     }
 }
 
-- (void)handleTap:(UITapGestureRecognizer*)recognizer
-{
-}
+- (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
 
-- (void)handleSwipe:(UISwipeGestureRecognizer*)recognizer
-{
-}
-
-- (void)slideCanvas:(UIPanGestureRecognizer*)panGesture {
-	if(panGesture.state == UIGestureRecognizerStateBegan ||
-	   panGesture.state == UIGestureRecognizerStateChanged)
-	{
-		UIView *theView = panGesture.view;
-		CGPoint center = theView.center;
-        CGPoint translation = [panGesture translationInView:theView.superview];
-		
-        theView.center = CGPointMake(center.x + translation.x, theView.center.y);	// only move on the x axis
-		//accumulated offset => reset translation of GestureRecognizer
-        [panGesture setTranslation:CGPointZero inView:theView.superview];
-	}
+    CGRect canvasFrame = canvasView.frame;
+    canvasFrame.origin.x = canvasView.bounds.size.width - 40;
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         canvasView.frame = canvasFrame;
+                     }
+                     completion:^(BOOL finished){
+                         NSLog(@"Done!");
+                     }];
+    
+    
 }
 
 
@@ -148,7 +145,8 @@
 
 #pragma mark - Canvas Button
 
-- (void)useCamera
+//- (void)useCamera
+- (IBAction)camera:(id)sender;
 {
     if([UIImagePickerController isSourceTypeAvailable:
         UIImagePickerControllerSourceTypeCamera])
@@ -163,7 +161,8 @@
     }
 }
 
--(void)useCameraRoll:(id)sender
+//-(void)useCameraRoll:(id)sender
+- (IBAction)cameraRoll:(id)sender;
 {
     // For iPad
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
