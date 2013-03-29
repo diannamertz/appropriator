@@ -141,17 +141,26 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="G7K-Lv-V1Q" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" type="default" id="8DF-WD-mD5"/>
-                                    <constraint firstItem="G9S-9t-Mjc" firstAttribute="centerY" secondItem="ABD-N4-6ZT" secondAttribute="centerY" type="default" id="8eN-nw-Y1n"/>
-                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" type="default" id="Fem-Lo-XfQ"/>
+                                    <constraint firstItem="G7K-Lv-V1Q" firstAttribute="baseline" secondItem="G9S-9t-Mjc" secondAttribute="baseline" type="default" id="4te-gm-x0z"/>
+                                    <constraint firstItem="jvY-7f-Pfb" firstAttribute="baseline" secondItem="G7K-Lv-V1Q" secondAttribute="baseline" type="default" id="5Hu-T4-tSj"/>
+                                    <constraint firstItem="ejp-ol-RZd" firstAttribute="baseline" secondItem="G9S-9t-Mjc" secondAttribute="baseline" type="default" id="8Ri-91-wDn"/>
+                                    <constraint firstItem="ejp-ol-RZd" firstAttribute="top" secondItem="h4Q-aX-p8x" secondAttribute="top" type="default" id="8u8-xT-ayN"/>
+                                    <constraint firstItem="G9S-9t-Mjc" firstAttribute="baseline" secondItem="jvY-7f-Pfb" secondAttribute="baseline" type="default" id="Ozf-bJ-m0r"/>
+                                    <constraint firstItem="G7K-Lv-V1Q" firstAttribute="top" secondItem="ejp-ol-RZd" secondAttribute="top" type="default" id="ShI-Nb-TMb"/>
+                                    <constraint firstItem="jvY-7f-Pfb" firstAttribute="baseline" secondItem="h4Q-aX-p8x" secondAttribute="baseline" type="default" id="U9R-0o-I3t"/>
+                                    <constraint firstItem="ejp-ol-RZd" firstAttribute="baseline" secondItem="G7K-Lv-V1Q" secondAttribute="baseline" type="default" id="UZQ-15-dYZ"/>
                                     <constraint firstItem="jvY-7f-Pfb" firstAttribute="leading" secondItem="G7K-Lv-V1Q" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="XUz-Mr-bnK"/>
-                                    <constraint firstItem="jvY-7f-Pfb" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" type="default" id="gBx-E1-aq6"/>
-                                    <constraint firstItem="ejp-ol-RZd" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" type="default" id="ivI-WL-maZ"/>
+                                    <constraint firstItem="G9S-9t-Mjc" firstAttribute="top" secondItem="jvY-7f-Pfb" secondAttribute="top" type="default" id="doD-g4-kWm"/>
+                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="baseline" secondItem="G9S-9t-Mjc" secondAttribute="baseline" type="default" id="eRc-G7-vnh"/>
+                                    <constraint firstItem="ejp-ol-RZd" firstAttribute="baseline" secondItem="jvY-7f-Pfb" secondAttribute="baseline" type="default" id="gXj-2Y-0uu"/>
+                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" constant="-1" id="hpx-1d-cMk"/>
                                     <constraint firstItem="ejp-ol-RZd" firstAttribute="leading" secondItem="h4Q-aX-p8x" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kE5-eD-hR4"/>
                                     <constraint firstItem="h4Q-aX-p8x" firstAttribute="leading" secondItem="ABD-N4-6ZT" secondAttribute="leading" constant="6" id="oUJ-NV-MqZ"/>
                                     <constraint firstItem="G7K-Lv-V1Q" firstAttribute="leading" secondItem="h4Q-aX-p8x" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="pLF-0G-6tf"/>
+                                    <constraint firstItem="G7K-Lv-V1Q" firstAttribute="top" secondItem="jvY-7f-Pfb" secondAttribute="top" type="default" id="qwl-73-PQq"/>
                                     <constraint firstItem="G9S-9t-Mjc" firstAttribute="leading" secondItem="jvY-7f-Pfb" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="qxJ-bN-0nE"/>
-                                    <constraint firstItem="G9S-9t-Mjc" firstAttribute="bottom" secondItem="ABD-N4-6ZT" secondAttribute="bottom" type="default" id="vRK-JL-rV6"/>
+                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="baseline" secondItem="ejp-ol-RZd" secondAttribute="baseline" type="default" id="reV-T1-BvU"/>
+                                    <constraint firstItem="G7K-Lv-V1Q" firstAttribute="baseline" secondItem="h4Q-aX-p8x" secondAttribute="baseline" type="default" id="wJX-cC-jc3"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-KC-sXe" userLabel="CanvasView">
@@ -215,6 +224,7 @@
                             <constraint firstItem="fvy-KC-sXe" firstAttribute="top" secondItem="bOH-ex-mMv" secondAttribute="top" type="default" id="Ixe-CA-CRQ"/>
                             <constraint firstItem="ABD-N4-6ZT" firstAttribute="leading" secondItem="bOH-ex-mMv" secondAttribute="leading" type="default" id="UPk-t6-nnw"/>
                             <constraint firstItem="ABD-N4-6ZT" firstAttribute="trailing" secondItem="bOH-ex-mMv" secondAttribute="trailing" type="default" id="hrz-Jw-YXN"/>
+                            <constraint firstAttribute="bottom" secondItem="ABD-N4-6ZT" secondAttribute="bottom" constant="417" id="kZ2-jd-ms5"/>
                             <constraint firstItem="zem-a8-u5Q" firstAttribute="top" secondItem="bOH-ex-mMv" secondAttribute="top" constant="44" id="lgt-Q7-z4f"/>
                             <constraint firstItem="zem-a8-u5Q" firstAttribute="leading" secondItem="bOH-ex-mMv" secondAttribute="leading" type="default" id="lob-oY-KyI"/>
                             <constraint firstItem="ABD-N4-6ZT" firstAttribute="top" secondItem="bOH-ex-mMv" secondAttribute="top" type="default" id="qX7-lq-wPo"/>
@@ -301,33 +311,6 @@
         <image name="Manet_Dejeuner_croptop.png" width="403" height="395"/>
         <image name="Michelangelo_CreationAdam_croptop.png" width="1946" height="896"/>
     </resources>
-    <classes>
-        <class className="CanvasViewController" superclassName="ToolboxViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CanvasViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="camera:"/>
-                <relationship kind="action" name="cameraRoll:"/>
-                <relationship kind="action" name="useShareButton:"/>
-                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cameraRollButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="viewA" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewB" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewC" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ToolboxViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

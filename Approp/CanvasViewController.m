@@ -79,12 +79,6 @@
         theView.center = CGPointMake(center.x + translation.x, center.y + translation.y);
         //accumulated offset => reset translation of GestureRecognizer
         [recognizer setTranslation:CGPointZero inView:theView.superview];
-        
-        /*
-         CGPoint translation = [recognizer translationInView:self.view];
-         recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
-         [recognizer setTranslation:CGPointMake(0,0) inView:self.view];
-         */
     }
 }
 
@@ -127,7 +121,7 @@
                          canvasView.frame = canvasRight;
                      }
                      completion:^(BOOL finished){
-                         NSLog(@"Right!");
+                        
                      }];
     
     } else {
@@ -139,7 +133,7 @@
                           canvasView.center = canvasCenter;
                       }
                       completion:^(BOOL finished){
-                          NSLog(@"Center!");
+                       
                       }];
     }
 }
@@ -176,7 +170,6 @@
     }
 }
 
-//-(void)useCameraRoll:(id)sender
 - (IBAction)cameraRoll:(id)sender;
 {
     // For iPad
@@ -197,7 +190,6 @@
                                 initWithContentViewController:imagePicker];
                 self.popover.delegate = self;
                 
-                //[self.popover presentPopoverFromRect:[sender bounds] permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
                 [self.popover presentPopoverFromRect:[sender bounds] inView:sender permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
                 
                 newMedia = NO;
@@ -236,7 +228,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
     // Keep aspect ration in tact between iPhone and iPad
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    //    if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
+    
     // Assume the image is in portrait mode
     UIImage * PortraitImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     // But if not portrait mode, turn to landscape
@@ -279,38 +271,11 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 - (UIImage*)screenshot
 {
-    CGSize imageSize = [[UIScreen mainScreen] bounds].size;
-    
-    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
-    
+    CGRect rect = [canvasView bounds];
+    UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    // Iterate over every window from back to front
-    for (UIWindow *window in [[UIApplication sharedApplication] windows])
-    {
-        if (![window respondsToSelector:@selector(screen)] || [window screen] == [UIScreen mainScreen])
-        {
-            // -renderInContext: renders in the coordinate space of the layer,
-            // so we must first apply the layer's geometry to the graphics context
-            CGContextSaveGState(context);
-            // Center the context around the window's anchor point
-            CGContextTranslateCTM(context, [window center].x, [window center].y);
-            // Apply the window's transform about the anchor point
-            CGContextConcatCTM(context, [window transform]);
-            // Offset by the portion of the bounds left of and above the anchor point
-            CGContextTranslateCTM(context,
-                                  -[window bounds].size.width * [[window layer] anchorPoint].x,
-                                  -[window bounds].size.height * [[window layer] anchorPoint].y);
-            
-            // Render the layer hierarchy to the current context
-            [[window layer] renderInContext:context];
-            
-            // Restore the context
-            CGContextRestoreGState(context);
-        }
-    }
-    
-    // Retrieve the screenshot image
+    [canvasView.layer renderInContext:context];
+
     UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
