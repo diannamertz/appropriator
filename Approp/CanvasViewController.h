@@ -27,7 +27,6 @@ UIImagePickerControllerDelegate>
 @property (nonatomic) NSString *sharingText;
 @property (nonatomic) UIImage *sharingImage;
 @property (nonatomic, strong) UIPopoverController *popover;
-@property (nonatomic, strong) UIActionSheet *actionSheet;
 
 - (IBAction)useShareButton:(id)sender;
 
@@ -35,9 +34,6 @@ UIImagePickerControllerDelegate>
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;
 - (void)handlePinch:(UIPinchGestureRecognizer*)recognizer;
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
-- (void)handleTap:(UITapGestureRecognizer*)recognizer;
-- (void)handleSwipe:(UISwipeGestureRecognizer*)recognizer;
-
 
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
