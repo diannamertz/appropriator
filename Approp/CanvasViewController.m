@@ -15,7 +15,6 @@
 {
     ToolboxViewController *toolboxcontroller;
 }
-@synthesize canvasView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -113,16 +112,16 @@
     
     CGPoint canvasCenter = super.view.center;
     
-    CGRect canvasRight = canvasView.frame;
-    canvasRight.origin.x = canvasView.bounds.size.width - 40;
+    CGRect canvasRight = self.canvasView.frame;
+    canvasRight.origin.x = self.canvasView.bounds.size.width - 40;
 
-    if (canvasView.center.x == super.view.center.x) {
+    if (self.canvasView.center.x == super.view.center.x) {
         
     [UIView animateWithDuration:0.5
                           delay:0.0
                         options: UIViewAnimationCurveEaseOut
                      animations:^{
-                         canvasView.frame = canvasRight;
+                         self.canvasView.frame = canvasRight;
                      }
                      completion:^(BOOL finished){
                         
@@ -134,7 +133,7 @@
                            delay:0.0
                          options: UIViewAnimationCurveEaseOut
                       animations:^{
-                          canvasView.center = canvasCenter;
+                          self.canvasView.center = canvasCenter;
                       }
                       completion:^(BOOL finished){
                        
@@ -274,10 +273,10 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 - (UIImage*)screenshot
 {
-    CGRect rect = [canvasView bounds];
+    CGRect rect = [self.canvasView bounds];
     UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    [canvasView.layer renderInContext:context];
+    [self.canvasView.layer renderInContext:context];
 
     UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
     

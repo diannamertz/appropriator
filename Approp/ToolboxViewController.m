@@ -86,7 +86,7 @@
     
     UIImage *selectedPainting = [paintingsInfo objectForKey:@"image_top"];
     
-    [_paintingsDelegate selectedThePainting:selectedPainting];
+    [self.paintingsDelegate selectedThePainting:selectedPainting];
     
     NSLog(@"%@", selectedPainting);
 
