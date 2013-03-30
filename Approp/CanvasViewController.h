@@ -11,12 +11,13 @@
 #import "ToolboxViewController.h"
 
 
-@interface CanvasViewController : ToolboxViewController
+@interface CanvasViewController : ToolboxViewController 
 <UINavigationControllerDelegate,
 UIGestureRecognizerDelegate,
 UIPopoverControllerDelegate,
 UIActionSheetDelegate,
-UIImagePickerControllerDelegate>
+UIImagePickerControllerDelegate,
+PaintingSelectionDelegate>
 
 @property (nonatomic, strong) IBOutlet UIView *canvasView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
@@ -40,7 +41,6 @@ UIImagePickerControllerDelegate>
 
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;
-
 
 
 

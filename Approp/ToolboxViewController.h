@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PaintingSelectionDelegate <NSObject>
+@required
+-(void)selectedThePainting:(UIImage *)newPainting;
+@end
+
 @interface ToolboxViewController : UIViewController
 <UITableViewDataSource,
 UITableViewDelegate,
@@ -18,7 +23,8 @@ UIGestureRecognizerDelegate>
 }
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSArray *paintingsArray;
+@property (nonatomic, strong) NSMutableArray *paintingsArray;
+@property (nonatomic, assign) id<PaintingSelectionDelegate> paintingsDelegate;
 
 
 @end

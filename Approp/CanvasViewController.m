@@ -12,6 +12,9 @@
 @interface CanvasViewController()
 @end
 @implementation CanvasViewController
+{
+    ToolboxViewController *toolboxcontroller;
+}
 @synthesize canvasView;
 
 - (void)didReceiveMemoryWarning
@@ -37,8 +40,9 @@
 	self.canvasView.layer.shadowOffset = CGSizeMake(-2.0, 2.0);
 	self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
 	self.canvasView.layer.shadowOpacity = 0.6;
+    
+    toolboxcontroller.paintingsDelegate = self;
 }
-
 
 #pragma mark - Gesture Recognizers
 
@@ -154,7 +158,6 @@
 
 #pragma mark - Canvas Button
 
-//- (void)useCamera
 - (IBAction)camera:(id)sender;
 {
     if([UIImagePickerController isSourceTypeAvailable:
@@ -308,5 +311,16 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     [self presentViewController:activityController
                        animated:YES completion:nil];
 }
+
+#pragma Painting Selection Delegate
+-(void)selectedThePainting:(UIImage *)newPainting
+{
+    NSLog(@"got here");
+  
+    UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:newPainting];
+    [self.imageView addSubview:newPaintingView];
+    
+}
+
 
 @end

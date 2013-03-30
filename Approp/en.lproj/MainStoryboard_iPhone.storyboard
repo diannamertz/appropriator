@@ -100,10 +100,8 @@
                                 <constraints>
                                     <constraint firstItem="jvY-7f-Pfb" firstAttribute="leading" secondItem="ejp-ol-RZd" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="PiD-Jh-ycf"/>
                                     <constraint firstItem="jvY-7f-Pfb" firstAttribute="baseline" secondItem="ejp-ol-RZd" secondAttribute="baseline" type="default" id="SX9-KO-9xa"/>
-                                    <constraint firstItem="ejp-ol-RZd" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" constant="-1" id="XbL-kp-ucc"/>
-                                    <constraint firstItem="jvY-7f-Pfb" firstAttribute="bottom" secondItem="ABD-N4-6ZT" secondAttribute="bottom" type="default" id="YKG-1B-2OR"/>
                                     <constraint firstItem="ejp-ol-RZd" firstAttribute="leading" secondItem="ABD-N4-6ZT" secondAttribute="leading" constant="6" id="Ypy-Z0-Boo"/>
-                                    <constraint firstItem="jvY-7f-Pfb" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" type="default" id="mJC-hi-G6S"/>
+                                    <constraint firstItem="jvY-7f-Pfb" firstAttribute="top" secondItem="ABD-N4-6ZT" secondAttribute="top" constant="-1" id="sp0-vX-e2x"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3K-th-hMp" userLabel="ToolboxBottomView">
@@ -135,9 +133,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="h4Q-aX-p8x" firstAttribute="leading" secondItem="z3K-th-hMp" secondAttribute="leading" constant="5" id="MPa-69-u9E"/>
-                                    <constraint firstItem="G9S-9t-Mjc" firstAttribute="top" secondItem="z3K-th-hMp" secondAttribute="top" type="default" id="b2J-SI-Rj3"/>
+                                    <constraint firstItem="G9S-9t-Mjc" firstAttribute="baseline" secondItem="h4Q-aX-p8x" secondAttribute="baseline" type="default" id="Mar-pG-Qxy"/>
+                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="z3K-th-hMp" secondAttribute="top" constant="-1" id="Nsg-cv-zlZ"/>
+                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="G9S-9t-Mjc" secondAttribute="top" type="default" id="cV8-j2-jAb"/>
                                     <constraint firstItem="G9S-9t-Mjc" firstAttribute="leading" secondItem="h4Q-aX-p8x" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gsd-ho-wPB"/>
-                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="z3K-th-hMp" secondAttribute="top" type="default" id="i50-xM-Aaa"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-KC-sXe" userLabel="CanvasView">
@@ -202,6 +201,7 @@
                             <constraint firstItem="fvy-KC-sXe" firstAttribute="trailing" secondItem="bOH-ex-mMv" secondAttribute="trailing" type="default" id="VTT-Fo-4et"/>
                             <constraint firstItem="z3K-th-hMp" firstAttribute="bottom" secondItem="bOH-ex-mMv" secondAttribute="bottom" type="default" id="dc2-Hm-9ij"/>
                             <constraint firstItem="z3K-th-hMp" firstAttribute="top" secondItem="bOH-ex-mMv" secondAttribute="top" constant="416" id="deP-ed-9rT"/>
+                            <constraint firstAttribute="bottom" secondItem="ABD-N4-6ZT" secondAttribute="bottom" constant="417" id="eb0-Fq-kj2"/>
                             <constraint firstItem="ABD-N4-6ZT" firstAttribute="trailing" secondItem="bOH-ex-mMv" secondAttribute="trailing" type="default" id="hrz-Jw-YXN"/>
                             <constraint firstItem="z3K-th-hMp" firstAttribute="leading" secondItem="bOH-ex-mMv" secondAttribute="leading" type="default" id="jVn-8c-Du5"/>
                             <constraint firstItem="fvy-KC-sXe" firstAttribute="top" secondItem="bOH-ex-mMv" secondAttribute="top" type="default" id="jXH-uC-Zev"/>

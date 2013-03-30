@@ -18,7 +18,7 @@
 // Method to load the paintings array from the plist
 - (void)loadPaintings {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"paintings" ofType:@"plist"];
-    self.paintingsArray = [NSArray arrayWithContentsOfFile:path];
+    self.paintingsArray = [NSMutableArray arrayWithContentsOfFile:path];
     [self.tableView reloadData];
 }
 
@@ -77,16 +77,19 @@
     return cell;
 }
 
-#pragma Camera Delegate
-/*
-- (IBAction)camera:(id)sender;
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.delegate useCamera];
+    // Call the info from the paintings.plist and distribute to cells
+    NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
+    
+    UIImage *selectedPainting = [paintingsInfo objectForKey:@"image_top"];
+    
+    [_paintingsDelegate selectedThePainting:selectedPainting];
+    
+    NSLog(@"%@", selectedPainting);
+
 }
 
-- (IBAction)cameraRoll:(id)sender
-{
-    //[self.delegate useCameraRoll:sender];
-}
-*/
 @end
