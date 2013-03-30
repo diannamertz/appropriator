@@ -135,7 +135,6 @@
                                     <constraint firstItem="h4Q-aX-p8x" firstAttribute="leading" secondItem="z3K-th-hMp" secondAttribute="leading" constant="5" id="MPa-69-u9E"/>
                                     <constraint firstItem="G9S-9t-Mjc" firstAttribute="baseline" secondItem="h4Q-aX-p8x" secondAttribute="baseline" type="default" id="Mar-pG-Qxy"/>
                                     <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="z3K-th-hMp" secondAttribute="top" constant="-1" id="Nsg-cv-zlZ"/>
-                                    <constraint firstItem="h4Q-aX-p8x" firstAttribute="top" secondItem="G9S-9t-Mjc" secondAttribute="top" type="default" id="cV8-j2-jAb"/>
                                     <constraint firstItem="G9S-9t-Mjc" firstAttribute="leading" secondItem="h4Q-aX-p8x" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gsd-ho-wPB"/>
                                 </constraints>
                             </view>
