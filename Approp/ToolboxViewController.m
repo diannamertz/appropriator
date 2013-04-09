@@ -85,14 +85,15 @@
     
     UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
     
-    newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
-    newPaintingView.clipsToBounds = YES;
-    
-
     [self.theNewPaintingView addSubview:newPaintingView];
     
-    NSLog(@"%@", newPaintingView.image);
-
+    newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
+   // newPaintingView.clipsToBounds = YES;
+    
+    CGRect frame = newPaintingView.frame;
+    frame.size.height = 100;
+    frame.size.width = 100;
+    newPaintingView.frame = frame;
 }
 
 @end
