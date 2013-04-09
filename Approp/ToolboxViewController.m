@@ -80,15 +80,18 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Call the info from the paintings.plist and distribute to cells
+{    
     NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
     
-    UIImage *selectedPainting = [paintingsInfo objectForKey:@"image_top"];
+    UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
     
-    [self.paintingsDelegate selectedThePainting:selectedPainting];
+    newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
+    newPaintingView.clipsToBounds = YES;
     
-    NSLog(@"%@", selectedPainting);
+
+    [self.theNewPaintingView addSubview:newPaintingView];
+    
+    NSLog(@"%@", newPaintingView.image);
 
 }
 

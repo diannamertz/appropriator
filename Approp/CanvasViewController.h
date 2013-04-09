@@ -10,16 +10,14 @@
 #import <QuartzCore/QuartzCore.h>	// needed for shadow
 #import "ToolboxViewController.h"
 
-
 @interface CanvasViewController : ToolboxViewController 
 <UINavigationControllerDelegate,
 UIGestureRecognizerDelegate,
 UIPopoverControllerDelegate,
 UIActionSheetDelegate,
-UIImagePickerControllerDelegate,
-PaintingSelectionDelegate>
+UIImagePickerControllerDelegate>
 
-@property (nonatomic, strong) IBOutlet UIView *canvasView;
+@property (nonatomic, weak) IBOutlet UIView *canvasView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIImageView *viewA;
 @property (weak, nonatomic) IBOutlet UIImageView *viewB;
