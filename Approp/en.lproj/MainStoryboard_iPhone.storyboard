@@ -148,43 +148,18 @@
                                                     <constraint firstAttribute="height" constant="460" type="user" id="uWV-U2-VUI"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Manet_Dejeuner_croptop.png" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-tP-ZaX" userLabel="MultiTouchViewA">
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="FHN-Np-v6T"/>
-                                                    <constraint firstAttribute="width" constant="150" id="FLP-LO-dwJ"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Cranach_AdamEve_croptop.png" translatesAutoresizingMaskIntoConstraints="NO" id="wtr-cE-nPc" userLabel="MultiTouchViewB">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="3ZV-dh-ffR"/>
-                                                    <constraint firstAttribute="width" constant="150" id="xpC-9P-xeK"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Michelangelo_CreationAdam_croptop.png" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-Tn-4Az" userLabel="MultiTouchViewC">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="6QN-W5-L1o"/>
-                                                    <constraint firstAttribute="width" constant="150" id="8ph-ng-Eol"/>
-                                                </constraints>
-                                            </imageView>
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-Hc-8Ze">
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="VKg-tP-ZaX" secondAttribute="bottom" constant="47" id="2da-ir-nFv"/>
-                                            <constraint firstItem="VKg-tP-ZaX" firstAttribute="leading" secondItem="HW6-P6-4EP" secondAttribute="leading" constant="30" id="4ml-An-Kuu"/>
                                             <constraint firstItem="2eU-ug-8LH" firstAttribute="leading" secondItem="HW6-P6-4EP" secondAttribute="leading" type="default" id="HoI-2a-DR5"/>
                                             <constraint firstItem="2eU-ug-8LH" firstAttribute="top" secondItem="HW6-P6-4EP" secondAttribute="top" type="default" id="J4g-YZ-F8B"/>
-                                            <constraint firstItem="wtr-cE-nPc" firstAttribute="centerY" secondItem="2eU-ug-8LH" secondAttribute="centerY" type="default" id="SoI-MU-5T3"/>
                                             <constraint firstAttribute="bottom" secondItem="vjx-Hc-8Ze" secondAttribute="bottom" constant="-20" id="Upo-6P-6Nv"/>
-                                            <constraint firstAttribute="trailing" secondItem="xAf-Tn-4Az" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="YPU-Nx-BxM"/>
                                             <constraint firstItem="vjx-Hc-8Ze" firstAttribute="trailing" secondItem="HW6-P6-4EP" secondAttribute="trailing" type="default" id="fsu-tg-BW3"/>
-                                            <constraint firstItem="wtr-cE-nPc" firstAttribute="centerX" secondItem="2eU-ug-8LH" secondAttribute="centerX" type="default" id="pTi-Jc-Z6Z"/>
                                             <constraint firstItem="vjx-Hc-8Ze" firstAttribute="top" secondItem="HW6-P6-4EP" secondAttribute="top" type="default" id="qp3-Ow-2xN"/>
                                             <constraint firstItem="vjx-Hc-8Ze" firstAttribute="leading" secondItem="HW6-P6-4EP" secondAttribute="leading" type="default" id="sLF-Kk-YYu"/>
-                                            <constraint firstItem="xAf-Tn-4Az" firstAttribute="top" secondItem="HW6-P6-4EP" secondAttribute="top" constant="20" symbolic="YES" type="default" id="yBN-9m-5zL"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -231,9 +206,6 @@
                         <outlet property="tableView" destination="zem-a8-u5Q" id="W92-P7-CCQ"/>
                         <outlet property="theNewPaintingView" destination="vjx-Hc-8Ze" id="z1P-kb-oUD"/>
                         <outlet property="view" destination="bOH-ex-mMv" id="qb7-0K-g8x"/>
-                        <outlet property="viewA" destination="VKg-tP-ZaX" id="EYi-zu-Ixy"/>
-                        <outlet property="viewB" destination="wtr-cE-nPc" id="Ho1-Ua-Edm"/>
-                        <outlet property="viewC" destination="xAf-Tn-4Az" id="WUK-9A-fJJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ab-TV-HDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,11 +239,6 @@
             <point key="canvasLocation" x="-970" y="-441"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Cranach_AdamEve_croptop.png" width="646" height="547"/>
-        <image name="Manet_Dejeuner_croptop.png" width="403" height="395"/>
-        <image name="Michelangelo_CreationAdam_croptop.png" width="1946" height="896"/>
-    </resources>
     <classes>
         <class className="CanvasViewController" superclassName="ToolboxViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CanvasViewController.h"/>
@@ -284,9 +251,6 @@
                 <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="viewA" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewB" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewC" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

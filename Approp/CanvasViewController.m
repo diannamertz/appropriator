@@ -21,11 +21,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    /*
     [self addGestureRecognizersToView:self.viewA];
     [self addGestureRecognizersToView:self.viewB];
     [self addGestureRecognizersToView:self.viewC];
-	
+	*/
+    
 	// add slide gesture recognizer to show underlying toolbox view
 	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
 	slideCanvasGesture.numberOfTapsRequired = 1;
@@ -37,7 +38,7 @@
 	self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
 	self.canvasView.layer.shadowOpacity = 0.6;
 }
-
+/*
 #pragma mark - Gesture Recognizers
 
 // Thanks, Michael Markert!!!
@@ -101,7 +102,7 @@
         recognizer.rotation = 0;
     }
 }
-
+*/
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     
     CGPoint canvasCenter = super.view.center;

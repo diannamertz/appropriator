@@ -27,6 +27,8 @@
     // Load the data from the plist
     [self loadPaintings];
     [super viewDidLoad];
+    
+    [self addGestureRecognizersToView:self.theNewPaintingView];
 }
 
 
@@ -82,18 +84,89 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {    
     NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
+    /*
+    NSMutableArray *paintingNumber = [[NSMutableArray alloc] initWithCapacity:10];
     
-    UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
-    
-    [self.theNewPaintingView addSubview:newPaintingView];
-    
-    newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
-   // newPaintingView.clipsToBounds = YES;
-    
-    CGRect frame = newPaintingView.frame;
-    frame.size.height = 100;
-    frame.size.width = 100;
-    newPaintingView.frame = frame;
+    for (int i=0; i<10; i++) {
+    */    
+        UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
+        
+        [self.theNewPaintingView addSubview:newPaintingView];
+        
+        newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
+        // newPaintingView.clipsToBounds = YES;
+        
+        CGRect frame = newPaintingView.frame;
+        frame.size.height = 100;
+        frame.size.width = 100;
+        newPaintingView.frame = frame;
+        //[paintingNumber addObject:newPaintingView];
+   // }
 }
+
+#pragma mark - Gesture Recognizers
+
+// Thanks, Michael Markert!!!
+
+- (void)addGestureRecognizersToView:(UIView*)aView {
+    // add pan gesture (to move)
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]
+                                          initWithTarget:self action:@selector(handlePan:)];
+    panGesture.delegate = self;
+    [aView addGestureRecognizer:panGesture];
+    
+    // add pinch gesture (to zoom)
+    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc]
+                                              initWithTarget:self action:@selector(handlePinch:)];
+    pinchGesture.delegate = self;
+    [aView addGestureRecognizer:pinchGesture];
+    
+    // add rotation gesture (to rotate)
+    UIRotationGestureRecognizer *rotationGesture =
+    [[UIRotationGestureRecognizer alloc] initWithTarget:self action:
+     @selector(handleRotation:)];
+    rotationGesture.delegate = self;
+    [aView addGestureRecognizer:rotationGesture];
+}
+
+- (void)handlePan:(UIPanGestureRecognizer*)recognizer
+{
+    
+    UIView *theView = recognizer.view;
+    if(recognizer.state == UIGestureRecognizerStateBegan ||
+       recognizer.state == UIGestureRecognizerStateChanged) {
+        
+        CGPoint center = theView.center;
+        CGPoint translation = [recognizer translationInView:theView.superview];
+        
+        theView.center = CGPointMake(center.x + translation.x, center.y + translation.y);
+        //accumulated offset => reset translation of GestureRecognizer
+        [recognizer setTranslation:CGPointZero inView:theView.superview];
+    }
+}
+
+- (void)handlePinch:(UIPinchGestureRecognizer*)recognizer
+{
+    UIView *theView = recognizer.view;
+    if(recognizer.state == UIGestureRecognizerStateBegan ||
+       recognizer.state == UIGestureRecognizerStateChanged) {
+        CGFloat scale = recognizer.scale;
+        theView.transform = CGAffineTransformScale(theView.transform, scale,
+                                                   scale);
+        recognizer.scale = 1;   // reset to prevent accumulated offset
+    }
+}
+
+- (void)handleRotation:(UIRotationGestureRecognizer*)recognizer
+{
+    UIView *theView = recognizer.view;
+    if(recognizer.state == UIGestureRecognizerStateBegan ||
+       recognizer.state == UIGestureRecognizerStateChanged) {
+        theView.transform = CGAffineTransformRotate(theView.transform,
+                                                    recognizer.rotation);
+        recognizer.rotation = 0;
+    }
+}
+
 
 @end
