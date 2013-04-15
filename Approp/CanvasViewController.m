@@ -21,11 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    /*
-    [self addGestureRecognizersToView:self.viewA];
-    [self addGestureRecognizersToView:self.viewB];
-    [self addGestureRecognizersToView:self.viewC];
-	*/
     
 	// add slide gesture recognizer to show underlying toolbox view
 	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
@@ -38,71 +33,7 @@
 	self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
 	self.canvasView.layer.shadowOpacity = 0.6;
 }
-/*
-#pragma mark - Gesture Recognizers
 
-// Thanks, Michael Markert!!!
-
-- (void)addGestureRecognizersToView:(UIView*)aView {
-    // add pan gesture (to move)
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]
-                                          initWithTarget:self action:@selector(handlePan:)];
-    panGesture.delegate = self;
-    [aView addGestureRecognizer:panGesture];
-    
-    // add pinch gesture (to zoom)
-    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc]
-                                              initWithTarget:self action:@selector(handlePinch:)];
-    pinchGesture.delegate = self;
-    [aView addGestureRecognizer:pinchGesture];
-    
-    // add rotation gesture (to rotate)
-    UIRotationGestureRecognizer *rotationGesture =
-    [[UIRotationGestureRecognizer alloc] initWithTarget:self action:
-     @selector(handleRotation:)];
-    rotationGesture.delegate = self;
-    [aView addGestureRecognizer:rotationGesture];
-}
-
-- (void)handlePan:(UIPanGestureRecognizer*)recognizer
-{
-    
-    UIView *theView = recognizer.view;
-    if(recognizer.state == UIGestureRecognizerStateBegan ||
-       recognizer.state == UIGestureRecognizerStateChanged) {
-        
-        CGPoint center = theView.center;
-        CGPoint translation = [recognizer translationInView:theView.superview];
-        
-        theView.center = CGPointMake(center.x + translation.x, center.y + translation.y);
-        //accumulated offset => reset translation of GestureRecognizer
-        [recognizer setTranslation:CGPointZero inView:theView.superview];
-    }
-}
-
-- (void)handlePinch:(UIPinchGestureRecognizer*)recognizer
-{
-    UIView *theView = recognizer.view;
-    if(recognizer.state == UIGestureRecognizerStateBegan ||
-       recognizer.state == UIGestureRecognizerStateChanged) {
-        CGFloat scale = recognizer.scale;
-        theView.transform = CGAffineTransformScale(theView.transform, scale,
-                                                   scale);
-        recognizer.scale = 1;   // reset to prevent accumulated offset
-    }
-}
-
-- (void)handleRotation:(UIRotationGestureRecognizer*)recognizer
-{
-    UIView *theView = recognizer.view;
-    if(recognizer.state == UIGestureRecognizerStateBegan ||
-       recognizer.state == UIGestureRecognizerStateChanged) {
-        theView.transform = CGAffineTransformRotate(theView.transform,
-                                                    recognizer.rotation);
-        recognizer.rotation = 0;
-    }
-}
-*/
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     
     CGPoint canvasCenter = super.view.center;
@@ -121,7 +52,6 @@
                      completion:^(BOOL finished){
                         
                      }];
-    
     } else {
      
      [UIView animateWithDuration:0.5
@@ -135,7 +65,6 @@
                       }];
     }
 }
-
 
 
 #pragma mark UIGestureRecognizerDelegate
@@ -286,7 +215,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 -(IBAction) useShareButton: (id) sender {
     
-    //self.sharingImage = self.imageView.image;
     self.sharingImage = self.screenshot;
     self.sharingText = @"Check out what I made with Appropriator!";
     

@@ -27,8 +27,8 @@
     // Load the data from the plist
     [self loadPaintings];
     [super viewDidLoad];
-    
-    [self addGestureRecognizersToView:self.theNewPaintingView];
+
+    //[self addGestureRecognizersToView:self.theNewPaintingView];
 }
 
 
@@ -82,26 +82,26 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{    
+{
     NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
-    /*
-    NSMutableArray *paintingNumber = [[NSMutableArray alloc] initWithCapacity:10];
     
-    for (int i=0; i<10; i++) {
-    */    
-        UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
+    NSMutableArray *paintingNumber = [[NSMutableArray alloc] init];
         
-        [self.theNewPaintingView addSubview:newPaintingView];
-        
-        newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
-        // newPaintingView.clipsToBounds = YES;
-        
-        CGRect frame = newPaintingView.frame;
-        frame.size.height = 100;
-        frame.size.width = 100;
-        newPaintingView.frame = frame;
-        //[paintingNumber addObject:newPaintingView];
-   // }
+    UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
+    
+    newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
+    CGRect frame = newPaintingView.frame;
+    frame.size.height = 200;
+    frame.size.width = 200;
+    newPaintingView.frame = frame;
+    newPaintingView.userInteractionEnabled = YES;
+    
+    [self addGestureRecognizersToView:newPaintingView];
+
+    [paintingNumber addObject:newPaintingView];
+    
+    [self.theNewPaintingView addSubview:[paintingNumber objectAtIndex:([paintingNumber count]-1)]];
+    
 }
 
 #pragma mark - Gesture Recognizers

@@ -19,20 +19,12 @@ UIImagePickerControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *canvasView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
-//@property (weak, nonatomic) IBOutlet UIImageView *viewA;
-//@property (weak, nonatomic) IBOutlet UIImageView *viewB;
-//@property (weak, nonatomic) IBOutlet UIImageView *viewC;
 @property (nonatomic, strong) IBOutlet UIButton *shareButton;
 @property (nonatomic) NSString *sharingText;
 @property (nonatomic) UIImage *sharingImage;
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
-
-//- (void)addGestureRecognizersToView:(UIView*)aView;
-//- (void)handlePan:(UIPanGestureRecognizer*)recognizer;
-//- (void)handlePinch:(UIPinchGestureRecognizer*)recognizer;
-//- (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
 
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;
