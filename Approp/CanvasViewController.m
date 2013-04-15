@@ -64,6 +64,7 @@
                        
                       }];
     }
+    self.canvasView.layer.masksToBounds = YES;
 }
 
 

@@ -28,7 +28,7 @@
     [self loadPaintings];
     [super viewDidLoad];
 
-    //[self addGestureRecognizersToView:self.theNewPaintingView];
+    self.theNewPaintingView.layer.masksToBounds = YES;
 }
 
 
@@ -103,7 +103,10 @@
     
     [self.theNewPaintingView addSubview:[paintingNumber objectAtIndex:([paintingNumber count]-1)]];
     
-    self.theNewPaintingView.layer.masksToBounds = YES;
+    // improves performance
+    self.theNewPaintingView.layer.shouldRasterize = YES;
+    // adds retina screen support
+    self.theNewPaintingView.layer.rasterizationScale = self.view.window.screen.scale;
 }
 
 #pragma mark - Gesture Recognizers

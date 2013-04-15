@@ -148,7 +148,7 @@
                                                     <constraint firstAttribute="height" constant="460" type="user" id="uWV-U2-VUI"/>
                                                 </constraints>
                                             </imageView>
-                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-Hc-8Ze">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-Hc-8Ze">
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
