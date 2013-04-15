@@ -90,6 +90,7 @@
     UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
     
     newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
+    //newPaintingView.clipsToBounds = YES; (does this do anything?)
     CGRect frame = newPaintingView.frame;
     frame.size.height = 200;
     frame.size.width = 200;
@@ -122,11 +123,13 @@
     [aView addGestureRecognizer:pinchGesture];
     
     // add rotation gesture (to rotate)
-    UIRotationGestureRecognizer *rotationGesture =
-    [[UIRotationGestureRecognizer alloc] initWithTarget:self action:
-     @selector(handleRotation:)];
+    UIRotationGestureRecognizer *rotationGesture = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotation:)];
     rotationGesture.delegate = self;
     [aView addGestureRecognizer:rotationGesture];
+    
+    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+    longPressGesture.delegate = self;
+    [aView addGestureRecognizer:longPressGesture];
 }
 
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer
@@ -165,6 +168,16 @@
         theView.transform = CGAffineTransformRotate(theView.transform,
                                                     recognizer.rotation);
         recognizer.rotation = 0;
+    }
+}
+
+-(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer
+{
+    UIView *theView = recognizer.view;
+    recognizer.minimumPressDuration = 1.0;
+    if(recognizer.state == UIGestureRecognizerStateBegan ||
+       recognizer.state == UIGestureRecognizerStateChanged) {
+        [theView removeFromSuperview];
     }
 }
 
