@@ -170,9 +170,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Cranach_AdamEve_croptop.png" width="646" height="547"/>
-        <image name="Manet_Dejeuner_croptop.png" width="403" height="395"/>
-        <image name="Michelangelo_CreationAdam_croptop.png" width="1946" height="896"/>
+        <image name="Cranach_AdamEve_croptop.png" width="609" height="511"/>
+        <image name="Manet_Dejeuner_croptop.png" width="391" height="387"/>
+        <image name="Michelangelo_CreationAdam_croptop.png" width="1933" height="868"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>

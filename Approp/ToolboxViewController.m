@@ -90,7 +90,7 @@
     UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
     
     newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
-    //newPaintingView.clipsToBounds = YES; (does this do anything?)
+
     CGRect frame = newPaintingView.frame;
     frame.size.height = 200;
     frame.size.width = 200;
@@ -103,6 +103,7 @@
     
     [self.theNewPaintingView addSubview:[paintingNumber objectAtIndex:([paintingNumber count]-1)]];
     
+    self.theNewPaintingView.layer.masksToBounds = YES;
 }
 
 #pragma mark - Gesture Recognizers
