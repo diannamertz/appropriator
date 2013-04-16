@@ -25,6 +25,7 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
+@property (nonatomic, copy) NSArray *excludedActivityTypes;
 
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;
