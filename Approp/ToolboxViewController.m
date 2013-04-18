@@ -178,11 +178,40 @@
 -(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer
 {
     UIView *theView = recognizer.view;
+    
+    UIMenuController *menuController = [UIMenuController sharedMenuController];
+    UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:@"Dianna" action:@selector(customAction:)];
+    [menuController setMenuItems:[NSArray arrayWithObject:menuItem]];
+    [menuController setTargetRect:CGRectMake(theView.center.x, theView.center.y, 0, 0) inView:self.view];
+    [menuController setMenuVisible:YES animated:YES];
+    
+    
     recognizer.minimumPressDuration = 1.0;
     if(recognizer.state == UIGestureRecognizerStateBegan ||
        recognizer.state == UIGestureRecognizerStateChanged) {
-        [theView removeFromSuperview];
+        //[theView removeFromSuperview];
+        [theView becomeFirstResponder];
+        
     }
+}
+
+#pragma UIMenuController required mehtods
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+-(BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    NSLog(@"canPerformAction");
+    if (action == @selector(customAction:)) {
+        return YES;
+    }
+    return NO;
+}
+
+#pragma Custom Action(s)
+-(void)customAction:(id)sender {
+    NSLog(@"custom action! %@", sender);
 }
 
 

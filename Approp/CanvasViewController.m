@@ -26,12 +26,15 @@
 	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
 	slideCanvasGesture.numberOfTapsRequired = 1;
 	[self.canvasView addGestureRecognizer:slideCanvasGesture];
-	
+    
 	// add a nice shadow to the canvas view
 	self.canvasView.layer.shadowRadius = 4;
 	self.canvasView.layer.shadowOffset = CGSizeMake(-2.0, 2.0);
 	self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
 	self.canvasView.layer.shadowOpacity = 0.6;
+    
+    self.imageView.layer.masksToBounds = YES;
+    
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
@@ -64,7 +67,7 @@
                        
                       }];
     }
-    self.canvasView.layer.masksToBounds = YES;
+    
 }
 
 
@@ -151,8 +154,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
         }
     }
     [picker dismissViewControllerAnimated:YES completion:nil];
-    //    NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
-    
+   
     // Keep aspect ration in tact between iPhone and iPad
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
