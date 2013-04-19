@@ -9,7 +9,9 @@
 #import "ToolboxViewController.h"
 
 @interface ToolboxViewController ()
-
+{
+UIView *deView;
+}
 @end
 
 @implementation ToolboxViewController
@@ -177,21 +179,22 @@
 
 -(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer
 {
-    UIView *theView = recognizer.view;
+    //UIView *theView = recognizer.view;
+    deView = recognizer.view;
     
     UIMenuController *menuController = [UIMenuController sharedMenuController];
-    UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:@"Dianna" action:@selector(customAction:)];
-    [menuController setMenuItems:[NSArray arrayWithObject:menuItem]];
-    [menuController setTargetRect:CGRectMake(theView.center.x, theView.center.y, 0, 0) inView:self.view];
+    UIMenuItem *flipItem = [[UIMenuItem alloc] initWithTitle:@"Flip" action:@selector(flipAction:)];
+    UIMenuItem *frontItem = [[UIMenuItem alloc] initWithTitle:@"Bring to front" action:@selector(frontAction:)];
+    UIMenuItem *deleteItem = [[UIMenuItem alloc] initWithTitle:@"Delete" action:@selector(deleteAction:)];
+    [UIMenuController sharedMenuController].menuItems = @[flipItem, frontItem, deleteItem];
+    [menuController setTargetRect:CGRectMake(deView.center.x, deView.center.y, 0, 0) inView:self.view];
     [menuController setMenuVisible:YES animated:YES];
     
     
     recognizer.minimumPressDuration = 1.0;
     if(recognizer.state == UIGestureRecognizerStateBegan ||
        recognizer.state == UIGestureRecognizerStateChanged) {
-        //[theView removeFromSuperview];
-        [theView becomeFirstResponder];
-        
+        [deView becomeFirstResponder];
     }
 }
 
@@ -202,16 +205,31 @@
 
 -(BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
-    NSLog(@"canPerformAction");
-    if (action == @selector(customAction:)) {
+    if (action == @selector(flipAction:) ||
+        action == @selector(deleteAction:)) 
         return YES;
-    }
-    return NO;
+
+    return [super canPerformAction:action withSender:sender];
 }
 
 #pragma Custom Action(s)
--(void)customAction:(id)sender {
-    NSLog(@"custom action! %@", sender);
+
+-(void)flipAction:(id)sender {
+    
+    NSLog(@"flip action! %@", sender);
+}
+
+-(void)frontAction:(id)sender {
+    NSLog(@"bring to front");
+}
+
+-(void)deleteAction:(id)sender {
+    
+
+    
+    [deView removeFromSuperview];
+
+    NSLog(@"delete action! %@", sender);
 }
 
 
