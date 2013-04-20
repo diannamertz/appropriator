@@ -10,7 +10,7 @@
 
 @interface ToolboxViewController ()
 {
-UIView *deView;
+UIView *viewToEdit;
 }
 @end
 
@@ -180,21 +180,21 @@ UIView *deView;
 -(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer
 {
     //UIView *theView = recognizer.view;
-    deView = recognizer.view;
+    viewToEdit = recognizer.view;
     
     UIMenuController *menuController = [UIMenuController sharedMenuController];
     UIMenuItem *flipItem = [[UIMenuItem alloc] initWithTitle:@"Flip" action:@selector(flipAction:)];
     UIMenuItem *frontItem = [[UIMenuItem alloc] initWithTitle:@"Bring to front" action:@selector(frontAction:)];
     UIMenuItem *deleteItem = [[UIMenuItem alloc] initWithTitle:@"Delete" action:@selector(deleteAction:)];
     [UIMenuController sharedMenuController].menuItems = @[flipItem, frontItem, deleteItem];
-    [menuController setTargetRect:CGRectMake(deView.center.x, deView.center.y, 0, 0) inView:self.view];
+    [menuController setTargetRect:CGRectMake(viewToEdit.center.x, viewToEdit.center.y, 0, 0) inView:self.view];
     [menuController setMenuVisible:YES animated:YES];
     
     
     recognizer.minimumPressDuration = 1.0;
     if(recognizer.state == UIGestureRecognizerStateBegan ||
        recognizer.state == UIGestureRecognizerStateChanged) {
-        [deView becomeFirstResponder];
+        [viewToEdit becomeFirstResponder];
     }
 }
 
@@ -216,20 +216,20 @@ UIView *deView;
 
 -(void)flipAction:(id)sender {
     
-    NSLog(@"flip action! %@", sender);
+    [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         CGAffineTransform trans = viewToEdit.transform;
+                         viewToEdit.transform = CGAffineTransformScale(trans , -1, 1);
+                     }
+                     completion:nil];
 }
-
+     
 -(void)frontAction:(id)sender {
     NSLog(@"bring to front");
 }
 
 -(void)deleteAction:(id)sender {
-    
-
-    
-    [deView removeFromSuperview];
-
-    NSLog(@"delete action! %@", sender);
+    [viewToEdit removeFromSuperview];
 }
 
 
