@@ -230,7 +230,8 @@
 }
      
 -(void)frontAction:(id)sender {
-    NSLog(@"bring to front");
+    [self.theNewPaintingView bringSubviewToFront:viewToEdit];
+    
 }
 
 -(void)deleteAction:(id)sender {
