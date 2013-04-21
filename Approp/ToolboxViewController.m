@@ -218,40 +218,15 @@
 -(void)flipAction:(id)sender {
     UIImageView *viewToFlip = (UIImageView*)[viewToEdit viewWithTag:10];
     
-    viewToFlip.image = [UIImage imageWithCGImage:[viewToFlip.image CGImage] scale:1.0 orientation:UIImageOrientationUpMirrored];
-    
-    //[viewToEdit addSubview:viewToFlip];
-    /*
     [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         CGAffineTransform transform = viewToFlip.transform;
-                         transform = CGAffineTransformScale(transform, -1, 1);
-                         viewToFlip.transform = transform;
+                         if ((viewToFlip.image.imageOrientation == UIImageOrientationUp)) {
+                         viewToFlip.image = [UIImage imageWithCGImage:[viewToFlip.image CGImage] scale:1.0 orientation:UIImageOrientationUpMirrored];
+                         } else if ((viewToFlip.image.imageOrientation == UIImageOrientationUpMirrored)) {
+                         viewToFlip.image = [UIImage imageWithCGImage:[viewToFlip.image CGImage] scale:1.0 orientation:UIImageOrientationUp];
+                         }
                      }
-                     completion:nil];
-    */
-    /*
-    UIImageView *viewToFlip = (UIImageView*)[viewToEdit viewWithTag:10];
-    [viewToEdit addSubview:viewToFlip];
-    
-    UIImageOrientation flippedOrientation = UIImageOrientationUpMirrored;
-    switch (viewToFlip.imageOrientation) {
-        case UIImageOrientationUp: break;
-        case UIImageOrientationDown: flippedOrientation = UIImageOrientationDownMirrored; break;
-            // ...
-    }
-    UIImage * flippedImage = [UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:flippedOrientation];
-    */
-    
-    /*
-    [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         CGAffineTransform transform = viewToFlip.transform;
-                         transform = CGAffineTransformScale(transform, -1, 1);
-                         viewToFlip.transform = transform;
-                     }
-                     completion:nil];
-    */
+                     completion:nil];    
 }
      
 -(void)frontAction:(id)sender {
