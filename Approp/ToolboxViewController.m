@@ -10,7 +10,8 @@
 
 @interface ToolboxViewController ()
 {
-UIView *viewToEdit;
+    UIView *viewToEdit;
+    UIImageView *newPaintingView;
 }
 @end
 
@@ -89,7 +90,8 @@ UIView *viewToEdit;
     
     NSMutableArray *paintingNumber = [[NSMutableArray alloc] init];
         
-    UIImageView *newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
+    newPaintingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[paintingsInfo objectForKey:@"image_top"]]];
+    newPaintingView.tag = 10;
     
     newPaintingView.contentMode = UIViewContentModeScaleAspectFit;
 
@@ -179,7 +181,6 @@ UIView *viewToEdit;
 
 -(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer
 {
-    //UIView *theView = recognizer.view;
     viewToEdit = recognizer.view;
     
     UIMenuController *menuController = [UIMenuController sharedMenuController];
@@ -215,13 +216,42 @@ UIView *viewToEdit;
 #pragma Custom Action(s)
 
 -(void)flipAction:(id)sender {
+    UIImageView *viewToFlip = (UIImageView*)[viewToEdit viewWithTag:10];
     
+    viewToFlip.image = [UIImage imageWithCGImage:[viewToFlip.image CGImage] scale:1.0 orientation:UIImageOrientationUpMirrored];
+    
+    //[viewToEdit addSubview:viewToFlip];
+    /*
     [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         CGAffineTransform trans = viewToEdit.transform;
-                         viewToEdit.transform = CGAffineTransformScale(trans , -1, 1);
+                         CGAffineTransform transform = viewToFlip.transform;
+                         transform = CGAffineTransformScale(transform, -1, 1);
+                         viewToFlip.transform = transform;
                      }
                      completion:nil];
+    */
+    /*
+    UIImageView *viewToFlip = (UIImageView*)[viewToEdit viewWithTag:10];
+    [viewToEdit addSubview:viewToFlip];
+    
+    UIImageOrientation flippedOrientation = UIImageOrientationUpMirrored;
+    switch (viewToFlip.imageOrientation) {
+        case UIImageOrientationUp: break;
+        case UIImageOrientationDown: flippedOrientation = UIImageOrientationDownMirrored; break;
+            // ...
+    }
+    UIImage * flippedImage = [UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:flippedOrientation];
+    */
+    
+    /*
+    [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         CGAffineTransform transform = viewToFlip.transform;
+                         transform = CGAffineTransformScale(transform, -1, 1);
+                         viewToFlip.transform = transform;
+                     }
+                     completion:nil];
+    */
 }
      
 -(void)frontAction:(id)sender {

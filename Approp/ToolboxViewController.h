@@ -24,7 +24,7 @@ UIGestureRecognizerDelegate>
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;
 - (void)handlePinch:(UIPinchGestureRecognizer*)recognizer;
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
--(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
+- (void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
 
 @end
 
