@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017CFD11644256400F9F4FB /* ToolboxViewController.m */; };
+		604624EA1725539900D00179 /* icon-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 604624E61725539900D00179 /* icon-camera.png */; };
+		604624EB1725539900D00179 /* icon-library.png in Resources */ = {isa = PBXBuildFile; fileRef = 604624E71725539900D00179 /* icon-library.png */; };
+		604624EC1725539900D00179 /* icon-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 604624E81725539900D00179 /* icon-menu.png */; };
+		604624ED1725539900D00179 /* icon-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 604624E91725539900D00179 /* icon-share.png */; };
+		604624EF17257FCB00D00179 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 604624EE17257FCB00D00179 /* icon-info.png */; };
 		604742521660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */; };
 		604742531660E6A700329F03 /* Cranach_AdamEve_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */; };
 		604742541660E6A700329F03 /* Holbein_Ambassadors_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */; };
 		604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */; };
 		604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */; };
 		60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60907AD9166BAF090080B835 /* QuartzCore.framework */; };
-		6098FD08165D2F7100268E40 /* Caravaggio_Fanciullo_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD07165D2F7100268E40 /* Caravaggio_Fanciullo_top.png */; };
-		6098FD0B165D2F8B00268E40 /* Cranach_AdamEve_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD0A165D2F8B00268E40 /* Cranach_AdamEve_top.png */; };
-		6098FD0D165D2F9400268E40 /* Holbein_Ambassadors_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD0C165D2F9400268E40 /* Holbein_Ambassadors_top.png */; };
-		6098FD0F165D2F9B00268E40 /* Manet_Dejeuner_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD0E165D2F9B00268E40 /* Manet_Dejeuner_top.png */; };
-		6098FD11165D2FA300268E40 /* Michelangelo_CreationAdam_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098FD10165D2FA300268E40 /* Michelangelo_CreationAdam_top.png */; };
 		609D0FB51632949700E08660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB41632949700E08660 /* UIKit.framework */; };
 		609D0FB71632949800E08660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB61632949700E08660 /* Foundation.framework */; };
 		609D0FB91632949800E08660 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB81632949800E08660 /* CoreGraphics.framework */; };
@@ -63,17 +63,17 @@
 /* Begin PBXFileReference section */
 		6017CFD01644256400F9F4FB /* ToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxViewController.h; sourceTree = "<group>"; };
 		6017CFD11644256400F9F4FB /* ToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxViewController.m; sourceTree = "<group>"; };
+		604624E61725539900D00179 /* icon-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-camera.png"; sourceTree = "<group>"; };
+		604624E71725539900D00179 /* icon-library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-library.png"; sourceTree = "<group>"; };
+		604624E81725539900D00179 /* icon-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-menu.png"; sourceTree = "<group>"; };
+		604624E91725539900D00179 /* icon-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-share.png"; sourceTree = "<group>"; };
+		604624EE17257FCB00D00179 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
 		6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Fanciullo_croptop.png; sourceTree = "<group>"; };
 		6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cranach_AdamEve_croptop.png; sourceTree = "<group>"; };
 		6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors_croptop.png; sourceTree = "<group>"; };
 		604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner_croptop.png; sourceTree = "<group>"; };
 		604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_croptop.png; sourceTree = "<group>"; };
 		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6098FD07165D2F7100268E40 /* Caravaggio_Fanciullo_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Fanciullo_top.png; sourceTree = "<group>"; };
-		6098FD0A165D2F8B00268E40 /* Cranach_AdamEve_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cranach_AdamEve_top.png; sourceTree = "<group>"; };
-		6098FD0C165D2F9400268E40 /* Holbein_Ambassadors_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors_top.png; sourceTree = "<group>"; };
-		6098FD0E165D2F9B00268E40 /* Manet_Dejeuner_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner_top.png; sourceTree = "<group>"; };
-		6098FD10165D2FA300268E40 /* Michelangelo_CreationAdam_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_top.png; sourceTree = "<group>"; };
 		609D0FB01632949700E08660 /* Approp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Approp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609D0FB41632949700E08660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		609D0FB61632949700E08660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -233,22 +233,22 @@
 		60E06FB21635A17C00BFB6D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				604624E61725539900D00179 /* icon-camera.png */,
+				604624EE17257FCB00D00179 /* icon-info.png */,
+				604624E71725539900D00179 /* icon-library.png */,
+				604624E81725539900D00179 /* icon-menu.png */,
+				604624E91725539900D00179 /* icon-share.png */,
 				60B7C6C916A6F97000F54328 /* Default-568h@2x.png */,
+				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
 				6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */,
+				60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */,
 				6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */,
 				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
-				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
-				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
-				6098FD0E165D2F9B00268E40 /* Manet_Dejeuner_top.png */,
-				6098FD10165D2FA300268E40 /* Michelangelo_CreationAdam_top.png */,
-				6098FD0C165D2F9400268E40 /* Holbein_Ambassadors_top.png */,
-				6098FD0A165D2F8B00268E40 /* Cranach_AdamEve_top.png */,
-				6098FD07165D2F7100268E40 /* Caravaggio_Fanciullo_top.png */,
-				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
-				60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */,
 				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
 				60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */,
+				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
 				60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */,
+				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
 				60E06FBA1635A17D00BFB6D0 /* paintings.plist */,
 			);
 			path = Resources;
@@ -336,17 +336,17 @@
 				60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */,
 				60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */,
 				60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */,
-				6098FD08165D2F7100268E40 /* Caravaggio_Fanciullo_top.png in Resources */,
-				6098FD0B165D2F8B00268E40 /* Cranach_AdamEve_top.png in Resources */,
-				6098FD0D165D2F9400268E40 /* Holbein_Ambassadors_top.png in Resources */,
-				6098FD0F165D2F9B00268E40 /* Manet_Dejeuner_top.png in Resources */,
-				6098FD11165D2FA300268E40 /* Michelangelo_CreationAdam_top.png in Resources */,
 				604742521660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png in Resources */,
 				604742531660E6A700329F03 /* Cranach_AdamEve_croptop.png in Resources */,
 				604742541660E6A700329F03 /* Holbein_Ambassadors_croptop.png in Resources */,
 				604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */,
 				604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */,
 				60B7C6CA16A6F97000F54328 /* Default-568h@2x.png in Resources */,
+				604624EA1725539900D00179 /* icon-camera.png in Resources */,
+				604624EB1725539900D00179 /* icon-library.png in Resources */,
+				604624EC1725539900D00179 /* icon-menu.png in Resources */,
+				604624ED1725539900D00179 /* icon-share.png in Resources */,
+				604624EF17257FCB00D00179 /* icon-info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

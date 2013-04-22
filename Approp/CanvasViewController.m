@@ -35,6 +35,18 @@
     
     self.imageView.layer.masksToBounds = YES;
     
+    [[self.cameraButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
+    [self.cameraButton setBackgroundImage:[UIImage imageNamed:@"icon-camera.png"] forState:UIControlStateNormal];
+    
+    [[self.cameraRollButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
+    [self.cameraRollButton setBackgroundImage:[UIImage imageNamed:@"icon-library.png"] forState:UIControlStateNormal];
+    
+    [[self.shareButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
+    [self.shareButton setBackgroundImage:[UIImage imageNamed:@"icon-share.png"] forState:UIControlStateNormal];
+    
+    [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
+    [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
+    
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
@@ -200,6 +212,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 - (UIImage*)screenshot
 {
+    self.menuButton.alpha = 0;
     CGRect rect = [self.canvasView bounds];
     UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -209,9 +222,10 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
     UIGraphicsEndImageContext();
     
+    self.menuButton.alpha = 100;
+    
     return imageToShare;
 }
-
 
 
 #pragma mark - Share Button
@@ -233,7 +247,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     UIActivityViewController *activityController =
     [[UIActivityViewController alloc] initWithActivityItems:activityItems
                                       applicationActivities:nil];
-    activityController.excludedActivityTypes = @[UIActivityTypeAssignToContact];
+    activityController.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeMessage];
     
     [self presentViewController:activityController
                        animated:YES completion:nil];
