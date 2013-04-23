@@ -236,7 +236,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     self.sharingText = @"Check out what I made with Appropriator!";
     
     
-    NSArray *activityItems;
+    NSArray *activityItems = [[NSArray alloc] init];
     
     if (self.sharingImage != nil) {
         activityItems = @[self.sharingText, self.sharingImage];
@@ -244,13 +244,11 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
         activityItems = @[self.sharingText];
     }
     
-    UIActivityViewController *activityController =
-    [[UIActivityViewController alloc] initWithActivityItems:activityItems
-                                      applicationActivities:nil];
+    __block UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
     activityController.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeMessage];
     
-    [self presentViewController:activityController
-                       animated:YES completion:nil];
+    [self presentViewController:activityController animated:YES completion:^{ activityController.excludedActivityTypes=nil; activityController=nil;}];
 }
 
 @end
