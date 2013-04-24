@@ -182,7 +182,13 @@
 -(void)handleLongPress:(UILongPressGestureRecognizer*)recognizer
 {
     viewToEdit = recognizer.view;
-    
+    recognizer.minimumPressDuration = 1.0;
+    if(recognizer.state == UIGestureRecognizerStateBegan ||
+       recognizer.state == UIGestureRecognizerStateChanged
+       ) {
+        [self becomeFirstResponder];
+    }
+  
     UIMenuController *menuController = [UIMenuController sharedMenuController];
     UIMenuItem *flipItem = [[UIMenuItem alloc] initWithTitle:@"Flip" action:@selector(flipAction:)];
     UIMenuItem *frontItem = [[UIMenuItem alloc] initWithTitle:@"Bring to front" action:@selector(frontAction:)];
@@ -190,16 +196,9 @@
     [UIMenuController sharedMenuController].menuItems = @[flipItem, frontItem, deleteItem];
     [menuController setTargetRect:CGRectMake(viewToEdit.center.x, viewToEdit.center.y, 0, 0) inView:self.view];
     [menuController setMenuVisible:YES animated:YES];
-    
-    
-    recognizer.minimumPressDuration = 1.0;
-    if(recognizer.state == UIGestureRecognizerStateBegan ||
-       recognizer.state == UIGestureRecognizerStateChanged) {
-        [viewToEdit becomeFirstResponder];
-    }
 }
 
-#pragma UIMenuController required mehtods
+#pragma UIMenuController required methods
 -(BOOL)canBecomeFirstResponder {
     return YES;
 }
@@ -207,7 +206,8 @@
 -(BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
     if (action == @selector(flipAction:) ||
-        action == @selector(deleteAction:)) 
+        action == @selector(frontAction:) ||
+        action == @selector(deleteAction:))
         return YES;
 
     return [super canPerformAction:action withSender:sender];

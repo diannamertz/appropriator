@@ -46,7 +46,6 @@
     
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
-    
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
@@ -78,8 +77,7 @@
                       completion:^(BOOL finished){
                        
                       }];
-    }
-    
+    }    
 }
 
 
@@ -212,7 +210,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 - (UIImage*)screenshot
 {
-    self.menuButton.alpha = 0;
     CGRect rect = [self.canvasView bounds];
     UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -222,16 +219,14 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
     UIGraphicsEndImageContext();
     
-    self.menuButton.alpha = 100;
-    
     return imageToShare;
 }
 
 
 #pragma mark - Share Button
 
--(IBAction) useShareButton: (id) sender {
-    
+-(IBAction) useShareButton: (id) sender
+{    
     self.sharingImage = self.screenshot;
     self.sharingText = @"Check out what I made with Appropriator!";
     

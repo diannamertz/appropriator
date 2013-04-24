@@ -20,6 +20,7 @@ UIGestureRecognizerDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 
+
 - (void)addGestureRecognizersToView:(UIView*)aView;
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;
 - (void)handlePinch:(UIPinchGestureRecognizer*)recognizer;
