@@ -73,6 +73,9 @@
     UIImageView *paintingsImage = (UIImageView *)[cell viewWithTag:100];
     paintingsImage.image = [UIImage imageNamed:[paintingsInfo objectForKey:@"image"]];
     
+    paintingsImage.backgroundColor = [UIColor whiteColor];
+    paintingsImage.opaque = YES;
+    
     UILabel *paintingArtist = (UILabel *)[cell viewWithTag:101];
     paintingArtist.text = [paintingsInfo objectForKey:@"name"];
     
