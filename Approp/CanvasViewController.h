@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Dianna Mertz. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>	// needed for shadow
 #import "ToolboxViewController.h"
@@ -29,9 +30,11 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
 @property (nonatomic, copy) NSArray *excludedActivityTypes;
 
+
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;
 - (IBAction)useShareButton:(id)sender;
-
+- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+- (UIImage *)screenshot;
 
 @end
