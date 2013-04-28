@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>	// needed for shadow
 #import "ToolboxViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "UIImage+fixOrientation.h"
 
 @interface CanvasViewController : ToolboxViewController 
 <UINavigationControllerDelegate,
@@ -17,7 +19,10 @@ UIGestureRecognizerDelegate,
 UIPopoverControllerDelegate,
 UIActionSheetDelegate,
 UIImagePickerControllerDelegate>
-
+{
+    UIImage *portraitImage;
+    UIImage *landscapeImage;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
 @property (nonatomic, weak) IBOutlet UIView *canvasView;
@@ -25,6 +30,7 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIButton *shareButton;
 @property (nonatomic) NSString *sharingText;
 @property (nonatomic) UIImage *sharingImage;
+@property (nonatomic) UIImage *rotateImage;
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;

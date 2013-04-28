@@ -48,12 +48,14 @@
 		609D1000163298F000E08660 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFF163298F000E08660 /* MessageUI.framework */; };
 		609D1002163298F900E08660 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D1001163298F900E08660 /* Security.framework */; };
 		609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D10031632990500E08660 /* SystemConfiguration.framework */; };
+		60D36FD4172DADCE00AD04E1 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D36FD3172DADCE00AD04E1 /* UIImage+fixOrientation.m */; };
 		60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */; };
 		60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */; };
 		60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */; };
 		60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */; };
 		60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */; };
 		60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FBA1635A17D00BFB6D0 /* paintings.plist */; };
+		60E3B589172D5F100015F769 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E3B588172D5F100015F769 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,12 +118,15 @@
 		609D0FFF163298F000E08660 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		609D1001163298F900E08660 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		609D10031632990500E08660 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		60D36FD2172DADCE00AD04E1 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+fixOrientation.h"; path = "../UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		60D36FD3172DADCE00AD04E1 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+fixOrientation.m"; path = "../UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Caravaggio_Fanciullo.jpg; sourceTree = "<group>"; };
 		60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cranach_AdamEve.jpg; sourceTree = "<group>"; };
 		60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holbein_Ambassadors.jpg; sourceTree = "<group>"; };
 		60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manet_Dejeuner.jpg; sourceTree = "<group>"; };
 		60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam.png; sourceTree = "<group>"; };
 		60E06FBA1635A17D00BFB6D0 /* paintings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paintings.plist; sourceTree = "<group>"; };
+		60E3B588172D5F100015F769 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E3B589172D5F100015F769 /* AVFoundation.framework in Frameworks */,
 				60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */,
 				609D0FB91632949800E08660 /* CoreGraphics.framework in Frameworks */,
 				609D0FB71632949800E08660 /* Foundation.framework in Frameworks */,
@@ -180,6 +186,7 @@
 		609D0FB31632949700E08660 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60E3B588172D5F100015F769 /* AVFoundation.framework */,
 				60907AD9166BAF090080B835 /* QuartzCore.framework */,
 				609D10031632990500E08660 /* SystemConfiguration.framework */,
 				609D1001163298F900E08660 /* Security.framework */,
@@ -210,6 +217,8 @@
 				609D0FD31632949800E08660 /* CanvasViewController.m */,
 				6052979D1727E8A800B832AC /* InfoController.h */,
 				6052979E1727E8A900B832AC /* InfoController.m */,
+				60D36FD2172DADCE00AD04E1 /* UIImage+fixOrientation.h */,
+				60D36FD3172DADCE00AD04E1 /* UIImage+fixOrientation.m */,
 				609D0FBB1632949800E08660 /* Supporting Files */,
 			);
 			path = Approp;
@@ -426,6 +435,7 @@
 				609D0FD41632949800E08660 /* CanvasViewController.m in Sources */,
 				6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */,
 				6052979F1727E8A900B832AC /* InfoController.m in Sources */,
+				60D36FD4172DADCE00AD04E1 /* UIImage+fixOrientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

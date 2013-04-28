@@ -10,10 +10,7 @@
 #define DEGREES_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 @interface CanvasViewController()
-{
-    UIImage *portraitImage;
-    UIImage *landscapeImage;
-}
+
 @end
 @implementation CanvasViewController
 
@@ -98,7 +95,18 @@
 }
 
 #pragma mark - Canvas Button
-
+/*
+// utility routing used during image capture to set up capture orientation
+- (AVCaptureVideoOrientation)avOrientationForDeviceOrientation:(UIDeviceOrientation)deviceOrientation
+{
+	AVCaptureVideoOrientation result = deviceOrientation;
+	if ( deviceOrientation == UIDeviceOrientationLandscapeLeft )
+		result = AVCaptureVideoOrientationLandscapeRight;
+	else if ( deviceOrientation == UIDeviceOrientationLandscapeRight )
+		result = AVCaptureVideoOrientationLandscapeLeft;
+	return result;
+}
+*/
 - (IBAction)camera:(id)sender;
 {
     if([UIImagePickerController isSourceTypeAvailable:
@@ -142,8 +150,7 @@
     } else {
         
         // For iPhone
-        if ([UIImagePickerController isSourceTypeAvailable:
-             UIImagePickerControllerSourceTypeSavedPhotosAlbum])
+        if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum])
         {
             UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
             imagePicker.delegate = self;
@@ -155,7 +162,6 @@
         }
     }
 }
-
 
 // Choose and Load the image from the library
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -171,28 +177,60 @@
    
     // Keep aspect ration in tact between iPhone and iPad
     
-    self.imageView.contentMode = UIViewContentModeScaleAspectFill;    
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    
+    
     // Assume the image is in portrait mode
     portraitImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+
+    portraitImage = [portraitImage fixOrientation];
     
     // But if not portrait mode, turn to landscape
     if (portraitImage.size.width > portraitImage.size.height) {
+        
         landscapeImage = [[UIImage alloc] initWithCGImage: portraitImage.CGImage scale: 1.0 orientation: UIImageOrientationRight];
+    
         self.imageView.image = landscapeImage;
+        
         if (newMedia)
             UIImageWriteToSavedPhotosAlbum(landscapeImage,
                                            self,
                                            @selector(image:finishedSavingWithError:contextInfo:),
                                            nil);
-    } else {
+    }
+         
+    
+    
+     else if (portraitImage.imageOrientation == UIImageOrientationRight) {
+        
+        UIImage *rotateImage = [[UIImage alloc] initWithCGImage: portraitImage.CGImage scale: 1.0 orientation: UIImageOrientationUp];
+        landscapeImage = [[UIImage alloc] initWithCGImage: rotateImage.CGImage scale: 1.0 orientation: UIImageOrientationRight];
+        
+        self.imageView.image = landscapeImage;
+        
+        if (newMedia)
+            UIImageWriteToSavedPhotosAlbum(landscapeImage,
+                                           self,
+                                           @selector(image:finishedSavingWithError:contextInfo:),
+                                           nil);
+    //}
+      
+    }
+    
+    else {
         self.imageView.image = portraitImage;
+        
         if (newMedia)
             UIImageWriteToSavedPhotosAlbum(portraitImage,
                                            self,
                                            @selector(image:finishedSavingWithError:contextInfo:),
                                            nil);
+           
     }
+       
 }
+
 
 // Method for a problem saving
 -(void)image:(UIImage *)image finishedSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
@@ -206,6 +244,8 @@
         [alert show];
     }
 }
+
+// from: http://www.catamount.com/forums/viewtopic.php?f=21&t=967
 
 - (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
 {
@@ -238,52 +278,6 @@
 
 - (UIImage*)screenshot
 {
-    /*
-    if (self.imageView.image == portraitImage) {
-        NSLog(@"portrait");
-        CGRect rect = [self.canvasView bounds];
-        UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        [self.canvasView.layer renderInContext:context];
-        UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        return imageToShare;
-        
-    } else if (self.imageView.image == landscapeImage) {
-        NSLog(@"landscape");
-        CGRect rect = [self.canvasView bounds];
-        UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        [self.canvasView.layer renderInContext:context];
-        
-        UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
-        UIImage *rotate = [[UIImage alloc] initWithCGImage:imageToShare.CGImage scale:1.0 orientation:UIImageOrientationLeft];
-        UIGraphicsEndImageContext();
-        return rotate;
-
-        
-        
-        CGAffineTransform transform = CGAffineTransformIdentity;
-        transform = CGAffineTransformTranslate(transform, imageToShare.size.width, imageToShare.size.height);
-        transform = CGAffineTransformRotate(transform, -M_PI_2);
-       
-
-        
-        
-    } else {
-        NSLog(@"not working");
-    }
-    */
-
-
-    // This is a quarter right
-
-
-
-    //if (self.imageView.image == landscapeImage) return self.imageView.image;
-    
-    // try this next: http://www.catamount.com/forums/viewtopic.php?f=21&t=967
-    
     CGRect rect = [self.canvasView bounds];
 
     UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
@@ -292,29 +286,7 @@
     UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return imageToShare;
-    
-    
-    /*
-    
-    UIGraphicsBeginImageContext(imageToShare.size);
-    CGContextRef newContext = UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM( newContext, 0.5f * imageToShare.size.width, 0.5f * imageToShare.size.height ) ;
-    
-    CGContextRotateCTM( newContext, M_PI_2 ) ;
-    
-    float theta;
-    theta = M_PI;
-    CGAffineTransform xfrm = CGAffineTransformMakeRotation(theta);
-    CGRect result = CGRectApplyAffineTransform((CGRect){ { -imageToShare.size.height * 0.5f, -imageToShare.size.width * 0.5f }, imageToShare.size.height, imageToShare.size.width }, xfrm);
-    
-    
-    //[imageToShare drawInRect:(CGRect){ { -imageToShare.size.height * 0.5f, -imageToShare.size.width * 0.5f }, imageToShare.size } ] ;
-    [imageToShare drawInRect:result];
-    
-    UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return rotatedImage;
-*/
+
 }
 
 
@@ -322,20 +294,14 @@
 
 -(IBAction) useShareButton: (id) sender
 {
-    
-    
     self.sharingImage = self.screenshot;
     
     if (self.imageView.image == landscapeImage) {
-    self.sharingImage = [self imageRotatedByDegrees:-90.0];
-    } else if (self.imageView.image == portraitImage) {
-        // do nothing
-    }
+        self.sharingImage = [self imageRotatedByDegrees:-90.0];
+    } 
     
     self.sharingText = @"Check out what I made with Appropriator!";
     
-
-
     NSArray *activityItems = [[NSArray alloc] init];
     
     if (self.sharingImage != nil) {
