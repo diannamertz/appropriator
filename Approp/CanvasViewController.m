@@ -95,28 +95,16 @@
 }
 
 #pragma mark - Canvas Button
-/*
-// utility routing used during image capture to set up capture orientation
-- (AVCaptureVideoOrientation)avOrientationForDeviceOrientation:(UIDeviceOrientation)deviceOrientation
-{
-	AVCaptureVideoOrientation result = deviceOrientation;
-	if ( deviceOrientation == UIDeviceOrientationLandscapeLeft )
-		result = AVCaptureVideoOrientationLandscapeRight;
-	else if ( deviceOrientation == UIDeviceOrientationLandscapeRight )
-		result = AVCaptureVideoOrientationLandscapeLeft;
-	return result;
-}
-*/
+
 - (IBAction)camera:(id)sender;
 {
-    if([UIImagePickerController isSourceTypeAvailable:
-        UIImagePickerControllerSourceTypeCamera])
+    if([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera])
     {
         UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
         imagePicker.delegate = self;
         imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
         imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
-        imagePicker.allowsEditing = NO;
+        imagePicker.allowsEditing = YES;
         [self presentViewController:imagePicker animated:YES completion:nil];
         newMedia = YES;
     }
@@ -130,8 +118,7 @@
         if ([self.popover isPopoverVisible]) {
             [self.popover dismissPopoverAnimated:YES];
         } else {
-            if ([UIImagePickerController isSourceTypeAvailable:
-                 UIImagePickerControllerSourceTypeSavedPhotosAlbum])
+            if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum])
             {
                 UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
                 imagePicker.delegate = self;
@@ -145,6 +132,9 @@
                 [self.popover presentPopoverFromRect:[sender bounds] inView:sender permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
                 
                 newMedia = NO;
+            }
+            else {
+                NSLog(@"no source type availabel");
             }
         }
     } else {
@@ -160,7 +150,10 @@
             [self presentViewController:imagePicker animated:YES completion:nil];
             newMedia = NO;
         }
-    }
+        else {
+            NSLog(@"no source type availabel");
+        }
+    } 
 }
 
 // Choose and Load the image from the library
@@ -176,63 +169,30 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
    
     // Keep aspect ration in tact between iPhone and iPad
-    
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    
-    
     
     // Assume the image is in portrait mode
     portraitImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    // Save original image to Photo Library, in the original orientation
+    if (newMedia)
+        UIImageWriteToSavedPhotosAlbum(portraitImage,
+                                       self,
+                                       @selector(image:finishedSavingWithError:contextInfo:),
+                                       nil);
 
     portraitImage = [portraitImage fixOrientation];
     
     // But if not portrait mode, turn to landscape
     if (portraitImage.size.width > portraitImage.size.height) {
-        
         landscapeImage = [[UIImage alloc] initWithCGImage: portraitImage.CGImage scale: 1.0 orientation: UIImageOrientationRight];
-    
         self.imageView.image = landscapeImage;
         
-        if (newMedia)
-            UIImageWriteToSavedPhotosAlbum(landscapeImage,
-                                           self,
-                                           @selector(image:finishedSavingWithError:contextInfo:),
-                                           nil);
-    }
-         
-    
-    
-     else if (portraitImage.imageOrientation == UIImageOrientationRight) {
-        
-        UIImage *rotateImage = [[UIImage alloc] initWithCGImage: portraitImage.CGImage scale: 1.0 orientation: UIImageOrientationUp];
-        landscapeImage = [[UIImage alloc] initWithCGImage: rotateImage.CGImage scale: 1.0 orientation: UIImageOrientationRight];
-        
-        self.imageView.image = landscapeImage;
-        
-        if (newMedia)
-            UIImageWriteToSavedPhotosAlbum(landscapeImage,
-                                           self,
-                                           @selector(image:finishedSavingWithError:contextInfo:),
-                                           nil);
-    //}
-      
-    }
-    
-    else {
+    } else {
         self.imageView.image = portraitImage;
-        
-        if (newMedia)
-            UIImageWriteToSavedPhotosAlbum(portraitImage,
-                                           self,
-                                           @selector(image:finishedSavingWithError:contextInfo:),
-                                           nil);
-           
     }
-       
 }
 
-
-// Method for a problem saving
 -(void)image:(UIImage *)image finishedSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
     if (error) {
@@ -243,35 +203,6 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
-}
-
-// from: http://www.catamount.com/forums/viewtopic.php?f=21&t=967
-
-- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
-{
-    // calculate the size of the rotated view's containing box for our drawing space
-    UIView *rotatedViewBox = [[UIView alloc] initWithFrame:CGRectMake(0,0,self.screenshot.size.width, self.screenshot.size.height)];
-    CGAffineTransform t = CGAffineTransformMakeRotation(DEGREES_RADIANS(degrees));
-    rotatedViewBox.transform = t;
-    CGSize rotatedSize = rotatedViewBox.frame.size;
-    
-    // Create the bitmap context
-    UIGraphicsBeginImageContext(rotatedSize);
-    CGContextRef bitmap = UIGraphicsGetCurrentContext();
-    
-    // Move the origin to the middle of the image so we will rotate and scale around the center.
-    CGContextTranslateCTM(bitmap, rotatedSize.width/2, rotatedSize.height/2);
-    
-    // Rotate the image context
-    CGContextRotateCTM(bitmap, DEGREES_RADIANS(degrees));
-    
-    // Now, draw the rotated/scaled image into the context
-    CGContextScaleCTM(bitmap, 1.0, -1.0);
-    CGContextDrawImage(bitmap, CGRectMake(-self.screenshot.size.width / 2, -self.screenshot.size.height / 2, self.screenshot.size.width, self.screenshot.size.height), [self.screenshot CGImage]);
-    
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
 }
 
 #pragma mark - Capture Screenshot
@@ -294,18 +225,22 @@
 
 -(IBAction) useShareButton: (id) sender
 {
-    self.sharingImage = self.screenshot;
+    sharingImage = self.screenshot;
     
-    if (self.imageView.image == landscapeImage) {
-        self.sharingImage = [self imageRotatedByDegrees:-90.0];
-    } 
+    NSLog(@"%@", self.imageView.image);
+    
+    if (self.imageView.image == NULL) {
+        
+    } else if (self.imageView.image == landscapeImage) {
+        sharingImage = [sharingImage imageRotatedByDegrees:-90.0];
+    }  
     
     self.sharingText = @"Check out what I made with Appropriator!";
     
     NSArray *activityItems = [[NSArray alloc] init];
     
-    if (self.sharingImage != nil) {
-        activityItems = @[self.sharingText, self.sharingImage];
+    if (sharingImage != nil) {
+        activityItems = @[self.sharingText, sharingImage];
     } else {
         activityItems = @[self.sharingText];
     }
