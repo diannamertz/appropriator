@@ -118,7 +118,7 @@
         if ([self.popover isPopoverVisible]) {
             [self.popover dismissPopoverAnimated:YES];
         } else {
-            if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum])
+            if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary])
             {
                 UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
                 imagePicker.delegate = self;
@@ -133,27 +133,29 @@
                 
                 newMedia = NO;
             }
-            else {
-                NSLog(@"no source type availabel");
-            }
         }
     } else {
         
         // For iPhone
-        if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum])
+        if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary])
         {
             UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
             imagePicker.delegate = self;
             imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-            imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+            //imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
+            imagePicker.allowsEditing = NO;
+            [self presentViewController:imagePicker animated:YES completion:nil];
+            newMedia = NO;
+        } else if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
+            UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+            imagePicker.delegate = self;
+            imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+            //imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
             imagePicker.allowsEditing = NO;
             [self presentViewController:imagePicker animated:YES completion:nil];
             newMedia = NO;
         }
-        else {
-            NSLog(@"no source type availabel");
-        }
-    } 
+    }
 }
 
 // Choose and Load the image from the library
@@ -226,9 +228,7 @@
 -(IBAction) useShareButton: (id) sender
 {
     sharingImage = self.screenshot;
-    
-    NSLog(@"%@", self.imageView.image);
-    
+
     if (self.imageView.image == NULL) {
         
     } else if (self.imageView.image == landscapeImage) {
