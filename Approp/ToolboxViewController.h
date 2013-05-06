@@ -10,20 +10,25 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@protocol ToolboxViewControllerDelegate <NSObject>
-- (void)returnAndSendMail;
-@end
+#import "InfoController.h"
 
-@interface ToolboxViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate>
+@interface ToolboxViewController : UIViewController <	UITableViewDataSource,
+														UITableViewDelegate,
+														UIImagePickerControllerDelegate,
+														UIGestureRecognizerDelegate,
+														InfoControllerDelegate,
+														MFMailComposeViewControllerDelegate>
 {
     BOOL newMedia;
 }
+
 @property (nonatomic, weak) IBOutlet UIView *theNewPaintingView;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 @property (nonatomic, strong) MFMailComposeViewController *mailComposer;
+
 //@property (nonatomic, strong) InfoController *infoController;
-@property(nonatomic,assign) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
+@property(assign) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
 
 
 - (void)addGestureRecognizersToView:(UIView*)aView;
@@ -31,6 +36,8 @@
 - (void)handlePinch:(UIPinchGestureRecognizer*)recognizer;
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
 - (void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
+
+- (void)returnAndSendMail;
 
 @end
 

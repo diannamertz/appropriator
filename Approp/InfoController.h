@@ -7,14 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ToolboxViewController.h"
 
-@interface InfoController : UIViewController <ToolboxViewControllerDelegate>
+
+@protocol InfoControllerDelegate <NSObject>
+
+- (void)returnAndSendMail;
+
+@end
+
+
+@interface InfoController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *sendToDoubledi;
 @property (weak, nonatomic) IBOutlet UIButton *emailMeButton;
 
-@property (nonatomic, assign) id<ToolboxViewControllerDelegate> toolboxViewControllerDelegate;
+@property (assign) id<InfoControllerDelegate> delegate;
 
 -(IBAction)sendToDoubledi:(id)sender;
 -(IBAction)sendEmailButtonPressed:(id)sender;

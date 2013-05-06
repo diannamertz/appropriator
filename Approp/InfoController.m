@@ -35,7 +35,7 @@
 -(IBAction)sendEmailButtonPressed:(id)sender
 {
     NSLog(@"sendEmailButtonPressed");
-    [self.toolboxViewControllerDelegate returnAndSendMail];
+    [self.delegate returnAndSendMail];
 }
 
 

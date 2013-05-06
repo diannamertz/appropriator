@@ -242,7 +242,9 @@
     [viewToEdit removeFromSuperview];
 }
 
-#pragma Use InfoController
+
+
+#pragma InfoController Delegate
 
 
 -(void)returnAndSendMail
