@@ -9,24 +9,18 @@
 #import "InfoController.h"
 
 @interface InfoController ()
+{
+    ToolboxViewController *tvc;
+}
 
 @end
 
-@implementation InfoController
+@implementation InfoController 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,5 +34,38 @@
     NSURL *urlDoubledi = [NSURL URLWithString:@"http://doubledi.com"];
     [[UIApplication sharedApplication] openURL: urlDoubledi];
 }
+
+- (IBAction)emailMe:(id)sender {
+    tvc = (ToolboxViewController *)self.presentingViewController;
+    [tvc dismissViewControllerAnimated:YES completion:^{
+        MFMailComposeViewController *mailController =
+        [[MFMailComposeViewController alloc] init];
+        if([MFMailComposeViewController canSendMail]){
+            if(mailController) {
+                mailController.mailComposeDelegate = tvc;
+                [mailController setToRecipients:@[@"diannamertz@gmail.com"]];
+                [mailController setSubject:@"Appropriator"];
+                [mailController setMessageBody:@"" isHTML:YES];
+                [tvc presentViewController:mailController
+                                           animated:YES
+                                         completion:nil];
+            }
+        }
+    }];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+
+{
+    NSLog(@"%@", tvc);
+    if (result == MFMailComposeResultSent) {
+        NSLog(@"It's sent!");
+    }
+    
+    [tvc dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
 
 @end

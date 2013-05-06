@@ -26,6 +26,7 @@
 		608C6EC3172A81E3001ACB6E /* front@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC0172A81E3001ACB6E /* front@2x.png */; };
 		608C6EC5172AB022001ACB6E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC4172AB022001ACB6E /* info.png */; };
 		60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60907AD9166BAF090080B835 /* QuartzCore.framework */; };
+		60921D3C1733E216007F34E8 /* icon-contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 60921D3B1733E216007F34E8 /* icon-contact.png */; };
 		609D0FB51632949700E08660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB41632949700E08660 /* UIKit.framework */; };
 		609D0FB71632949800E08660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB61632949700E08660 /* Foundation.framework */; };
 		609D0FB91632949800E08660 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB81632949800E08660 /* CoreGraphics.framework */; };
@@ -33,7 +34,6 @@
 		609D0FC11632949800E08660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FC01632949800E08660 /* main.m */; };
 		609D0FC51632949800E08660 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FC41632949800E08660 /* AppDelegate.m */; };
 		609D0FCE1632949800E08660 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609D0FCC1632949800E08660 /* MainStoryboard_iPhone.storyboard */; };
-		609D0FD11632949800E08660 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609D0FCF1632949800E08660 /* MainStoryboard_iPad.storyboard */; };
 		609D0FD41632949800E08660 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FD31632949800E08660 /* CanvasViewController.m */; };
 		609D0FDF1632949800E08660 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FDE1632949800E08660 /* SenTestingKit.framework */; };
 		609D0FE01632949800E08660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FB41632949700E08660 /* UIKit.framework */; };
@@ -88,6 +88,7 @@
 		608C6EC0172A81E3001ACB6E /* front@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front@2x.png"; sourceTree = "<group>"; };
 		608C6EC4172AB022001ACB6E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		60921D3B1733E216007F34E8 /* icon-contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-contact.png"; sourceTree = "<group>"; };
 		609D0FB01632949700E08660 /* Approp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Approp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609D0FB41632949700E08660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		609D0FB61632949700E08660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,7 +100,6 @@
 		609D0FC31632949800E08660 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		609D0FC41632949800E08660 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		609D0FCD1632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		609D0FD01632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		609D0FD21632949800E08660 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		609D0FD31632949800E08660 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		609D0FDD1632949800E08660 /* AppropTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppropTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,13 +130,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609D1000163298F000E08660 /* MessageUI.framework in Frameworks */,
 				60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */,
 				609D0FB91632949800E08660 /* CoreGraphics.framework in Frameworks */,
 				609D0FB71632949800E08660 /* Foundation.framework in Frameworks */,
 				609D0FB51632949700E08660 /* UIKit.framework in Frameworks */,
 				609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */,
 				609D1002163298F900E08660 /* Security.framework in Frameworks */,
-				609D1000163298F000E08660 /* MessageUI.framework in Frameworks */,
 				609D0FFE163298E400E08660 /* CFNetwork.framework in Frameworks */,
 				609D0FFC163298DB00E08660 /* CoreLocation.framework in Frameworks */,
 				609D0FF8163298CC00E08660 /* CoreFoundation.framework in Frameworks */,
@@ -200,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				609D0FCC1632949800E08660 /* MainStoryboard_iPhone.storyboard */,
-				609D0FCF1632949800E08660 /* MainStoryboard_iPad.storyboard */,
 				609D0FC31632949800E08660 /* AppDelegate.h */,
 				609D0FC41632949800E08660 /* AppDelegate.m */,
 				6017CFD01644256400F9F4FB /* ToolboxViewController.h */,
@@ -257,6 +256,7 @@
 				6041F4D41729B34000C999AF /* Default@2x.png */,
 				608C6EC4172AB022001ACB6E /* info.png */,
 				604624E61725539900D00179 /* icon-camera.png */,
+				60921D3B1733E216007F34E8 /* icon-contact.png */,
 				604624EE17257FCB00D00179 /* icon-info.png */,
 				604624E71725539900D00179 /* icon-library.png */,
 				604624E91725539900D00179 /* icon-share.png */,
@@ -350,7 +350,6 @@
 			files = (
 				609D0FBF1632949800E08660 /* InfoPlist.strings in Resources */,
 				609D0FCE1632949800E08660 /* MainStoryboard_iPhone.storyboard in Resources */,
-				609D0FD11632949800E08660 /* MainStoryboard_iPad.storyboard in Resources */,
 				60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */,
 				60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */,
 				60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */,
@@ -373,6 +372,7 @@
 				608C6EC2172A81E3001ACB6E /* front.png in Resources */,
 				608C6EC3172A81E3001ACB6E /* front@2x.png in Resources */,
 				608C6EC5172AB022001ACB6E /* info.png in Resources */,
+				60921D3C1733E216007F34E8 /* icon-contact.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,14 +466,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		609D0FCF1632949800E08660 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				609D0FD01632949800E08660 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		609D0FE71632949800E08660 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -507,10 +499,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -529,10 +521,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -543,12 +535,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Approp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -560,12 +553,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Approp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
 			};

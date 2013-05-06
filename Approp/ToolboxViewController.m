@@ -32,6 +32,7 @@
     [super viewDidLoad];
 
     self.theNewPaintingView.layer.masksToBounds = YES;
+    self.mailComposeDelegate = self;
 }
 
 
@@ -241,5 +242,14 @@
     [viewToEdit removeFromSuperview];
 }
 
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+
+{
+    if (result == MFMailComposeResultSent) {
+        NSLog(@"It's sent!");
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

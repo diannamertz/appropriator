@@ -7,12 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+#import "ToolboxViewController.h"
 
-@interface InfoController : UIViewController
-
+@interface InfoController : UIViewController //<MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *sendToDoubledi;
+@property (weak, nonatomic) IBOutlet UIButton *emailMeButton;
+
+//@property(nonatomic,assign) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
 
 -(IBAction)sendToDoubledi:(id)sender;
+-(IBAction)emailMe:(id)sender;
 
 @end
+
+
