@@ -130,7 +130,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="5qk-db-Gc2" kind="modal" modalTransitionStyle="partialCurl" id="MnS-3i-wW4"/>
+                                            <segue destination="5qk-db-Gc2" kind="modal" identifier="segueToInfoController" modalTransitionStyle="partialCurl" id="d3W-Jf-ezL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -275,7 +275,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="emailMe:" destination="5qk-db-Gc2" eventType="touchUpInside" id="UmI-LC-SnR"/>
+                                    <action selector="sendEmailButtonPressed:" destination="5qk-db-Gc2" eventType="touchUpInside" id="ay1-nX-e5c"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Support:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUv-RB-S1o">
@@ -360,7 +360,7 @@
         <class className="InfoController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoController.h"/>
             <relationships>
-                <relationship kind="action" name="emailMe:"/>
+                <relationship kind="action" name="sendEmailButtonPressed:"/>
                 <relationship kind="action" name="sendToDoubledi:"/>
                 <relationship kind="outlet" name="emailMeButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="sendToDoubledi" candidateClass="UIButton"/>

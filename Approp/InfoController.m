@@ -9,9 +9,6 @@
 #import "InfoController.h"
 
 @interface InfoController ()
-{
-    ToolboxViewController *tvc;
-}
 
 @end
 
@@ -35,37 +32,11 @@
     [[UIApplication sharedApplication] openURL: urlDoubledi];
 }
 
-- (IBAction)emailMe:(id)sender {
-    tvc = (ToolboxViewController *)self.presentingViewController;
-    [tvc dismissViewControllerAnimated:YES completion:^{
-        MFMailComposeViewController *mailController =
-        [[MFMailComposeViewController alloc] init];
-        if([MFMailComposeViewController canSendMail]){
-            if(mailController) {
-                mailController.mailComposeDelegate = tvc;
-                [mailController setToRecipients:@[@"diannamertz@gmail.com"]];
-                [mailController setSubject:@"Appropriator"];
-                [mailController setMessageBody:@"" isHTML:YES];
-                [tvc presentViewController:mailController
-                                           animated:YES
-                                         completion:nil];
-            }
-        }
-    }];
-}
-
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-
+-(IBAction)sendEmailButtonPressed:(id)sender
 {
-    NSLog(@"%@", tvc);
-    if (result == MFMailComposeResultSent) {
-        NSLog(@"It's sent!");
-    }
-    
-    [tvc dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"sendEmailButtonPressed");
+    [self.toolboxViewControllerDelegate returnAndSendMail];
 }
-
-
 
 
 @end

@@ -10,15 +10,21 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
+@protocol ToolboxViewControllerDelegate <NSObject>
+- (void)returnAndSendMail;
+@end
+
 @interface ToolboxViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate>
 {
     BOOL newMedia;
 }
-@property (weak, nonatomic) IBOutlet UIView *theNewPaintingView;
+@property (nonatomic, weak) IBOutlet UIView *theNewPaintingView;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
-
+@property (nonatomic, strong) MFMailComposeViewController *mailComposer;
+//@property (nonatomic, strong) InfoController *infoController;
 @property(nonatomic,assign) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
+
 
 - (void)addGestureRecognizersToView:(UIView*)aView;
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;
@@ -26,11 +32,7 @@
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
 - (void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error;
-
 @end
-
-
 
 
 

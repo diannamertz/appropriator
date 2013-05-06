@@ -32,7 +32,7 @@
     [super viewDidLoad];
 
     self.theNewPaintingView.layer.masksToBounds = YES;
-    self.mailComposeDelegate = self;
+    
 }
 
 
@@ -242,6 +242,17 @@
     [viewToEdit removeFromSuperview];
 }
 
+#pragma Use InfoController
+
+
+-(void)returnAndSendMail
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        self.mailComposer.mailComposeDelegate = self;
+        [self presentViewController:self.mailComposer animated:NO completion:nil];
+    }];
+}
+
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 
 {
@@ -251,5 +262,6 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 @end
