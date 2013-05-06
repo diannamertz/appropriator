@@ -42,6 +42,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+#warning set all your properties to nil, else your object leaks!
+	self.theNewPaintingView = nil;
+	// ...
+}
+
 
 #pragma mark - Table view data source
 
@@ -243,21 +249,32 @@
 }
 
 
+#pragma mark InfoController
 
-#pragma InfoController Delegate
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+#warning Here's the trick on how to set the delegate
+	// hook in the segue to set the delegate of the target
+	if([segue.identifier isEqualToString:@"infoControllerSegue"]) {
+		InfoController *infoController = (InfoController*)segue.destinationViewController;
+		infoController.delegate = self;		// important!
+	}
+}
+
+#pragma mark InfoController Delegate
 
 
--(void)returnAndSendMail
-{
+-(void)returnAndSendMail {
+	// dismiss the infoViewController
     [self dismissViewControllerAnimated:YES completion:^{
-        self.mailComposer.mailComposeDelegate = self;
-        [self presentViewController:self.mailComposer animated:NO completion:nil];
+		// and create the mailComposer
+		MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+		mailComposer.mailComposeDelegate = self;	// important!
+		[mailComposer setSubject:@"Hi"];
+		[self presentViewController:mailComposer animated:YES completion:nil];
     }];
 }
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-
-{
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
     if (result == MFMailComposeResultSent) {
         NSLog(@"It's sent!");
     }

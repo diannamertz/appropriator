@@ -24,7 +24,7 @@ UIImagePickerControllerDelegate>
     UIImage *sharingImage;
 }
 
-@property (weak, nonatomic) IBOutlet UIButton *infoButton;
+@property (nonatomic, weak) IBOutlet UIButton *infoButton;
 @property (nonatomic, weak) IBOutlet UIView *canvasView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UIButton *shareButton;

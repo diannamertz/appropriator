@@ -27,9 +27,6 @@
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 @property (nonatomic, strong) MFMailComposeViewController *mailComposer;
 
-//@property (nonatomic, strong) InfoController *infoController;
-@property(assign) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
-
 
 - (void)addGestureRecognizersToView:(UIView*)aView;
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;

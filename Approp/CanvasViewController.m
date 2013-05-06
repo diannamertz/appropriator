@@ -49,6 +49,13 @@
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
 }
 
+
+- (void)dealloc {
+#warning set all your properties to nil, else your object leaks!
+	self.infoButton = nil;
+	// ...
+}
+
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     
     CGPoint canvasCenter = super.view.center;

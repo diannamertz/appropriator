@@ -18,9 +18,6 @@
 
 @interface InfoController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *sendToDoubledi;
-@property (weak, nonatomic) IBOutlet UIButton *emailMeButton;
-
 @property (assign) id<InfoControllerDelegate> delegate;
 
 -(IBAction)sendToDoubledi:(id)sender;
