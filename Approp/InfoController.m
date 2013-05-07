@@ -14,16 +14,15 @@
 
 @implementation InfoController 
 
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 }
 
 -(IBAction)sendToDoubledi:(id)sender
@@ -34,7 +33,6 @@
 
 -(IBAction)sendEmailButtonPressed:(id)sender
 {
-    NSLog(@"sendEmailButtonPressed");
     [self.delegate returnAndSendMail];
 }
 

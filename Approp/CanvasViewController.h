@@ -34,6 +34,7 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
 @property (nonatomic, copy) NSArray *excludedActivityTypes;
+@property (strong, nonatomic) IBOutlet UIImageView *pulsingFrontGraphic;
 
 
 - (IBAction)camera:(id)sender;

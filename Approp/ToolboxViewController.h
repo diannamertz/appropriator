@@ -33,7 +33,6 @@
 - (void)handlePinch:(UIPinchGestureRecognizer*)recognizer;
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
 - (void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
-
 - (void)returnAndSendMail;
 
 @end

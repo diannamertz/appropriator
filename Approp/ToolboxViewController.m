@@ -17,8 +17,12 @@
 
 @implementation ToolboxViewController
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
-// Method to load the paintings array from the plist
 - (void)loadPaintings {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"paintings" ofType:@"plist"];
     self.paintingsArray = [NSMutableArray arrayWithContentsOfFile:path];
@@ -32,24 +36,17 @@
     [super viewDidLoad];
 
     self.theNewPaintingView.layer.masksToBounds = YES;
-    
-}
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)dealloc {
-#warning set all your properties to nil, else your object leaks!
 	self.theNewPaintingView = nil;
-	// ...
+    self.tableView = nil;
+    self.paintingsArray = nil;
+    self.mailComposer = nil;
 }
 
 
-#pragma mark - Table view data source
+#pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -91,8 +88,6 @@
     
     return cell;
 }
-
-#pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -208,7 +203,7 @@
     [menuController setMenuVisible:YES animated:YES];
 }
 
-#pragma UIMenuController required methods
+#pragma mark - UIMenuController
 -(BOOL)canBecomeFirstResponder {
     return YES;
 }
@@ -222,8 +217,6 @@
 
     return [super canPerformAction:action withSender:sender];
 }
-
-#pragma Custom Action(s)
 
 -(void)flipAction:(id)sender {
     UIImageView *viewToFlip = (UIImageView*)[viewToEdit viewWithTag:10];
@@ -249,36 +242,28 @@
 }
 
 
-#pragma mark InfoController
+#pragma mark - InfoController
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-#warning Here's the trick on how to set the delegate
-	// hook in the segue to set the delegate of the target
 	if([segue.identifier isEqualToString:@"infoControllerSegue"]) {
 		InfoController *infoController = (InfoController*)segue.destinationViewController;
 		infoController.delegate = self;		// important!
 	}
 }
 
-#pragma mark InfoController Delegate
-
-
 -(void)returnAndSendMail {
 	// dismiss the infoViewController
     [self dismissViewControllerAnimated:YES completion:^{
 		// and create the mailComposer
 		MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
-		mailComposer.mailComposeDelegate = self;	// important!
-		[mailComposer setSubject:@"Hi"];
+		mailComposer.mailComposeDelegate = self;
+        [mailComposer setToRecipients:@[@"diannamertz@gmail.com"]];
+		[mailComposer setSubject:@"re: Appropriator"];
 		[self presentViewController:mailComposer animated:YES completion:nil];
     }];
 }
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    if (result == MFMailComposeResultSent) {
-        NSLog(@"It's sent!");
-    }
-    
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

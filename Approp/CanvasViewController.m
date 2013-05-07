@@ -47,14 +47,37 @@
     
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
+    
+    [self pulse:self.pulsingFrontGraphic];
 }
 
 
 - (void)dealloc {
-#warning set all your properties to nil, else your object leaks!
 	self.infoButton = nil;
-	// ...
+    self.canvasView = nil;
+    self.imageView = nil;
+    self.shareButton = nil;
+    self.sharingText = nil;
+    self.rotateImage = nil;
+    self.popover = nil;
+    self.cameraButton = nil;
+    self.cameraRollButton = nil;
+    self.excludedActivityTypes = nil;
 }
+
+#pragma mark - Canvas Front w/ Animation
+
+- (void)pulse:(UIImageView*)imageView {
+    [UIView animateWithDuration:0.5
+                          delay:0
+                        options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut)
+                     animations:(void (^)(void)) ^{
+                         self.pulsingFrontGraphic.transform=CGAffineTransformMakeScale(0.7, 0.7);
+                     }
+                     completion:nil];
+}
+
+#pragma mark - Slide Canvas 
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     
@@ -72,10 +95,8 @@
                          self.canvasView.frame = canvasRight;
                      }
                      completion:^(BOOL finished){
-                        
                      }];
     } else {
-     
      [UIView animateWithDuration:0.5
                            delay:0.0
                          options: UIViewAnimationCurveEaseOut
@@ -83,25 +104,11 @@
                           self.canvasView.center = canvasCenter;
                       }
                       completion:^(BOOL finished){
-                       
                       }];
     }    
 }
 
-
-#pragma mark UIGestureRecognizerDelegate
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-	// we don't want the canvas be moved along with other recognizers
-	if(gestureRecognizer.view == self.canvasView || otherGestureRecognizer.view == self.canvasView) {
-		return NO;
-	} else {
-		return YES;
-	}
-}
-
-#pragma mark - Canvas Button
+#pragma mark - Camera and Photo Buttons
 
 - (IBAction)camera:(id)sender;
 {
@@ -111,7 +118,7 @@
         imagePicker.delegate = self;
         imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
         imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
-        imagePicker.allowsEditing = YES;
+        imagePicker.allowsEditing = NO;
         [self presentViewController:imagePicker animated:YES completion:nil];
         newMedia = YES;
     }
@@ -119,37 +126,11 @@
 
 - (IBAction)cameraRoll:(id)sender;
 {
-    // For iPad
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        
-        if ([self.popover isPopoverVisible]) {
-            [self.popover dismissPopoverAnimated:YES];
-        } else {
-            if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary])
-            {
-                UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-                imagePicker.delegate = self;
-                imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-                imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
-                imagePicker.allowsEditing = NO;
-                self.popover = [[UIPopoverController alloc]
-                                initWithContentViewController:imagePicker];
-                self.popover.delegate = self;
-                
-                [self.popover presentPopoverFromRect:[sender bounds] inView:sender permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
-                
-                newMedia = NO;
-            }
-        }
-    } else {
-        
-        // For iPhone
         if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary])
         {
             UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
             imagePicker.delegate = self;
             imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-            //imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
             imagePicker.allowsEditing = NO;
             [self presentViewController:imagePicker animated:YES completion:nil];
             newMedia = NO;
@@ -157,24 +138,14 @@
             UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
             imagePicker.delegate = self;
             imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-            //imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType: UIImagePickerControllerSourceTypeCamera];
             imagePicker.allowsEditing = NO;
             [self presentViewController:imagePicker animated:YES completion:nil];
             newMedia = NO;
-        }
     }
 }
 
-// Choose and Load the image from the library
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    // For iPad
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        if (self.view.window != nil) {
-            [self.popover dismissPopoverAnimated:true];
-        }
-    }
-
     [picker dismissViewControllerAnimated:YES completion:nil];
    
     // Keep aspect ration in tact between iPhone and iPad
@@ -202,7 +173,7 @@
     }
 }
 
--(void)image:(UIImage *)image finishedSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+- (void)image:(UIImage *)image finishedSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
     if (error) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Save failed"
@@ -214,25 +185,21 @@
     }
 }
 
-#pragma mark - Capture Screenshot
+#pragma mark - Share Button
 
 - (UIImage*)screenshot
 {
     CGRect rect = [self.canvasView bounds];
-
+    
     UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
     CGContextRef context = UIGraphicsGetCurrentContext();
     [self.canvasView.layer renderInContext:context];
     UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return imageToShare;
-
 }
 
-
-#pragma mark - Share Button
-
--(IBAction) useShareButton: (id) sender
+- (IBAction) useShareButton: (id) sender
 {
     sharingImage = self.screenshot;
 
