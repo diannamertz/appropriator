@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>	// needed for shadow
 #import "ToolboxViewController.h"
 #import "UIImage+fixOrientation.h"
 
@@ -37,9 +36,11 @@ UIImagePickerControllerDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *pulsingFrontGraphic;
 
 
+
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;
 - (IBAction)useShareButton:(id)sender;
 - (UIImage *)screenshot;
+- (void)pulse:(UIImageView*)imageView;
 
 @end

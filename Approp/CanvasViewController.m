@@ -48,12 +48,14 @@
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
     
-    [self pulse:self.pulsingFrontGraphic];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pulse:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    
+   // [self pulse:self.pulsingFrontGraphic];
 }
 
 
 - (void)dealloc {
-	self.infoButton = nil;
+    self.infoButton = nil;
     self.canvasView = nil;
     self.imageView = nil;
     self.shareButton = nil;
@@ -63,21 +65,22 @@
     self.cameraButton = nil;
     self.cameraRollButton = nil;
     self.excludedActivityTypes = nil;
+    self.pulsingFrontGraphic = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-#pragma mark - Canvas Front w/ Animation
+#pragma mark - Canvas Animations
 
 - (void)pulse:(UIImageView*)imageView {
     [UIView animateWithDuration:0.5
                           delay:0
-                        options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut)
+                        options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState)
                      animations:(void (^)(void)) ^{
                          self.pulsingFrontGraphic.transform=CGAffineTransformMakeScale(0.7, 0.7);
                      }
                      completion:nil];
 }
-
-#pragma mark - Slide Canvas 
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     

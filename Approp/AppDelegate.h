@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CanvasViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    CanvasViewController *cvc;
+}
 @property (nonatomic, strong) UIWindow *window;
 
 @end

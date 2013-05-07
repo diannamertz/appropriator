@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
-
+#import <QuartzCore/QuartzCore.h>
 #import "InfoController.h"
 
 @interface ToolboxViewController : UIViewController <	UITableViewDataSource,
@@ -26,6 +26,7 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 @property (nonatomic, strong) MFMailComposeViewController *mailComposer;
+@property (strong, nonatomic) IBOutlet UIView *toolboxTopView;
 
 
 - (void)addGestureRecognizersToView:(UIView*)aView;

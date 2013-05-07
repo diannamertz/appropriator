@@ -43,6 +43,7 @@
     self.tableView = nil;
     self.paintingsArray = nil;
     self.mailComposer = nil;
+    self.toolboxTopView = nil;
 }
 
 
@@ -71,14 +72,16 @@
     NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = cell.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:255.0 green:255.0 blue:255.0 alpha:20.0/255.0] CGColor], (id)[[UIColor colorWithRed:62.0/100.0 green:70.0/100.0 blue: 81.0/100.0 alpha:20.0/255.0] CGColor], nil];
+    [cell.layer insertSublayer:gradient atIndex:0];
+    
     // Call the info from the paintings.plist and distribute to cells
     NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
     
     UIImageView *paintingsImage = (UIImageView *)[cell viewWithTag:100];
     paintingsImage.image = [UIImage imageNamed:[paintingsInfo objectForKey:@"image"]];
-    
-    paintingsImage.backgroundColor = [UIColor whiteColor];
-    paintingsImage.opaque = YES;
     
     UILabel *paintingArtist = (UILabel *)[cell viewWithTag:101];
     paintingArtist.text = [paintingsInfo objectForKey:@"name"];
