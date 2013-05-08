@@ -21,6 +21,7 @@ UIImagePickerControllerDelegate>
     UIImage *portraitImage;
     UIImage *landscapeImage;
     UIImage *sharingImage;
+    CAAnimation *animationViewPosition;
 }
 
 @property (nonatomic, weak) IBOutlet UIButton *infoButton;
@@ -33,14 +34,14 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
 @property (nonatomic, copy) NSArray *excludedActivityTypes;
-@property (strong, nonatomic) IBOutlet UIImageView *pulsingFrontGraphic;
-
-
+@property (weak, nonatomic) IBOutlet UIImageView *pulsingFrontGraphic;
 
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;
 - (IBAction)useShareButton:(id)sender;
 - (UIImage *)screenshot;
 - (void)pulse:(UIImageView*)imageView;
+- (void)resumeAnimation: (NSNotification*)note;
+- (void)pauseAnimation: (NSNotification*)note;
 
 @end

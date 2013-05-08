@@ -14,6 +14,8 @@
 @end
 @implementation CanvasViewController
 
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -48,11 +50,15 @@
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pulse:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeAnimation:) name:UIApplicationWillEnterForegroundNotification object:nil];
     
-   // [self pulse:self.pulsingFrontGraphic];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseAnimation:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    animationViewPosition = [[CAAnimation alloc] init];
+    
+    [self pulse:self.pulsingFrontGraphic];
+    [self.pulsingFrontGraphic.layer addAnimation:animationViewPosition forKey:@"position"];
 }
-
 
 - (void)dealloc {
     self.infoButton = nil;
@@ -67,12 +73,55 @@
     self.excludedActivityTypes = nil;
     self.pulsingFrontGraphic = nil;
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object: nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object: nil];
 }
 
 #pragma mark - Canvas Animations
 
+-(void)pauseLayer:(CALayer*)layer
+{
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+-(void)resumeLayer:(CALayer*)layer
+{
+    CFTimeInterval pausedTime = [layer timeOffset];
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    layer.beginTime = timeSincePause;
+}
+
+- (void)pauseAnimation: (NSNotification*)note
+{
+    NSLog(@"%@", animationViewPosition);
+    NSLog(@"%@", self.pulsingFrontGraphic.layer);
+    animationViewPosition = [[self.pulsingFrontGraphic.layer animationForKey:@"position"] copy];
+    NSLog(@"%@", animationViewPosition);
+    NSLog(@"%@", self.pulsingFrontGraphic.layer);
+    [self pauseLayer:self.pulsingFrontGraphic.layer];
+    NSLog(@"pause");
+}
+
+-(void)resumeAnimation: (NSNotification*)note
+{
+    NSLog(@"%@", animationViewPosition);
+    if (animationViewPosition != nil)
+    {
+        [self.pulsingFrontGraphic.layer addAnimation:animationViewPosition forKey:@"position"];
+        animationViewPosition = nil;
+    }
+    [self resumeLayer:self.pulsingFrontGraphic.layer];
+
+    NSLog(@"resume");
+}
+
 - (void)pulse:(UIImageView*)imageView {
+    //CAKeyframeAnimation *positionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     [UIView animateWithDuration:0.5
                           delay:0
                         options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState)
