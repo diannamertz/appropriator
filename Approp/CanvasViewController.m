@@ -10,8 +10,9 @@
 #define DEGREES_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 @interface CanvasViewController()
-
+@property (copy) CABasicAnimation *animationViewPosition;
 @end
+
 @implementation CanvasViewController
 
 
@@ -54,10 +55,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseAnimation:) name:UIApplicationDidEnterBackgroundNotification object:nil];
     
-    animationViewPosition = [[CAAnimation alloc] init];
-    
-    [self pulse:self.pulsingFrontGraphic];
-    [self.pulsingFrontGraphic.layer addAnimation:animationViewPosition forKey:@"position"];
+    self.animationViewPosition = [CABasicAnimation animationWithKeyPath:@"position"];
+    [self pulse:self.pulsingFrontView];
 }
 
 - (void)dealloc {
@@ -71,7 +70,7 @@
     self.cameraButton = nil;
     self.cameraRollButton = nil;
     self.excludedActivityTypes = nil;
-    self.pulsingFrontGraphic = nil;
+    self.pulsingFrontView = nil;
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object: nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object: nil];
@@ -98,35 +97,35 @@
 
 - (void)pauseAnimation: (NSNotification*)note
 {
-    NSLog(@"%@", animationViewPosition);
-    NSLog(@"%@", self.pulsingFrontGraphic.layer);
-    animationViewPosition = [[self.pulsingFrontGraphic.layer animationForKey:@"position"] copy];
-    NSLog(@"%@", animationViewPosition);
-    NSLog(@"%@", self.pulsingFrontGraphic.layer);
-    [self pauseLayer:self.pulsingFrontGraphic.layer];
+    NSLog(@"%@", self.animationViewPosition);  // This returns CAAnimation
+    NSLog(@"%@", self.pulsingFrontView.layer); // This returns CALayer
+    self.animationViewPosition = [[self.pulsingFrontView.layer animationForKey:@"position"] copy];
+    NSLog(@"%@", self.animationViewPosition); // This returns null
+    NSLog(@"%@", self.pulsingFrontView.layer); // This returns CALayer
+    [self pauseLayer:self.pulsingFrontView.layer];
     NSLog(@"pause");
 }
 
 -(void)resumeAnimation: (NSNotification*)note
 {
-    NSLog(@"%@", animationViewPosition);
-    if (animationViewPosition != nil)
+    NSLog(@"%@", self.animationViewPosition); // This returns null
+    if (self.animationViewPosition != nil)
     {
-        [self.pulsingFrontGraphic.layer addAnimation:animationViewPosition forKey:@"position"];
-        animationViewPosition = nil;
+        [self.pulsingFrontView.layer addAnimation:self.animationViewPosition forKey:@"position"];
+        self.animationViewPosition = nil;
     }
-    [self resumeLayer:self.pulsingFrontGraphic.layer];
+    [self resumeLayer:self.pulsingFrontView.layer];
 
     NSLog(@"resume");
 }
 
-- (void)pulse:(UIImageView*)imageView {
-    //CAKeyframeAnimation *positionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+- (void)pulse:(UIImageView*)imageView;
+{
     [UIView animateWithDuration:0.5
                           delay:0
                         options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState)
                      animations:(void (^)(void)) ^{
-                         self.pulsingFrontGraphic.transform=CGAffineTransformMakeScale(0.7, 0.7);
+                         self.pulsingFrontView.transform=CGAffineTransformMakeScale(0.7, 0.7);
                      }
                      completion:nil];
 }

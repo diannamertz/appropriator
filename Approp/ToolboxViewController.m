@@ -7,6 +7,7 @@
 //
 
 #import "ToolboxViewController.h"
+#import "CustomCellBackground.h"
 
 @interface ToolboxViewController ()
 {
@@ -72,22 +73,37 @@
     NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    /*
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = cell.bounds;
     gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:255.0 green:255.0 blue:255.0 alpha:20.0/255.0] CGColor], (id)[[UIColor colorWithRed:62.0/100.0 green:70.0/100.0 blue: 81.0/100.0 alpha:20.0/255.0] CGColor], nil];
     [cell.layer insertSublayer:gradient atIndex:0];
+     
+     */
+    
+    if (![cell.backgroundView isKindOfClass:[CustomCellBackground class]])
+    {
+        cell.backgroundView = [[CustomCellBackground alloc] init];
+    }
+    
+    if (![cell.selectedBackgroundView isKindOfClass:[CustomCellBackground class]]) {
+        cell.selectedBackgroundView = [[CustomCellBackground alloc] init];
+    }
     
     // Call the info from the paintings.plist and distribute to cells
     NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
     
     UIImageView *paintingsImage = (UIImageView *)[cell viewWithTag:100];
     paintingsImage.image = [UIImage imageNamed:[paintingsInfo objectForKey:@"image"]];
+    paintingsImage.backgroundColor = [UIColor clearColor];
     
     UILabel *paintingArtist = (UILabel *)[cell viewWithTag:101];
     paintingArtist.text = [paintingsInfo objectForKey:@"name"];
+    paintingArtist.backgroundColor = [UIColor clearColor];
     
     UILabel *paintingTitle = (UILabel *)[cell viewWithTag:102];
     paintingTitle.text = [paintingsInfo objectForKey:@"title"];
+    paintingTitle.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
