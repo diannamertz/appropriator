@@ -7,7 +7,7 @@
 //
 
 #import "ToolboxViewController.h"
-#import "CustomCellBackground.h"
+#import "ToolboxView.h"
 
 @interface ToolboxViewController ()
 {
@@ -81,13 +81,13 @@
      
      */
     
-    if (![cell.backgroundView isKindOfClass:[CustomCellBackground class]])
+    if (![cell.backgroundView isKindOfClass:[ToolboxView class]])
     {
-        cell.backgroundView = [[CustomCellBackground alloc] init];
+        cell.backgroundView = [[ToolboxView alloc] init];
     }
     
-    if (![cell.selectedBackgroundView isKindOfClass:[CustomCellBackground class]]) {
-        cell.selectedBackgroundView = [[CustomCellBackground alloc] init];
+    if (![cell.selectedBackgroundView isKindOfClass:[ToolboxView class]]) {
+        cell.selectedBackgroundView = [[ToolboxView alloc] init];
     }
     
     // Call the info from the paintings.plist and distribute to cells

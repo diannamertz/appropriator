@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomCellBackground : UIView
+@interface ToolboxView : UIView
 
 @end

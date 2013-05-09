@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Dianna Mertz. All rights reserved.
 //
 
-#import "CustomCellBackground.h"
+#import "ToolboxView.h"
 #import "Common.h"
 
-@implementation CustomCellBackground
+@implementation ToolboxView
 
 - (id)initWithFrame:(CGRect)frame
 {
