@@ -24,6 +24,7 @@
 		606F979F173BB753009F7E4F /* adam.png in Resources */ = {isa = PBXBuildFile; fileRef = 606F979E173BB753009F7E4F /* adam.png */; };
 		606F97A2173BCD8D009F7E4F /* ToolboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97A1173BCD8C009F7E4F /* ToolboxView.m */; };
 		606F97A5173BD625009F7E4F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97A4173BD625009F7E4F /* Common.m */; };
+		606F97AB173C357E009F7E4F /* ToolboxTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97AA173C357E009F7E4F /* ToolboxTopView.m */; };
 		608C6EC1172A81E3001ACB6E /* front-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EBE172A81E3001ACB6E /* front-568h@2x.png */; };
 		608C6EC2172A81E3001ACB6E /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EBF172A81E3001ACB6E /* front.png */; };
 		608C6EC3172A81E3001ACB6E /* front@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC0172A81E3001ACB6E /* front@2x.png */; };
@@ -91,6 +92,8 @@
 		606F97A1173BCD8C009F7E4F /* ToolboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxView.m; sourceTree = "<group>"; };
 		606F97A3173BD625009F7E4F /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		606F97A4173BD625009F7E4F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		606F97A9173C357E009F7E4F /* ToolboxTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxTopView.h; sourceTree = "<group>"; };
+		606F97AA173C357E009F7E4F /* ToolboxTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxTopView.m; sourceTree = "<group>"; };
 		608C6EBE172A81E3001ACB6E /* front-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front-568h@2x.png"; sourceTree = "<group>"; };
 		608C6EBF172A81E3001ACB6E /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = front.png; sourceTree = "<group>"; };
 		608C6EC0172A81E3001ACB6E /* front@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front@2x.png"; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				6017CFD11644256400F9F4FB /* ToolboxViewController.m */,
 				606F97A0173BCD8C009F7E4F /* ToolboxView.h */,
 				606F97A1173BCD8C009F7E4F /* ToolboxView.m */,
+				606F97A9173C357E009F7E4F /* ToolboxTopView.h */,
+				606F97AA173C357E009F7E4F /* ToolboxTopView.m */,
 				609D0FD21632949800E08660 /* CanvasViewController.h */,
 				609D0FD31632949800E08660 /* CanvasViewController.m */,
 				6052979D1727E8A800B832AC /* InfoController.h */,
@@ -444,6 +449,7 @@
 				60C5D620172EC5F000D85EFD /* UIImage+fixOrientation.m in Sources */,
 				606F97A2173BCD8D009F7E4F /* ToolboxView.m in Sources */,
 				606F97A5173BD625009F7E4F /* Common.m in Sources */,
+				606F97AB173C357E009F7E4F /* ToolboxTopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

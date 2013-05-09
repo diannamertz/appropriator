@@ -11,6 +11,7 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <QuartzCore/QuartzCore.h>
 #import "InfoController.h"
+#import "ToolboxTopView.h"
 
 @interface ToolboxViewController : UIViewController <	UITableViewDataSource,
 														UITableViewDelegate,
@@ -26,8 +27,7 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 @property (nonatomic, strong) MFMailComposeViewController *mailComposer;
-@property (strong, nonatomic) IBOutlet UIView *toolboxTopView;
-
+@property (strong, nonatomic) IBOutlet ToolboxTopView *toolboxTopView;
 
 - (void)addGestureRecognizersToView:(UIView*)aView;
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;
