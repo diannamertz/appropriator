@@ -51,12 +51,11 @@
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeAnimation:) name:UIApplicationWillEnterForegroundNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pauseAnimation:) name:UIApplicationDidEnterBackgroundNotification object:nil];
-    
-    self.animationViewPosition = [CABasicAnimation animationWithKeyPath:@"position"];
-    [self pulse:self.pulsingFrontView];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self stripesSlideIn:self.patternView];
 }
 
 - (void)dealloc {
@@ -70,64 +69,28 @@
     self.cameraButton = nil;
     self.cameraRollButton = nil;
     self.excludedActivityTypes = nil;
-    self.pulsingFrontView = nil;
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object: nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object: nil];
 }
 
 #pragma mark - Canvas Animations
 
--(void)pauseLayer:(CALayer*)layer
+-(void)stripesSlideIn:(UIImageView*)imageView;
 {
-    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
-    layer.speed = 0.0;
-    layer.timeOffset = pausedTime;
+    CGPoint patternViewCenter = super.view.center;
+    
+    CGRect patternViewRight = self.canvasView.frame;
+    patternViewRight.origin.x = self.canvasView.bounds.size.width;
+    
+    if (self.patternView.center.x == super.view.center.x) {
+        
+        [UIView animateWithDuration:4.0
+                              delay:0.0
+                            options: UIViewAnimationCurveEaseOut
+                         animations:(void (^)(void)) ^{
+                             self.patternView.frame = patternViewRight;
+                             self.patternView.center = patternViewCenter;
+                         }
+                         completion:nil];
 }
-
--(void)resumeLayer:(CALayer*)layer
-{
-    CFTimeInterval pausedTime = [layer timeOffset];
-    layer.speed = 1.0;
-    layer.timeOffset = 0.0;
-    layer.beginTime = 0.0;
-    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
-    layer.beginTime = timeSincePause;
-}
-
-- (void)pauseAnimation: (NSNotification*)note
-{
-    NSLog(@"%@", self.animationViewPosition);  // This returns CAAnimation
-    NSLog(@"%@", self.pulsingFrontView.layer); // This returns CALayer
-    self.animationViewPosition = [[self.pulsingFrontView.layer animationForKey:@"position"] copy];
-    NSLog(@"%@", self.animationViewPosition); // This returns null
-    NSLog(@"%@", self.pulsingFrontView.layer); // This returns CALayer
-    [self pauseLayer:self.pulsingFrontView.layer];
-    NSLog(@"pause");
-}
-
--(void)resumeAnimation: (NSNotification*)note
-{
-    NSLog(@"%@", self.animationViewPosition); // This returns null
-    if (self.animationViewPosition != nil)
-    {
-        [self.pulsingFrontView.layer addAnimation:self.animationViewPosition forKey:@"position"];
-        self.animationViewPosition = nil;
-    }
-    [self resumeLayer:self.pulsingFrontView.layer];
-
-    NSLog(@"resume");
-}
-
-- (void)pulse:(UIImageView*)imageView;
-{
-    [UIView animateWithDuration:0.5
-                          delay:0
-                        options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse | UIViewAnimationCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState)
-                     animations:(void (^)(void)) ^{
-                         self.pulsingFrontView.transform=CGAffineTransformMakeScale(0.7, 0.7);
-                     }
-                     completion:nil];
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {

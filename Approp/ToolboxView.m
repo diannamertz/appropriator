@@ -24,8 +24,8 @@
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
     UIColor *whiteColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-    UIColor *lightGrayColor = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue: 230.0/255.0 alpha:1.0];
-    UIColor *separatorColor = [UIColor colorWithRed:208.0/255.0 green:208.0/255.0 blue:208.0/255.0 alpha:1.0];
+    UIColor *lightGrayColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue: 245.0/255.0 alpha:1.0];
+    UIColor *separatorColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue: 81.0/255.0 alpha:1.0];
     
     CGRect paperRect = self.bounds;
     

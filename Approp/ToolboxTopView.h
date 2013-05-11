@@ -10,4 +10,8 @@
 
 @interface ToolboxTopView : UIView
 
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIColor *whiteColor;
+@property (nonatomic, strong) UIColor *lightGrayColor;
+
 @end

@@ -25,6 +25,7 @@
 		606F97A2173BCD8D009F7E4F /* ToolboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97A1173BCD8C009F7E4F /* ToolboxView.m */; };
 		606F97A5173BD625009F7E4F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97A4173BD625009F7E4F /* Common.m */; };
 		606F97AB173C357E009F7E4F /* ToolboxTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97AA173C357E009F7E4F /* ToolboxTopView.m */; };
+		606F97AF173E2317009F7E4F /* stripes.png in Resources */ = {isa = PBXBuildFile; fileRef = 606F97AE173E2317009F7E4F /* stripes.png */; };
 		608C6EC1172A81E3001ACB6E /* front-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EBE172A81E3001ACB6E /* front-568h@2x.png */; };
 		608C6EC2172A81E3001ACB6E /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EBF172A81E3001ACB6E /* front.png */; };
 		608C6EC3172A81E3001ACB6E /* front@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC0172A81E3001ACB6E /* front@2x.png */; };
@@ -94,6 +95,7 @@
 		606F97A4173BD625009F7E4F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		606F97A9173C357E009F7E4F /* ToolboxTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxTopView.h; sourceTree = "<group>"; };
 		606F97AA173C357E009F7E4F /* ToolboxTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxTopView.m; sourceTree = "<group>"; };
+		606F97AE173E2317009F7E4F /* stripes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stripes.png; sourceTree = "<group>"; };
 		608C6EBE172A81E3001ACB6E /* front-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front-568h@2x.png"; sourceTree = "<group>"; };
 		608C6EBF172A81E3001ACB6E /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = front.png; sourceTree = "<group>"; };
 		608C6EC0172A81E3001ACB6E /* front@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front@2x.png"; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				606F979E173BB753009F7E4F /* adam.png */,
+				606F97AE173E2317009F7E4F /* stripes.png */,
 				608C6EBE172A81E3001ACB6E /* front-568h@2x.png */,
 				608C6EBF172A81E3001ACB6E /* front.png */,
 				608C6EC0172A81E3001ACB6E /* front@2x.png */,
@@ -392,6 +395,7 @@
 				608C6EC5172AB022001ACB6E /* info.png in Resources */,
 				60921D3C1733E216007F34E8 /* icon-contact.png in Resources */,
 				606F979F173BB753009F7E4F /* adam.png in Resources */,
+				606F97AF173E2317009F7E4F /* stripes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

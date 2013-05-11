@@ -69,7 +69,7 @@
                                     <outlet property="delegate" destination="kQS-c5-iu3" id="MNv-4v-qa0"/>
                                 </connections>
                             </tableView>
-                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-N4-6ZT" userLabel="ToolboxTopView" customClass="ToolboxTopView">
+                            <view opaque="NO" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-N4-6ZT" userLabel="ToolboxTopView" customClass="ToolboxTopView">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-ol-RZd">
                                         <constraints>
@@ -77,9 +77,6 @@
                                             <constraint firstAttribute="width" constant="40" id="5Jc-Pi-IcL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -154,13 +151,7 @@
                             </view>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-KC-sXe" userLabel="CanvasView">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrJ-RA-oHg" userLabel="patternView"/>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="PwZ-Nr-e2d">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="uKc-nx-ufh"/>
-                                            <constraint firstAttribute="width" constant="100" id="zYm-ex-RYB"/>
-                                        </constraints>
-                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="stripes.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-CM-I2o" userLabel="patternView"/>
                                     <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2eU-ug-8LH" userLabel="imageView"/>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-Hc-8Ze" userLabel="theNewPaintingView">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -168,20 +159,18 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83529418710000003" green="0.34901961679999999" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
+                                    <constraint firstItem="gAS-CM-I2o" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="1Q0-3C-Hua"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="8Ax-eC-cSe"/>
-                                    <constraint firstAttribute="centerY" secondItem="PwZ-Nr-e2d" secondAttribute="centerY" type="user" id="CTG-Ng-EgL"/>
+                                    <constraint firstItem="gAS-CM-I2o" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="K23-g1-1uh"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="MFo-11-BTF"/>
-                                    <constraint firstItem="SrJ-RA-oHg" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="Sgx-wi-ePb"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="ZCB-9n-7PC"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="cGC-E1-gCz"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="gHb-mp-xME"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="glz-AR-9au"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="lRP-Qm-KDi"/>
-                                    <constraint firstAttribute="centerX" secondItem="PwZ-Nr-e2d" secondAttribute="centerX" type="user" id="tjM-EB-6iS"/>
+                                    <constraint firstItem="gAS-CM-I2o" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="nth-Um-rjR"/>
+                                    <constraint firstItem="gAS-CM-I2o" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="smy-cZ-rrW"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="vkq-Af-brC"/>
-                                    <constraint firstItem="SrJ-RA-oHg" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="xO6-Ka-iHu"/>
-                                    <constraint firstItem="SrJ-RA-oHg" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="xrd-Qq-9Bz"/>
-                                    <constraint firstItem="SrJ-RA-oHg" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="z8g-hK-sDA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -216,8 +205,7 @@
                         <outlet property="canvasView" destination="fvy-KC-sXe" id="01R-86-m7o"/>
                         <outlet property="imageView" destination="2eU-ug-8LH" id="lai-ZX-0gs"/>
                         <outlet property="infoButton" destination="A4S-x6-lH5" id="aaS-4x-tiC"/>
-                        <outlet property="patternView" destination="SrJ-RA-oHg" id="3m3-jw-fBN"/>
-                        <outlet property="pulsingFrontView" destination="PwZ-Nr-e2d" id="zln-4k-dgv"/>
+                        <outlet property="patternView" destination="gAS-CM-I2o" id="WJe-q5-Op6"/>
                         <outlet property="shareButton" destination="h4Q-aX-p8x" id="VsJ-IE-6PE"/>
                         <outlet property="tableView" destination="zem-a8-u5Q" id="W92-P7-CCQ"/>
                         <outlet property="theNewPaintingView" destination="vjx-Hc-8Ze" id="z1P-kb-oUD"/>
@@ -353,9 +341,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-camera.png" width="550" height="550"/>
         <image name="icon-contact.png" width="512" height="512"/>
         <image name="info.png" width="295" height="153"/>
+        <image name="stripes.png" width="640" height="1136"/>
     </resources>
     <classes>
         <class className="CanvasViewController" superclassName="ToolboxViewController">
@@ -369,8 +357,7 @@
                 <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="patternView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="pulsingFrontView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="patternView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
             </relationships>
         </class>
