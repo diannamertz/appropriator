@@ -11,13 +11,17 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <QuartzCore/QuartzCore.h>
 #import "InfoController.h"
+#import "LicenseController.h"
 
-@interface ToolboxViewController : UIViewController <	UITableViewDataSource,
+@interface ToolboxViewController : UIViewController <	LicenseDelegate,
+                                                        UITableViewDataSource,
 														UITableViewDelegate,
 														UIImagePickerControllerDelegate,
 														UIGestureRecognizerDelegate,
 														InfoControllerDelegate,
-														MFMailComposeViewControllerDelegate>
+														MFMailComposeViewControllerDelegate,
+                                                        DismissLicenseControllerDelegate
+                                                        >
 {
     BOOL newMedia;
 }
@@ -25,8 +29,8 @@
 @property (nonatomic, weak) IBOutlet UIView *theNewPaintingView;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
-@property (nonatomic, strong) MFMailComposeViewController *mailComposer;
 @property (strong, nonatomic) IBOutlet UIView *toolboxTopView;
+//@property (strong, nonatomic) LicenseController *licenseController;
 
 - (void)addGestureRecognizersToView:(UIView*)aView;
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;
@@ -34,6 +38,8 @@
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
 - (void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
 - (void)returnAndSendMail;
+-(void)fetchLicenseInfo;
+-(void)dismissLicenseInfo;
 
 @end
 

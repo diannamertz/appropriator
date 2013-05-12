@@ -43,13 +43,13 @@
 	self.toolboxTopView.layer.shadowOffset = CGSizeMake(-2.0, 2.0);
 	self.toolboxTopView.layer.shadowColor = [UIColor blackColor].CGColor;
 	self.toolboxTopView.layer.shadowOpacity = 0.3;
+  
 }
 
 - (void)dealloc {
 	self.theNewPaintingView = nil;
     self.tableView = nil;
     self.paintingsArray = nil;
-    self.mailComposer = nil;
     self.toolboxTopView = nil;
 }
 
@@ -263,6 +263,7 @@
 	if([segue.identifier isEqualToString:@"infoControllerSegue"]) {
 		InfoController *infoController = (InfoController*)segue.destinationViewController;
 		infoController.delegate = self;		// important!
+        infoController.licenseDelegate = self;
 	}
 }
 
@@ -279,6 +280,21 @@
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(void)fetchLicenseInfo {
+    [self dismissViewControllerAnimated:YES completion:^{
+        LicenseController *licenseController = [self.storyboard instantiateViewControllerWithIdentifier:@"LicenseControllerID"];
+        licenseController.delegate = self;
+        licenseController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:licenseController animated:YES completion:nil];
+        
+    }];
+}
+
+-(void)dismissLicenseInfo {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

@@ -252,13 +252,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="60L-wY-dBZ">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="2vV-tb-GYr"/>
                                     <constraint firstAttribute="height" constant="78" type="user" id="7IV-8U-JaG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Artwork curated from Wikimedia Commons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="TDc-lX-U1c">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="All artwork is in the public domain and curated from Wikimedia Commons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="TDc-lX-U1c">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Xwd-Sd-dwt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.24313727021217346" green="0.27450981736183167" blue="0.31764706969261169" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -295,32 +298,101 @@
                                 <color key="textColor" red="0.24313727020000001" green="0.27450981740000002" blue="0.31764706970000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="see more" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3f-JO-kEZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DZN-uu-aQr"/>
+                                    <constraint firstAttribute="width" constant="71" id="gQ8-ql-h5f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.68627452850000004" blue="0.68627452850000004" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEl-sl-keG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="EaD-ko-h80"/>
+                                    <constraint firstAttribute="height" constant="53" id="PTv-uu-Ahh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedLicenseButton:" destination="5qk-db-Gc2" eventType="touchUpInside" id="r8w-oz-eMz"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VUv-RB-S1o" firstAttribute="leading" secondItem="b2N-6d-McU" secondAttribute="leading" constant="109" id="0Ky-iR-re1"/>
                             <constraint firstItem="60L-wY-dBZ" firstAttribute="trailing" secondItem="onN-ub-WGa" secondAttribute="trailing" type="default" id="0QX-Lk-rSk"/>
+                            <constraint firstItem="u3f-JO-kEZ" firstAttribute="centerX" secondItem="TDc-lX-U1c" secondAttribute="centerX" type="default" id="0ur-gB-qIE"/>
                             <constraint firstAttribute="trailing" secondItem="9yy-Rb-7am" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1dn-kF-3cN"/>
-                            <constraint firstAttribute="bottom" secondItem="60L-wY-dBZ" secondAttribute="bottom" constant="202" id="9MK-z2-4nx"/>
+                            <constraint firstAttribute="bottom" secondItem="TDc-lX-U1c" secondAttribute="bottom" constant="26" id="3uz-ID-5r1"/>
                             <constraint firstItem="9yy-Rb-7am" firstAttribute="centerX" secondItem="nYN-dA-Py6" secondAttribute="centerX" type="default" id="Czb-7J-N9G"/>
                             <constraint firstAttribute="trailing" secondItem="TDc-lX-U1c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="KAQ-PS-Pb7"/>
-                            <constraint firstAttribute="bottom" secondItem="TDc-lX-U1c" secondAttribute="bottom" constant="31" id="Oym-oJ-oEQ"/>
+                            <constraint firstAttribute="bottom" secondItem="9yy-Rb-7am" secondAttribute="bottom" constant="147" id="L5F-nh-wBj"/>
+                            <constraint firstItem="u3f-JO-kEZ" firstAttribute="bottom" secondItem="KEl-sl-keG" secondAttribute="bottom" type="default" id="LzZ-t6-Dbd"/>
+                            <constraint firstAttribute="trailing" secondItem="KEl-sl-keG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="R5M-to-J4M"/>
                             <constraint firstItem="TDc-lX-U1c" firstAttribute="leading" secondItem="b2N-6d-McU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="T7A-cE-hKp"/>
-                            <constraint firstAttribute="bottom" secondItem="VUv-RB-S1o" secondAttribute="bottom" constant="92" id="VOg-7C-EBj"/>
                             <constraint firstAttribute="trailing" secondItem="Xx7-8T-YJa" secondAttribute="trailing" constant="109" id="YQm-en-jNs"/>
+                            <constraint firstAttribute="bottom" secondItem="VUv-RB-S1o" secondAttribute="bottom" constant="87" id="cj2-dJ-gjO"/>
                             <constraint firstItem="60L-wY-dBZ" firstAttribute="centerX" secondItem="9yy-Rb-7am" secondAttribute="centerX" type="default" id="eIX-by-cW8"/>
-                            <constraint firstItem="Xx7-8T-YJa" firstAttribute="bottom" secondItem="onN-ub-WGa" secondAttribute="bottom" type="default" id="hp6-vd-LdC"/>
+                            <constraint firstAttribute="bottom" secondItem="onN-ub-WGa" secondAttribute="bottom" constant="77" id="fVO-yg-GlP"/>
+                            <constraint firstAttribute="bottom" secondItem="u3f-JO-kEZ" secondAttribute="bottom" constant="10" id="lS9-VT-KVo"/>
                             <constraint firstItem="9yy-Rb-7am" firstAttribute="leading" secondItem="b2N-6d-McU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qHJ-dJ-Ryd"/>
-                            <constraint firstAttribute="bottom" secondItem="nYN-dA-Py6" secondAttribute="bottom" constant="133" id="sJK-sK-Eup"/>
-                            <constraint firstAttribute="bottom" secondItem="9yy-Rb-7am" secondAttribute="bottom" constant="154" id="v0Z-WF-caX"/>
-                            <constraint firstAttribute="bottom" secondItem="onN-ub-WGa" secondAttribute="bottom" constant="82" id="wPL-uT-Gmb"/>
+                            <constraint firstItem="Xx7-8T-YJa" firstAttribute="bottom" secondItem="onN-ub-WGa" secondAttribute="bottom" type="default" id="qJf-OQ-Ksy"/>
+                            <constraint firstAttribute="bottom" secondItem="nYN-dA-Py6" secondAttribute="bottom" constant="126" id="qYE-F7-RtO"/>
+                            <constraint firstAttribute="bottom" secondItem="60L-wY-dBZ" secondAttribute="bottom" constant="188" id="rG9-rF-ZLF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nxt-Tu-XTY"/>
+                    <connections>
+                        <outlet property="infoView" destination="b2N-6d-McU" id="Qzc-Oh-CFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nw2-eH-5PH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-94" y="-441"/>
+        </scene>
+        <!--License Controller-->
+        <scene sceneID="WC0-nl-390">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9td-SM-yAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="LicenseControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wku-Gc-6g4" customClass="LicenseController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oeJ-ql-p8o">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-YS-m4F">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonWasPressed:" destination="Wku-Gc-6g4" eventType="touchUpInside" id="1eo-sT-fUy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nfN-YS-m4F" firstAttribute="leading" secondItem="oeJ-ql-p8o" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Tav-H3-xa0"/>
+                            <constraint firstItem="nfN-YS-m4F" firstAttribute="top" secondItem="oeJ-ql-p8o" secondAttribute="top" constant="20" symbolic="YES" type="default" id="svv-ta-D3J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="nfN-YS-m4F" id="PRD-bm-7jU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-285" y="319"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b2H-xW-8Gc">
@@ -348,41 +420,6 @@
         <image name="info.png" width="295" height="153"/>
         <image name="pattern.png" width="640" height="1136"/>
     </resources>
-    <classes>
-        <class className="CanvasViewController" superclassName="ToolboxViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CanvasViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="camera:"/>
-                <relationship kind="action" name="cameraRoll:"/>
-                <relationship kind="action" name="useShareButton:"/>
-                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cameraRollButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="patternView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="InfoController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoController.h"/>
-            <relationships>
-                <relationship kind="action" name="sendEmailButtonPressed:"/>
-                <relationship kind="action" name="sendToDoubledi:"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ToolboxViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="theNewPaintingView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="toolboxTopView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
