@@ -26,6 +26,8 @@
 {
     [super viewDidLoad];
     
+    self.canvasView.backgroundColor = [UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1];
+    
 	// add slide gesture recognizer to show underlying toolbox view
 	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
 	slideCanvasGesture.numberOfTapsRequired = 1;
@@ -50,12 +52,6 @@
     
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
-    
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [self stripesSlideIn:self.patternView];
 }
 
 - (void)dealloc {
@@ -72,26 +68,6 @@
 }
 
 #pragma mark - Canvas Animations
-
--(void)stripesSlideIn:(UIImageView*)imageView;
-{
-    CGPoint patternViewCenter = super.view.center;
-    
-    CGRect patternViewRight = self.canvasView.frame;
-    patternViewRight.origin.x = self.canvasView.bounds.size.width;
-    
-    if (self.patternView.center.x == super.view.center.x) {
-        
-        [UIView animateWithDuration:4.0
-                              delay:0.0
-                            options: UIViewAnimationCurveEaseOut
-                         animations:(void (^)(void)) ^{
-                             self.patternView.frame = patternViewRight;
-                             self.patternView.center = patternViewCenter;
-                         }
-                         completion:nil];
-}
-}
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     

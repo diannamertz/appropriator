@@ -28,31 +28,26 @@
                                                         <constraint firstAttribute="height" constant="100" id="vch-q9-SK0"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-Dq-ElY">
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-Dq-ElY">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="Igb-4L-Sm7"/>
                                                         <constraint firstAttribute="width" constant="150" id="SR2-vj-JZn"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <color key="textColor" red="0.24313727020000001" green="0.27450981740000002" blue="0.31764706970000001" alpha="1" colorSpace="deviceRGB"/>
                                                     <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="LZV-Sv-GVi">
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="LZV-Sv-GVi">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="vOZ-A3-53Q"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.24313727021217346" green="0.27450981736183167" blue="0.31764706969261169" alpha="1" colorSpace="deviceRGB"/>
                                                     <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="LZV-Sv-GVi" firstAttribute="top" secondItem="URk-Ct-E6G" secondAttribute="top" constant="55" id="VaU-xV-Ini"/>
                                             <constraint firstItem="UHP-Dq-ElY" firstAttribute="leading" secondItem="luE-ea-wx5" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Ye7-Tc-AuE"/>
@@ -69,7 +64,7 @@
                                     <outlet property="delegate" destination="kQS-c5-iu3" id="MNv-4v-qa0"/>
                                 </connections>
                             </tableView>
-                            <view opaque="NO" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-N4-6ZT" userLabel="ToolboxTopView" customClass="ToolboxTopView">
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-N4-6ZT" userLabel="ToolboxTopView">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-ol-RZd">
                                         <constraints>
@@ -151,26 +146,33 @@
                             </view>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-KC-sXe" userLabel="CanvasView">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="stripes.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-CM-I2o" userLabel="patternView"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-CM-I2o" userLabel="patternView"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="front_center.png" translatesAutoresizingMaskIntoConstraints="NO" id="xBf-Qa-Yza">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="KMV-lq-q1t"/>
+                                            <constraint firstAttribute="width" constant="175" id="cCC-70-FQT"/>
+                                        </constraints>
+                                    </imageView>
                                     <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2eU-ug-8LH" userLabel="imageView"/>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-Hc-8Ze" userLabel="theNewPaintingView">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.83529418710000003" green="0.34901961679999999" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstItem="gAS-CM-I2o" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="1Q0-3C-Hua"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="8Ax-eC-cSe"/>
-                                    <constraint firstItem="gAS-CM-I2o" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="K23-g1-1uh"/>
+                                    <constraint firstAttribute="centerY" secondItem="gAS-CM-I2o" secondAttribute="centerY" type="user" id="BtZ-xy-ytJ"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="MFo-11-BTF"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="ZCB-9n-7PC"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="cGC-E1-gCz"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="gHb-mp-xME"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="glz-AR-9au"/>
+                                    <constraint firstAttribute="centerX" secondItem="xBf-Qa-Yza" secondAttribute="centerX" type="user" id="iOk-Ux-mkG"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="lRP-Qm-KDi"/>
+                                    <constraint firstAttribute="centerX" secondItem="gAS-CM-I2o" secondAttribute="centerX" type="user" id="ll9-YU-pTT"/>
                                     <constraint firstItem="gAS-CM-I2o" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="nth-Um-rjR"/>
-                                    <constraint firstItem="gAS-CM-I2o" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="smy-cZ-rrW"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="vkq-Af-brC"/>
+                                    <constraint firstAttribute="centerY" secondItem="xBf-Qa-Yza" secondAttribute="centerY" type="user" id="xgt-Sf-vah"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -341,9 +343,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="front_center.png" width="308" height="308"/>
         <image name="icon-contact.png" width="512" height="512"/>
         <image name="info.png" width="295" height="153"/>
-        <image name="stripes.png" width="640" height="1136"/>
+        <image name="pattern.png" width="640" height="1136"/>
     </resources>
     <classes>
         <class className="CanvasViewController" superclassName="ToolboxViewController">
@@ -371,15 +374,12 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="ToolboxTopView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxTopView.h"/>
-        </class>
         <class className="ToolboxViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="theNewPaintingView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="toolboxTopView" candidateClass="ToolboxTopView"/>
+                <relationship kind="outlet" name="toolboxTopView" candidateClass="UIView"/>
             </relationships>
         </class>
     </classes>

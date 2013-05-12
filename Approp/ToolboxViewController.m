@@ -7,7 +7,6 @@
 //
 
 #import "ToolboxViewController.h"
-#import "ToolboxView.h"
 
 
 @interface ToolboxViewController ()
@@ -38,6 +37,12 @@
     [super viewDidLoad];
 
     self.theNewPaintingView.layer.masksToBounds = YES;
+    
+    self.toolboxTopView.backgroundColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
+    self.toolboxTopView.layer.shadowRadius = 4;
+	self.toolboxTopView.layer.shadowOffset = CGSizeMake(-2.0, 2.0);
+	self.toolboxTopView.layer.shadowColor = [UIColor blackColor].CGColor;
+	self.toolboxTopView.layer.shadowOpacity = 0.3;
 }
 
 - (void)dealloc {
@@ -74,36 +79,26 @@
     NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    /*
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = cell.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:255.0 green:255.0 blue:255.0 alpha:20.0/255.0] CGColor], (id)[[UIColor colorWithRed:62.0/100.0 green:70.0/100.0 blue: 81.0/100.0 alpha:20.0/255.0] CGColor], nil];
-    [cell.layer insertSublayer:gradient atIndex:0];
-     
-     */
+    cell.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue: 245.0/255.0 alpha:1.0];
     
-    if (![cell.backgroundView isKindOfClass:[ToolboxView class]])
-    {
-        cell.backgroundView = [[ToolboxView alloc] init];
-    }
-    
-    if (![cell.selectedBackgroundView isKindOfClass:[ToolboxView class]]) {
-        cell.selectedBackgroundView = [[ToolboxView alloc] init];
-    }
+    [tableView setSeparatorColor:[UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue: 81.0/255.0 alpha:1.0]];
     
     // Call the info from the paintings.plist and distribute to cells
     NSDictionary *paintingsInfo = [self.paintingsArray objectAtIndex:indexPath.row];
     
     UIImageView *paintingsImage = (UIImageView *)[cell viewWithTag:100];
     paintingsImage.image = [UIImage imageNamed:[paintingsInfo objectForKey:@"image"]];
+    paintingsImage.opaque = YES;
     paintingsImage.backgroundColor = [UIColor clearColor];
     
     UILabel *paintingArtist = (UILabel *)[cell viewWithTag:101];
     paintingArtist.text = [paintingsInfo objectForKey:@"name"];
+    paintingArtist.textColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue: 81.0/255.0 alpha:1.0];
     paintingArtist.backgroundColor = [UIColor clearColor];
     
     UILabel *paintingTitle = (UILabel *)[cell viewWithTag:102];
     paintingTitle.text = [paintingsInfo objectForKey:@"title"];
+    paintingTitle.textColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue: 81.0/255.0 alpha:1.0];
     paintingTitle.backgroundColor = [UIColor clearColor];
     
     return cell;
