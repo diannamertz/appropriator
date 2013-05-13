@@ -147,29 +147,12 @@
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-KC-sXe" userLabel="CanvasView">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="pattern.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-CM-I2o" userLabel="patternView"/>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpj-Co-NFg">
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="front_center.png" translatesAutoresizingMaskIntoConstraints="NO" id="xBf-Qa-Yza"/>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap to Access Your Library" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="70" translatesAutoresizingMaskIntoConstraints="NO" id="QNS-pE-bu6">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="EmE-cc-Jld"/>
-                                                    <constraint firstAttribute="width" constant="70" id="M0L-me-zaI"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="front_center.png" translatesAutoresizingMaskIntoConstraints="NO" id="xBf-Qa-Yza">
                                         <constraints>
-                                            <constraint firstItem="xBf-Qa-Yza" firstAttribute="bottom" secondItem="Rpj-Co-NFg" secondAttribute="bottom" type="default" id="75T-Sn-UjO"/>
-                                            <constraint firstAttribute="centerX" secondItem="QNS-pE-bu6" secondAttribute="centerX" type="user" id="CYm-Bg-tMU"/>
-                                            <constraint firstItem="xBf-Qa-Yza" firstAttribute="leading" secondItem="Rpj-Co-NFg" secondAttribute="leading" type="default" id="QQs-Iw-URW"/>
-                                            <constraint firstAttribute="centerY" secondItem="QNS-pE-bu6" secondAttribute="centerY" type="user" id="fN5-NX-Bc4"/>
-                                            <constraint firstItem="xBf-Qa-Yza" firstAttribute="top" secondItem="Rpj-Co-NFg" secondAttribute="top" type="default" id="lyQ-Av-iDa"/>
-                                            <constraint firstItem="xBf-Qa-Yza" firstAttribute="trailing" secondItem="Rpj-Co-NFg" secondAttribute="trailing" type="default" id="rIc-iP-HlK"/>
+                                            <constraint firstAttribute="width" constant="100" id="76g-bk-3dj"/>
+                                            <constraint firstAttribute="height" constant="100" id="oX4-EZ-6A0"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <imageView autoresizesSubviews="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2eU-ug-8LH" userLabel="imageView"/>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-Hc-8Ze" userLabel="theNewPaintingView">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -177,11 +160,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gAS-CM-I2o" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="1Q0-3C-Hua"/>
-                                    <constraint firstItem="Rpj-Co-NFg" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" constant="200" id="3Aw-CV-BK1"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" type="default" id="8Ax-eC-cSe"/>
                                     <constraint firstAttribute="centerY" secondItem="gAS-CM-I2o" secondAttribute="centerY" type="user" id="BtZ-xy-ytJ"/>
-                                    <constraint firstAttribute="centerX" secondItem="Rpj-Co-NFg" secondAttribute="centerX" type="user" id="CD0-uk-nHL"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="MFo-11-BTF"/>
+                                    <constraint firstItem="xBf-Qa-Yza" firstAttribute="centerX" secondItem="gAS-CM-I2o" secondAttribute="centerX" type="default" id="Ue5-at-qaz"/>
+                                    <constraint firstItem="2eU-ug-8LH" firstAttribute="centerY" secondItem="xBf-Qa-Yza" secondAttribute="centerY" type="default" id="XWu-SM-9st"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="ZCB-9n-7PC"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="bottom" secondItem="fvy-KC-sXe" secondAttribute="bottom" type="default" id="cGC-E1-gCz"/>
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="trailing" secondItem="fvy-KC-sXe" secondAttribute="trailing" type="default" id="gHb-mp-xME"/>
@@ -189,8 +172,6 @@
                                     <constraint firstItem="2eU-ug-8LH" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="lRP-Qm-KDi"/>
                                     <constraint firstAttribute="centerX" secondItem="gAS-CM-I2o" secondAttribute="centerX" type="user" id="ll9-YU-pTT"/>
                                     <constraint firstItem="gAS-CM-I2o" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="nth-Um-rjR"/>
-                                    <constraint firstAttribute="centerY" secondItem="Rpj-Co-NFg" secondAttribute="centerY" type="user" id="ouh-Fc-vBc"/>
-                                    <constraint firstItem="Rpj-Co-NFg" firstAttribute="leading" secondItem="fvy-KC-sXe" secondAttribute="leading" constant="110" id="qhJ-ik-24n"/>
                                     <constraint firstItem="vjx-Hc-8Ze" firstAttribute="top" secondItem="fvy-KC-sXe" secondAttribute="top" type="default" id="vkq-Af-brC"/>
                                 </constraints>
                             </view>
@@ -229,9 +210,7 @@
                         <outlet property="patternView" destination="gAS-CM-I2o" id="WJe-q5-Op6"/>
                         <outlet property="shareButton" destination="h4Q-aX-p8x" id="VsJ-IE-6PE"/>
                         <outlet property="tableView" destination="zem-a8-u5Q" id="W92-P7-CCQ"/>
-                        <outlet property="tapMeContainer" destination="Rpj-Co-NFg" id="NCW-et-6CQ"/>
                         <outlet property="tapMeImage" destination="xBf-Qa-Yza" id="w7z-TJ-yXi"/>
-                        <outlet property="tapMeText" destination="QNS-pE-bu6" id="6fv-P4-F2Q"/>
                         <outlet property="theNewPaintingView" destination="vjx-Hc-8Ze" id="z1P-kb-oUD"/>
                         <outlet property="toolboxTopView" destination="ABD-N4-6ZT" id="Is5-cj-wTY"/>
                         <outlet property="view" destination="bOH-ex-mMv" id="qb7-0K-g8x"/>
@@ -505,61 +484,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="front_center.png" width="308" height="308"/>
+        <image name="front_center.png" width="281" height="280"/>
         <image name="icon-contact.png" width="512" height="512"/>
         <image name="info.png" width="295" height="153"/>
         <image name="pattern.png" width="640" height="1136"/>
     </resources>
-    <classes>
-        <class className="CanvasViewController" superclassName="ToolboxViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CanvasViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="camera:"/>
-                <relationship kind="action" name="cameraRoll:"/>
-                <relationship kind="action" name="useShareButton:"/>
-                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cameraRollButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="patternView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tapMeContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="tapMeImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tapMeText" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="InfoController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoController.h"/>
-            <relationships>
-                <relationship kind="action" name="pressedLicenseButton:"/>
-                <relationship kind="action" name="sendEmailButtonPressed:"/>
-                <relationship kind="action" name="sendToDoubledi:"/>
-                <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="LicenseController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LicenseController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButtonWasPressed:"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ToolboxViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="theNewPaintingView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="toolboxTopView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

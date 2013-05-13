@@ -53,10 +53,7 @@
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
     
-    self.tapMeText.textColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
-    
-    self.tapMeContainer.backgroundColor = [UIColor clearColor];
-    [self animateTapMeImage:self.tapMeContainer];
+    [self animateTapMeImage:self.tapMeImage];
 }
 
     
@@ -73,15 +70,20 @@
     self.excludedActivityTypes = nil;
 }
 
-#pragma mark - Canvas Animations
-
 -(void)animateTapMeImage:(UIView *)view {
-    [UIView animateWithDuration:4.0 delay:0.0
-                        options:UIViewAnimationCurveEaseInOut
+    [UIView animateWithDuration:1.0
+                          delay:0.0
+                        options:UIViewAnimationCurveEaseInOut 
                      animations:(void (^)(void)) ^{
-                                self.tapMeContainer.transform=CGAffineTransformMakeScale(1.4, 1.4);
+                                self.tapMeImage.transform=CGAffineTransformMakeScale(1.2, 1.2);
     }
-                     completion:nil];
+                     completion:^(BOOL finished){
+                         [UIView animateWithDuration:2.0
+                                          animations:^(void) {
+                                              self.tapMeImage.transform=CGAffineTransformMakeScale(1.0, 1.0);
+                                          }];
+    
+                     }];
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
