@@ -30,7 +30,6 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 @property (strong, nonatomic) IBOutlet UIView *toolboxTopView;
-//@property (strong, nonatomic) LicenseController *licenseController;
 
 - (void)addGestureRecognizersToView:(UIView*)aView;
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer;

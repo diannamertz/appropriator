@@ -12,10 +12,15 @@
 -(void)dismissLicenseInfo;
 @end
 
-@interface LicenseController : UIViewController 
+@interface LicenseController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) id<DismissLicenseControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (nonatomic, strong) NSMutableArray *paintingsArray;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIView *titleView;
+
 - (IBAction)backButtonWasPressed:(id)sender;
+
 
 @end
