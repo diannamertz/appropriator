@@ -30,7 +30,10 @@
 {
     [self loadPaintings];
     [super viewDidLoad];
-    self.titleView.backgroundColor = [UIColor colorWithRed:61.0/255.0 green:51.0/255.0 blue:46.0/255.0 alpha:1];
+    self.titleView.backgroundColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
+    self.titleLabel.textColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1];
+    [self.backButton setTitleColor:[UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1] forState:UIControlStateNormal];
+    self.titleLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:20];
 }
 
 - (IBAction)backButtonWasPressed:(id)sender {

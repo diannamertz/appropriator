@@ -36,6 +36,9 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
 @property (nonatomic, copy) NSArray *excludedActivityTypes;
 @property (weak, nonatomic) IBOutlet UIImageView *patternView;
+@property (weak, nonatomic) IBOutlet UIImageView *tapMeImage;
+@property (weak, nonatomic) IBOutlet UILabel *tapMeText;
+@property (weak, nonatomic) IBOutlet UIView *tapMeContainer;
 
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;

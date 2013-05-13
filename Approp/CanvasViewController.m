@@ -52,8 +52,14 @@
     
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
+    
+    self.tapMeText.textColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
+    
+    self.tapMeContainer.backgroundColor = [UIColor clearColor];
+    [self animateTapMeImage:self.tapMeContainer];
 }
 
+    
 - (void)dealloc {
     self.infoButton = nil;
     self.canvasView = nil;
@@ -68,6 +74,15 @@
 }
 
 #pragma mark - Canvas Animations
+
+-(void)animateTapMeImage:(UIView *)view {
+    [UIView animateWithDuration:4.0 delay:0.0
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:(void (^)(void)) ^{
+                                self.tapMeContainer.transform=CGAffineTransformMakeScale(1.4, 1.4);
+    }
+                     completion:nil];
+}
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
     

@@ -23,7 +23,6 @@
 		604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */; };
 		604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */; };
 		6052979F1727E8A900B832AC /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6052979E1727E8A900B832AC /* InfoController.m */; };
-		606F97A5173BD625009F7E4F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F97A4173BD625009F7E4F /* Common.m */; };
 		608C6EC5172AB022001ACB6E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC4172AB022001ACB6E /* info.png */; };
 		60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60907AD9166BAF090080B835 /* QuartzCore.framework */; };
 		60921D3C1733E216007F34E8 /* icon-contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 60921D3B1733E216007F34E8 /* icon-contact.png */; };
@@ -87,8 +86,6 @@
 		604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_croptop.png; sourceTree = "<group>"; };
 		6052979D1727E8A800B832AC /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		6052979E1727E8A900B832AC /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
-		606F97A3173BD625009F7E4F /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		606F97A4173BD625009F7E4F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		608C6EC4172AB022001ACB6E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		60921D3B1733E216007F34E8 /* icon-contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-contact.png"; sourceTree = "<group>"; };
@@ -206,8 +203,6 @@
 				609D0FCC1632949800E08660 /* MainStoryboard_iPhone.storyboard */,
 				609D0FC31632949800E08660 /* AppDelegate.h */,
 				609D0FC41632949800E08660 /* AppDelegate.m */,
-				606F97A3173BD625009F7E4F /* Common.h */,
-				606F97A4173BD625009F7E4F /* Common.m */,
 				6017CFD01644256400F9F4FB /* ToolboxViewController.h */,
 				6017CFD11644256400F9F4FB /* ToolboxViewController.m */,
 				609D0FD21632949800E08660 /* CanvasViewController.h */,
@@ -434,7 +429,6 @@
 				6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */,
 				6052979F1727E8A900B832AC /* InfoController.m in Sources */,
 				60C5D620172EC5F000D85EFD /* UIImage+fixOrientation.m in Sources */,
-				606F97A5173BD625009F7E4F /* Common.m in Sources */,
 				602D298017401F72006475A9 /* LicenseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
