@@ -18,7 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
 @property (nonatomic, strong) NSMutableArray *paintingsArray;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet UIView *titleView;
+@property (weak, nonatomic) IBOutlet UIView *titleView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 

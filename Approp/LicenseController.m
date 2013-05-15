@@ -7,6 +7,7 @@
 //
 
 #import "LicenseController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface LicenseController ()
 
@@ -56,6 +57,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // This isn't working ??
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.titleView.bounds];
+    self.titleView.layer.masksToBounds = NO;
+    self.titleView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.titleView.layer.shadowOffset = CGSizeMake(-2.0f, 2.0f);
+    self.titleView.layer.shadowOpacity = 0.4f;
+    self.titleView.layer.shadowRadius = 4;
+    self.titleView.layer.shadowPath = shadowPath.CGPath;
+    
     // Cell
     UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:@"LicenseCell"];
 

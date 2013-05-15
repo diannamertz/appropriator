@@ -33,12 +33,6 @@
 	slideCanvasGesture.numberOfTapsRequired = 1;
 	[self.canvasView addGestureRecognizer:slideCanvasGesture];
     
-	// add a nice shadow to the canvas view
-	self.canvasView.layer.shadowRadius = 4;
-	self.canvasView.layer.shadowOffset = CGSizeMake(-2.0, 2.0);
-	self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
-	self.canvasView.layer.shadowOpacity = 0.6;
-    
     self.imageView.layer.masksToBounds = YES;
     
     [[self.cameraButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
@@ -100,6 +94,14 @@
                         options: UIViewAnimationCurveEaseOut
                      animations:^{
                          self.canvasView.frame = canvasRight;
+                         
+                         UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.canvasView.bounds];
+                         self.canvasView.layer.masksToBounds = NO;
+                         self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
+                         self.canvasView.layer.shadowOffset = CGSizeMake(-2.0f, 2.0f);
+                         self.canvasView.layer.shadowOpacity = 0.6f;
+                         self.canvasView.layer.shadowPath = shadowPath.CGPath;
+                         
                      }
                      completion:^(BOOL finished){
                      }];

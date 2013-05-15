@@ -23,6 +23,8 @@
 		604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */; };
 		604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */; };
 		6052979F1727E8A900B832AC /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6052979E1727E8A900B832AC /* InfoController.m */; };
+		60760FA51742E3E9007B728E /* Caravaggio_Medusa.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */; };
+		60760FA81742E5B4007B728E /* Caravaggio_Medusa_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */; };
 		608C6EC5172AB022001ACB6E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC4172AB022001ACB6E /* info.png */; };
 		60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60907AD9166BAF090080B835 /* QuartzCore.framework */; };
 		60921D3C1733E216007F34E8 /* icon-contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 60921D3B1733E216007F34E8 /* icon-contact.png */; };
@@ -54,6 +56,12 @@
 		60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */; };
 		60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */; };
 		60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FBA1635A17D00BFB6D0 /* paintings.plist */; };
+		60EE9DB61743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */; };
+		60EE9DB71743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */; };
+		60EE9DBA1743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */; };
+		60EE9DBB1743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */; };
+		60EE9DBD17440C3100DFA86F /* Mansur_Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DBC17440C3100DFA86F /* Mansur_Zebra.png */; };
+		60EE9DBF17440C3B00DFA86F /* Mansur_Zebra_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DBE17440C3B00DFA86F /* Mansur_Zebra_croptop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +94,8 @@
 		604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_croptop.png; sourceTree = "<group>"; };
 		6052979D1727E8A800B832AC /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		6052979E1727E8A900B832AC /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
+		60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa.png; sourceTree = "<group>"; };
+		60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa_croptop.png; sourceTree = "<group>"; };
 		608C6EC4172AB022001ACB6E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		60921D3B1733E216007F34E8 /* icon-contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-contact.png"; sourceTree = "<group>"; };
@@ -124,6 +134,12 @@
 		60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manet_Dejeuner.jpg; sourceTree = "<group>"; };
 		60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam.png; sourceTree = "<group>"; };
 		60E06FBA1635A17D00BFB6D0 /* paintings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paintings.plist; sourceTree = "<group>"; };
+		60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png; sourceTree = "<group>"; };
+		60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png"; sourceTree = "<group>"; };
+		60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer_croptop.png; sourceTree = "<group>"; };
+		60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer.png; sourceTree = "<group>"; };
+		60EE9DBC17440C3100DFA86F /* Mansur_Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mansur_Zebra.png; path = ../../../Documents/projects/Appropriator/Painting_Elements/Both_high_res/Mansur_Zebra.png; sourceTree = "<group>"; };
+		60EE9DBE17440C3B00DFA86F /* Mansur_Zebra_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mansur_Zebra_croptop.png; path = ../../../Documents/projects/Appropriator/Painting_Elements/croptop/Mansur_Zebra_croptop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +267,10 @@
 		60E06FB21635A17C00BFB6D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60EE9DBE17440C3B00DFA86F /* Mansur_Zebra_croptop.png */,
+				60EE9DBC17440C3100DFA86F /* Mansur_Zebra.png */,
+				60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */,
+				60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */,
 				6041F4D21729B34000C999AF /* Default-568h@2x.png */,
 				6041F4D31729B34000C999AF /* Default.png */,
 				6041F4D41729B34000C999AF /* Default@2x.png */,
@@ -269,6 +289,10 @@
 				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
 				60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */,
 				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
+				60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */,
+				60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */,
+				60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */,
+				60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */,
 				60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */,
 				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
 				60E06FBA1635A17D00BFB6D0 /* paintings.plist */,
@@ -374,6 +398,14 @@
 				60921D3C1733E216007F34E8 /* icon-contact.png in Resources */,
 				60C9EA30173F99D80080E9FA /* front_center.png in Resources */,
 				602D297D17400C65006475A9 /* pattern.png in Resources */,
+				60760FA51742E3E9007B728E /* Caravaggio_Medusa.png in Resources */,
+				60760FA81742E5B4007B728E /* Caravaggio_Medusa_croptop.png in Resources */,
+				60EE9DB61743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png in Resources */,
+				60EE9DB71743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png in Resources */,
+				60EE9DBA1743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png in Resources */,
+				60EE9DBB1743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png in Resources */,
+				60EE9DBD17440C3100DFA86F /* Mansur_Zebra.png in Resources */,
+				60EE9DBF17440C3B00DFA86F /* Mansur_Zebra_croptop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

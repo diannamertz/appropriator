@@ -39,11 +39,6 @@
     self.theNewPaintingView.layer.masksToBounds = YES;
     
     self.toolboxTopView.backgroundColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
-    self.toolboxTopView.layer.shadowRadius = 4;
-	self.toolboxTopView.layer.shadowOffset = CGSizeMake(-2.0, 2.0);
-	self.toolboxTopView.layer.shadowColor = [UIColor blackColor].CGColor;
-	self.toolboxTopView.layer.shadowOpacity = 0.3;
-  
 }
 
 - (void)dealloc {
@@ -75,6 +70,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.toolboxTopView.bounds];
+    self.toolboxTopView.layer.masksToBounds = NO;
+    self.toolboxTopView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.toolboxTopView.layer.shadowOffset = CGSizeMake(-2.0f, 2.0f);
+    self.toolboxTopView.layer.shadowOpacity = 0.4f;
+    self.toolboxTopView.layer.shadowRadius = 4;
+    self.toolboxTopView.layer.shadowPath = shadowPath.CGPath;
+    
     // Cell
     NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
@@ -162,7 +165,6 @@
 
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer
 {
-    
     UIView *theView = recognizer.view;
     if(recognizer.state == UIGestureRecognizerStateBegan ||
        recognizer.state == UIGestureRecognizerStateChanged) {

@@ -4,11 +4,59 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Zebra</string>
+		<key>image_top</key>
+		<string>Mansur_Zebra_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/ustad-mansur/zebra-1621</string>
+		<key>name</key>
+		<string>Ustad Mansur</string>
+		<key>image</key>
+		<string>Mansur_Zebra.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Portrait of Friederike Maria Beer</string>
+		<key>image_top</key>
+		<string>Shiele_PortraitFriederikeBeer_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/egon-schiele/portrait-of-friederike-maria-beer-1914</string>
+		<key>name</key>
+		<string>Egon Schiele</string>
+		<key>image</key>
+		<string>Shiele_PortraitFriederikeBeer.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Claude Monet Painting by the Edge of a Wood</string>
+		<key>image_top</key>
+		<string>Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/john-singer-sargent/claude-monet-painting-by-the-edge-of-a-wood-1885</string>
+		<key>name</key>
+		<string>John Singer Sargent</string>
+		<key>image</key>
+		<string>Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Medusa</string>
+		<key>image_top</key>
+		<string>Caravaggio_Medusa_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/caravaggio/medusa-1597-1</string>
+		<key>name</key>
+		<string>Caravaggio</string>
+		<key>image</key>
+		<string>Caravaggio_Medusa.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Boy with a Basket of Fruit</string>
 		<key>image_top</key>
 		<string>Caravaggio_Fanciullo_croptop.png</string>
 		<key>link</key>
-		<string>http://en.wikipedia.org/wiki/File:Caravaggio_-_Fanciullo_con_canestro_di_frutta.jpg</string>
+		<string>http://www.wikipaintings.org/en/caravaggio/boy-with-a-basket-of-fruit-1593-1</string>
 		<key>name</key>
 		<string>Caravaggio</string>
 		<key>image</key>
@@ -20,7 +68,7 @@
 		<key>image_top</key>
 		<string>Cranach_AdamEve_croptop.png</string>
 		<key>link</key>
-		<string>http://en.wikipedia.org/wiki/File:Lucas_Cranach_the_Elder-Adam_and_Eve_1533.jpg</string>
+		<string>http://www.wikipaintings.org/en/lucas-cranach-the-elder/adam-and-eve-1531-1</string>
 		<key>name</key>
 		<string>Lucas Cranach the Elder</string>
 		<key>image</key>
@@ -32,7 +80,7 @@
 		<key>image_top</key>
 		<string>Holbein_Ambassadors_croptop.png</string>
 		<key>link</key>
-		<string>http://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg</string>
+		<string>http://www.wikipaintings.org/en/hans-holbein-the-younger/the-ambassadors-1533</string>
 		<key>name</key>
 		<string>Hans Holbein the Younger</string>
 		<key>image</key>
@@ -44,7 +92,7 @@
 		<key>image_top</key>
 		<string>Manet_Dejeuner_croptop.png</string>
 		<key>link</key>
-		<string>http://en.wikipedia.org/wiki/File:%C3%89douard_Manet_-_Le_D%C3%A9jeuner_sur_l%27herbe.jpg</string>
+		<string>http://www.wikipaintings.org/en/edouard-manet/the-luncheon-on-the-grass-1863</string>
 		<key>name</key>
 		<string>Édouard Manet </string>
 		<key>image</key>
@@ -56,7 +104,7 @@
 		<key>image_top</key>
 		<string>Michelangelo_CreationAdam_croptop.png</string>
 		<key>link</key>
-		<string>http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1n.jpg</string>
+		<string>http://www.wikipaintings.org/en/michelangelo/sistine-chapel-ceiling-creation-of-adam-1510</string>
 		<key>name</key>
 		<string>Michelangelo Buonarroti</string>
 		<key>image</key>
