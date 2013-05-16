@@ -4,6 +4,30 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Death and Life</string>
+		<key>image_top</key>
+		<string>Klimt_LifeAndDeath_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/gustav-klimt/death-and-life-1916-1</string>
+		<key>name</key>
+		<string>Gustav Klimt</string>
+		<key>image</key>
+		<string>Klimt_LifeAndDeath.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Anacreon</string>
+		<key>image_top</key>
+		<string>Gerome_Anacreon_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/jean-leon-gerome/anacreon</string>
+		<key>name</key>
+		<string>Jean-Leon Gerome</string>
+		<key>image</key>
+		<string>Gerome_Anacreon.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Primavera</string>
 		<key>image_top</key>
 		<string>Botticelli_Primavera_croptop.png</string>

@@ -66,6 +66,10 @@
 		60FB54941744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */; };
 		60FB54971744FA5100A82CEE /* Botticelli_Primavera_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */; };
 		60FB54981744FA5100A82CEE /* Botticelli_Primavera.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */; };
+		60FB549B17451F1700A82CEE /* Gerome_Anacreon_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB549917451F1600A82CEE /* Gerome_Anacreon_croptop.png */; };
+		60FB549C17451F1700A82CEE /* Gerome_Anacreon.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB549A17451F1600A82CEE /* Gerome_Anacreon.png */; };
+		60FB549F17453C4700A82CEE /* Klimt_LifeAndDeath_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB549D17453C4600A82CEE /* Klimt_LifeAndDeath_croptop.png */; };
+		60FB54A017453C4700A82CEE /* Klimt_LifeAndDeath.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB549E17453C4600A82CEE /* Klimt_LifeAndDeath.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +152,10 @@
 		60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kunisada_KanadehonChūshingura.png"; sourceTree = "<group>"; };
 		60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Botticelli_Primavera_croptop.png; sourceTree = "<group>"; };
 		60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Botticelli_Primavera.png; sourceTree = "<group>"; };
+		60FB549917451F1600A82CEE /* Gerome_Anacreon_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gerome_Anacreon_croptop.png; sourceTree = "<group>"; };
+		60FB549A17451F1600A82CEE /* Gerome_Anacreon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gerome_Anacreon.png; sourceTree = "<group>"; };
+		60FB549D17453C4600A82CEE /* Klimt_LifeAndDeath_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Klimt_LifeAndDeath_croptop.png; sourceTree = "<group>"; };
+		60FB549E17453C4600A82CEE /* Klimt_LifeAndDeath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Klimt_LifeAndDeath.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,12 +295,16 @@
 				6041F4D31729B34000C999AF /* Default.png */,
 				6041F4D41729B34000C999AF /* Default@2x.png */,
 				60C9EA2F173F99D80080E9FA /* front_center.png */,
+				60FB549917451F1600A82CEE /* Gerome_Anacreon_croptop.png */,
+				60FB549A17451F1600A82CEE /* Gerome_Anacreon.png */,
 				608C6EC4172AB022001ACB6E /* info.png */,
 				604624E61725539900D00179 /* icon-camera.png */,
 				60921D3B1733E216007F34E8 /* icon-contact.png */,
 				604624EE17257FCB00D00179 /* icon-info.png */,
 				604624E71725539900D00179 /* icon-library.png */,
 				604624E91725539900D00179 /* icon-share.png */,
+				60FB549D17453C4600A82CEE /* Klimt_LifeAndDeath_croptop.png */,
+				60FB549E17453C4600A82CEE /* Klimt_LifeAndDeath.png */,
 				60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */,
 				60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */,
 				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
@@ -422,6 +434,10 @@
 				60FB54941744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png in Resources */,
 				60FB54971744FA5100A82CEE /* Botticelli_Primavera_croptop.png in Resources */,
 				60FB54981744FA5100A82CEE /* Botticelli_Primavera.png in Resources */,
+				60FB549B17451F1700A82CEE /* Gerome_Anacreon_croptop.png in Resources */,
+				60FB549C17451F1700A82CEE /* Gerome_Anacreon.png in Resources */,
+				60FB549F17453C4700A82CEE /* Klimt_LifeAndDeath_croptop.png in Resources */,
+				60FB54A017453C4700A82CEE /* Klimt_LifeAndDeath.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
