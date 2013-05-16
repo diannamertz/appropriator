@@ -60,8 +60,12 @@
 		60EE9DB71743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */; };
 		60EE9DBA1743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */; };
 		60EE9DBB1743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */; };
-		60EE9DBD17440C3100DFA86F /* Mansur_Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DBC17440C3100DFA86F /* Mansur_Zebra.png */; };
-		60EE9DBF17440C3B00DFA86F /* Mansur_Zebra_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DBE17440C3B00DFA86F /* Mansur_Zebra_croptop.png */; };
+		60FB548F1744D4BF00A82CEE /* Mansur_Zebra_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */; };
+		60FB54901744D4BF00A82CEE /* Mansur_Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */; };
+		60FB54931744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */; };
+		60FB54941744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */; };
+		60FB54971744FA5100A82CEE /* Botticelli_Primavera_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */; };
+		60FB54981744FA5100A82CEE /* Botticelli_Primavera.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,8 +142,12 @@
 		60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png"; sourceTree = "<group>"; };
 		60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer_croptop.png; sourceTree = "<group>"; };
 		60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer.png; sourceTree = "<group>"; };
-		60EE9DBC17440C3100DFA86F /* Mansur_Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mansur_Zebra.png; path = ../../../Documents/projects/Appropriator/Painting_Elements/Both_high_res/Mansur_Zebra.png; sourceTree = "<group>"; };
-		60EE9DBE17440C3B00DFA86F /* Mansur_Zebra_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mansur_Zebra_croptop.png; path = ../../../Documents/projects/Appropriator/Painting_Elements/croptop/Mansur_Zebra_croptop.png; sourceTree = "<group>"; };
+		60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mansur_Zebra_croptop.png; sourceTree = "<group>"; };
+		60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mansur_Zebra.png; sourceTree = "<group>"; };
+		60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kunisada_KanadehonChūshingura_croptop.png"; sourceTree = "<group>"; };
+		60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kunisada_KanadehonChūshingura.png"; sourceTree = "<group>"; };
+		60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Botticelli_Primavera_croptop.png; sourceTree = "<group>"; };
+		60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Botticelli_Primavera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,10 +275,14 @@
 		60E06FB21635A17C00BFB6D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				60EE9DBE17440C3B00DFA86F /* Mansur_Zebra_croptop.png */,
-				60EE9DBC17440C3100DFA86F /* Mansur_Zebra.png */,
+				60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */,
+				60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */,
+				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
+				6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */,
 				60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */,
 				60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */,
+				60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */,
+				6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */,
 				6041F4D21729B34000C999AF /* Default-568h@2x.png */,
 				6041F4D31729B34000C999AF /* Default.png */,
 				6041F4D41729B34000C999AF /* Default@2x.png */,
@@ -281,14 +293,14 @@
 				604624EE17257FCB00D00179 /* icon-info.png */,
 				604624E71725539900D00179 /* icon-library.png */,
 				604624E91725539900D00179 /* icon-share.png */,
-				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
-				6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */,
-				60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */,
-				6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */,
+				60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */,
+				60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */,
 				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
 				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
 				60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */,
 				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
+				60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */,
+				60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */,
 				60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */,
 				60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */,
 				60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */,
@@ -404,8 +416,12 @@
 				60EE9DB71743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png in Resources */,
 				60EE9DBA1743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png in Resources */,
 				60EE9DBB1743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png in Resources */,
-				60EE9DBD17440C3100DFA86F /* Mansur_Zebra.png in Resources */,
-				60EE9DBF17440C3B00DFA86F /* Mansur_Zebra_croptop.png in Resources */,
+				60FB548F1744D4BF00A82CEE /* Mansur_Zebra_croptop.png in Resources */,
+				60FB54901744D4BF00A82CEE /* Mansur_Zebra.png in Resources */,
+				60FB54931744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png in Resources */,
+				60FB54941744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png in Resources */,
+				60FB54971744FA5100A82CEE /* Botticelli_Primavera_croptop.png in Resources */,
+				60FB54981744FA5100A82CEE /* Botticelli_Primavera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,30 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Primavera</string>
+		<key>image_top</key>
+		<string>Botticelli_Primavera_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/sandro-botticelli/primavera-1478</string>
+		<key>name</key>
+		<string>Sandro Botticelli</string>
+		<key>image</key>
+		<string>Botticelli_Primavera.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Kanadehon Chūshingura</string>
+		<key>image_top</key>
+		<string>Kunisada_KanadehonChūshingura_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/utagawa-kunisada/not_detected_240363</string>
+		<key>name</key>
+		<string>Utagawa Kunisada</string>
+		<key>image</key>
+		<string>Kunisada_KanadehonChūshingura.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Zebra</string>
 		<key>image_top</key>
 		<string>Mansur_Zebra_croptop.png</string>
