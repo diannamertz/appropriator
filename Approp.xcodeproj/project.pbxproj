@@ -22,9 +22,21 @@
 		604742541660E6A700329F03 /* Holbein_Ambassadors_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */; };
 		604742551660E6A700329F03 /* Manet_Dejeuner_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */; };
 		604742561660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */; };
+		604D7F381747752B00BCAB40 /* Bosch_TheGarden_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F361747752B00BCAB40 /* Bosch_TheGarden_croptop.png */; };
+		604D7F391747752B00BCAB40 /* Bosch_TheGarden.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F371747752B00BCAB40 /* Bosch_TheGarden.png */; };
+		604D7F3C174792E400BCAB40 /* Durer_Lobster_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3A174792E400BCAB40 /* Durer_Lobster_croptop.png */; };
+		604D7F3D174792E400BCAB40 /* Durer_Lobster.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3B174792E400BCAB40 /* Durer_Lobster.png */; };
+		604D7F4017479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */; };
+		604D7F4117479B0000BCAB40 /* Malevich_AeroplaneFlying.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */; };
+		604D7F441747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F421747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png */; };
+		604D7F451747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */; };
 		6052979F1727E8A900B832AC /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6052979E1727E8A900B832AC /* InfoController.m */; };
 		60760FA51742E3E9007B728E /* Caravaggio_Medusa.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */; };
 		60760FA81742E5B4007B728E /* Caravaggio_Medusa_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */; };
+		608A54EF17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */; };
+		608A54F017463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png in Resources */ = {isa = PBXBuildFile; fileRef = 608A54EE17463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png */; };
+		608A54F7174649B700A5E746 /* North_Flor_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 608A54F5174649B700A5E746 /* North_Flor_croptop.png */; };
+		608A54FA17465FA900A5E746 /* North_Flor.png in Resources */ = {isa = PBXBuildFile; fileRef = 608A54F917465FA900A5E746 /* North_Flor.png */; };
 		608C6EC5172AB022001ACB6E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 608C6EC4172AB022001ACB6E /* info.png */; };
 		60907ADA166BAF090080B835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60907AD9166BAF090080B835 /* QuartzCore.framework */; };
 		60921D3C1733E216007F34E8 /* icon-contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 60921D3B1733E216007F34E8 /* icon-contact.png */; };
@@ -100,10 +112,22 @@
 		6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors_croptop.png; sourceTree = "<group>"; };
 		604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner_croptop.png; sourceTree = "<group>"; };
 		604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam_croptop.png; sourceTree = "<group>"; };
+		604D7F361747752B00BCAB40 /* Bosch_TheGarden_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bosch_TheGarden_croptop.png; sourceTree = "<group>"; };
+		604D7F371747752B00BCAB40 /* Bosch_TheGarden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bosch_TheGarden.png; sourceTree = "<group>"; };
+		604D7F3A174792E400BCAB40 /* Durer_Lobster_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Durer_Lobster_croptop.png; sourceTree = "<group>"; };
+		604D7F3B174792E400BCAB40 /* Durer_Lobster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Durer_Lobster.png; sourceTree = "<group>"; };
+		604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Malevich_AeroplaneFlying_croptop.png; sourceTree = "<group>"; };
+		604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Malevich_AeroplaneFlying.png; sourceTree = "<group>"; };
+		604D7F421747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blake_Nebuchadnezzar_croptop.png; sourceTree = "<group>"; };
+		604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blake_Nebuchadnezzar.png; sourceTree = "<group>"; };
 		6052979D1727E8A800B832AC /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		6052979E1727E8A900B832AC /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa.png; sourceTree = "<group>"; };
 		60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa_croptop.png; sourceTree = "<group>"; };
+		608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeNainBrothers_AllegoryOfVictory_croptop.png; sourceTree = "<group>"; };
+		608A54EE17463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeNainBrothers_AllegoryofVictory.png; sourceTree = "<group>"; };
+		608A54F5174649B700A5E746 /* North_Flor_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = North_Flor_croptop.png; sourceTree = "<group>"; };
+		608A54F917465FA900A5E746 /* North_Flor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = North_Flor.png; sourceTree = "<group>"; };
 		608C6EC4172AB022001ACB6E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		60921D3B1733E216007F34E8 /* icon-contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-contact.png"; sourceTree = "<group>"; };
@@ -283,6 +307,10 @@
 		60E06FB21635A17C00BFB6D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				604D7F421747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png */,
+				604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */,
+				604D7F361747752B00BCAB40 /* Bosch_TheGarden_croptop.png */,
+				604D7F371747752B00BCAB40 /* Bosch_TheGarden.png */,
 				60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */,
 				60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */,
 				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
@@ -294,9 +322,13 @@
 				6041F4D21729B34000C999AF /* Default-568h@2x.png */,
 				6041F4D31729B34000C999AF /* Default.png */,
 				6041F4D41729B34000C999AF /* Default@2x.png */,
+				604D7F3A174792E400BCAB40 /* Durer_Lobster_croptop.png */,
+				604D7F3B174792E400BCAB40 /* Durer_Lobster.png */,
 				60C9EA2F173F99D80080E9FA /* front_center.png */,
 				60FB549917451F1600A82CEE /* Gerome_Anacreon_croptop.png */,
 				60FB549A17451F1600A82CEE /* Gerome_Anacreon.png */,
+				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
+				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
 				608C6EC4172AB022001ACB6E /* info.png */,
 				604624E61725539900D00179 /* icon-camera.png */,
 				60921D3B1733E216007F34E8 /* icon-contact.png */,
@@ -307,8 +339,10 @@
 				60FB549E17453C4600A82CEE /* Klimt_LifeAndDeath.png */,
 				60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */,
 				60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */,
-				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
-				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
+				608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */,
+				608A54EE17463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png */,
+				604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */,
+				604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */,
 				60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */,
 				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
 				60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */,
@@ -319,6 +353,8 @@
 				60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */,
 				60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */,
 				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
+				608A54F917465FA900A5E746 /* North_Flor.png */,
+				608A54F5174649B700A5E746 /* North_Flor_croptop.png */,
 				60E06FBA1635A17D00BFB6D0 /* paintings.plist */,
 				602D297C17400C65006475A9 /* pattern.png */,
 			);
@@ -438,6 +474,18 @@
 				60FB549C17451F1700A82CEE /* Gerome_Anacreon.png in Resources */,
 				60FB549F17453C4700A82CEE /* Klimt_LifeAndDeath_croptop.png in Resources */,
 				60FB54A017453C4700A82CEE /* Klimt_LifeAndDeath.png in Resources */,
+				608A54EF17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png in Resources */,
+				608A54F017463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png in Resources */,
+				608A54F7174649B700A5E746 /* North_Flor_croptop.png in Resources */,
+				608A54FA17465FA900A5E746 /* North_Flor.png in Resources */,
+				604D7F381747752B00BCAB40 /* Bosch_TheGarden_croptop.png in Resources */,
+				604D7F391747752B00BCAB40 /* Bosch_TheGarden.png in Resources */,
+				604D7F3C174792E400BCAB40 /* Durer_Lobster_croptop.png in Resources */,
+				604D7F3D174792E400BCAB40 /* Durer_Lobster.png in Resources */,
+				604D7F4017479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png in Resources */,
+				604D7F4117479B0000BCAB40 /* Malevich_AeroplaneFlying.png in Resources */,
+				604D7F441747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png in Resources */,
+				604D7F451747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,78 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Nebuchadnezzar</string>
+		<key>image_top</key>
+		<string>Blake_Nebuchadnezzar_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/william-blake/nebuchadnezzar-1795</string>
+		<key>name</key>
+		<string>William Blake</string>
+		<key>image</key>
+		<string>Blake_Nebuchadnezzar.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Aeroplane Flying</string>
+		<key>image_top</key>
+		<string>Malevich_AeroplaneFlying_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/kazimir-malevich/aeroplane-flying-1915</string>
+		<key>name</key>
+		<string>Kazimir Malevich</string>
+		<key>image</key>
+		<string>Malevich_AeroplaneFlying.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Lobster</string>
+		<key>image_top</key>
+		<string>Durer_Lobster_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/albrecht-durer/lobster-1495-1</string>
+		<key>name</key>
+		<string>Albrecht Durer</string>
+		<key>image</key>
+		<string>Durer_Lobster.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Garden of Earthly Delights (detail)</string>
+		<key>image_top</key>
+		<string>Bosch_TheGarden_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/hieronymus-bosch/the-garden-of-earthly-delights-1516-11</string>
+		<key>name</key>
+		<string>Hieronymus Bosch</string>
+		<key>image</key>
+		<string>Bosch_TheGarden.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Flor Imperiale, Coral Snake and Spider, Brazil</string>
+		<key>image_top</key>
+		<string>North_Flor_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/marianne-north/flor-imperiale-coral-snake-and-spider-brazil-1873</string>
+		<key>name</key>
+		<string>Marianne North</string>
+		<key>image</key>
+		<string>North_Flor.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Allegory of Victory</string>
+		<key>image_top</key>
+		<string>LeNainBrothers_AllegoryOfVictory_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/le-nain-brothers/allegory-of-victory</string>
+		<key>name</key>
+		<string>Le Nain Brothers</string>
+		<key>image</key>
+		<string>LeNainBrothers_AllegoryofVictory.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Death and Life</string>
 		<key>image_top</key>
 		<string>Klimt_LifeAndDeath_croptop.png</string>
