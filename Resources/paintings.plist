@@ -4,6 +4,78 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Five Fans</string>
+		<key>image_top</key>
+		<string>Hokusai_FiveFans_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/katsushika-hokusai/five-fans</string>
+		<key>name</key>
+		<string>Katsushika Hokusai</string>
+		<key>image</key>
+		<string>Hokusai_FiveFans.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Room</string>
+		<key>image_top</key>
+		<string>Rozanova_Room_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/olga-rozanova/room</string>
+		<key>name</key>
+		<string>Olga Rozanova</string>
+		<key>image</key>
+		<string>Rozanova_Room.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>At the Moulin Rouge, The Dance</string>
+		<key>image_top</key>
+		<string>ToulouseLautrec_TheDance_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/henri-de-toulouse-lautrec/at-the-moulin-rouge-the-dance-1890</string>
+		<key>name</key>
+		<string>Henri de Toulouse-Lautrec</string>
+		<key>image</key>
+		<string>ToulouseLautrec_TheDance.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Skull with Burning Cigarette</string>
+		<key>image_top</key>
+		<string>vanGogh_SkullWithBurningCigarette_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/vincent-van-gogh/skull-with-burning-cigarette-1885</string>
+		<key>name</key>
+		<string>Vincent van Gogh</string>
+		<key>image</key>
+		<string>vanGogh_SkullWithBurningCigarette.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Sisyphus</string>
+		<key>image_top</key>
+		<string>Titian_Sisyphus_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/titian/sisyphus-1549</string>
+		<key>name</key>
+		<string>Titian</string>
+		<key>image</key>
+		<string>Titian_Sisyphus.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Still Life with Pears and Grapes</string>
+		<key>image_top</key>
+		<string>Monet_StillLifewithPearsandGrapes_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/claude-monet/still-life-with-pears-and-grapes</string>
+		<key>name</key>
+		<string>Claude Monet</string>
+		<key>image</key>
+		<string>Monet_StillLifewithPearsandGrapes.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Nebuchadnezzar</string>
 		<key>image_top</key>
 		<string>Blake_Nebuchadnezzar_croptop.png</string>

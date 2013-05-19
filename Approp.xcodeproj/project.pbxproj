@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60045D011748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045CFF1748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png */; };
+		60045D021748059600A4990F /* Monet_StillLifewithPearsandGrapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D001748059600A4990F /* Monet_StillLifewithPearsandGrapes.png */; };
+		60045D051748BF4C00A4990F /* Titian_Sisyphus_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D031748BF4C00A4990F /* Titian_Sisyphus_croptop.png */; };
+		60045D061748BF4C00A4990F /* Titian_Sisyphus.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D041748BF4C00A4990F /* Titian_Sisyphus.png */; };
+		60045D091748D39A00A4990F /* vanGogh_SkullWithBurningCigarette_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D071748D39A00A4990F /* vanGogh_SkullWithBurningCigarette_croptop.png */; };
+		60045D0A1748D39A00A4990F /* vanGogh_SkullWithBurningCigarette.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D081748D39A00A4990F /* vanGogh_SkullWithBurningCigarette.png */; };
+		60045D0D1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D0B1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png */; };
+		60045D0E1748F60000A4990F /* ToulouseLautrec_TheDance.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */; };
 		6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017CFD11644256400F9F4FB /* ToolboxViewController.m */; };
 		602D297D17400C65006475A9 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 602D297C17400C65006475A9 /* pattern.png */; };
 		602D298017401F72006475A9 /* LicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D297F17401F72006475A9 /* LicenseController.m */; };
@@ -62,6 +70,10 @@
 		609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D10031632990500E08660 /* SystemConfiguration.framework */; };
 		60C5D620172EC5F000D85EFD /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */; };
 		60C9EA30173F99D80080E9FA /* front_center.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C9EA2F173F99D80080E9FA /* front_center.png */; };
+		60CDFE35174940680057DB81 /* Rozanova_Room_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */; };
+		60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE34174940680057DB81 /* Rozanova_Room.png */; };
+		60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */; };
+		60CDFE3C174981040057DB81 /* Hokusai_FiveFans_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */; };
 		60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */; };
 		60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */; };
 		60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */; };
@@ -95,6 +107,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60045CFF1748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monet_StillLifewithPearsandGrapes_croptop.png; sourceTree = "<group>"; };
+		60045D001748059600A4990F /* Monet_StillLifewithPearsandGrapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monet_StillLifewithPearsandGrapes.png; sourceTree = "<group>"; };
+		60045D031748BF4C00A4990F /* Titian_Sisyphus_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Titian_Sisyphus_croptop.png; sourceTree = "<group>"; };
+		60045D041748BF4C00A4990F /* Titian_Sisyphus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Titian_Sisyphus.png; sourceTree = "<group>"; };
+		60045D071748D39A00A4990F /* vanGogh_SkullWithBurningCigarette_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vanGogh_SkullWithBurningCigarette_croptop.png; sourceTree = "<group>"; };
+		60045D081748D39A00A4990F /* vanGogh_SkullWithBurningCigarette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vanGogh_SkullWithBurningCigarette.png; sourceTree = "<group>"; };
+		60045D0B1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToulouseLautrec_TheDance_croptop.png; sourceTree = "<group>"; };
+		60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToulouseLautrec_TheDance.png; sourceTree = "<group>"; };
 		6017CFD01644256400F9F4FB /* ToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxViewController.h; sourceTree = "<group>"; };
 		6017CFD11644256400F9F4FB /* ToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxViewController.m; sourceTree = "<group>"; };
 		602D297C17400C65006475A9 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
@@ -160,6 +180,10 @@
 		60C5D61E172EC5F000D85EFD /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		60C9EA2F173F99D80080E9FA /* front_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = front_center.png; sourceTree = "<group>"; };
+		60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room_croptop.png; sourceTree = "<group>"; };
+		60CDFE34174940680057DB81 /* Rozanova_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room.png; sourceTree = "<group>"; };
+		60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans.png; sourceTree = "<group>"; };
+		60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans_croptop.png; sourceTree = "<group>"; };
 		60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Caravaggio_Fanciullo.jpg; sourceTree = "<group>"; };
 		60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cranach_AdamEve.jpg; sourceTree = "<group>"; };
 		60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holbein_Ambassadors.jpg; sourceTree = "<group>"; };
@@ -327,6 +351,8 @@
 				60C9EA2F173F99D80080E9FA /* front_center.png */,
 				60FB549917451F1600A82CEE /* Gerome_Anacreon_croptop.png */,
 				60FB549A17451F1600A82CEE /* Gerome_Anacreon.png */,
+				60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */,
+				60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */,
 				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
 				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
 				608C6EC4172AB022001ACB6E /* info.png */,
@@ -353,10 +379,20 @@
 				60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */,
 				60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */,
 				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
+				60045CFF1748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png */,
+				60045D001748059600A4990F /* Monet_StillLifewithPearsandGrapes.png */,
 				608A54F917465FA900A5E746 /* North_Flor.png */,
 				608A54F5174649B700A5E746 /* North_Flor_croptop.png */,
 				60E06FBA1635A17D00BFB6D0 /* paintings.plist */,
 				602D297C17400C65006475A9 /* pattern.png */,
+				60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */,
+				60CDFE34174940680057DB81 /* Rozanova_Room.png */,
+				60045D031748BF4C00A4990F /* Titian_Sisyphus_croptop.png */,
+				60045D041748BF4C00A4990F /* Titian_Sisyphus.png */,
+				60045D0B1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png */,
+				60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */,
+				60045D071748D39A00A4990F /* vanGogh_SkullWithBurningCigarette_croptop.png */,
+				60045D081748D39A00A4990F /* vanGogh_SkullWithBurningCigarette.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -486,6 +522,18 @@
 				604D7F4117479B0000BCAB40 /* Malevich_AeroplaneFlying.png in Resources */,
 				604D7F441747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png in Resources */,
 				604D7F451747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png in Resources */,
+				60045D011748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png in Resources */,
+				60045D021748059600A4990F /* Monet_StillLifewithPearsandGrapes.png in Resources */,
+				60045D051748BF4C00A4990F /* Titian_Sisyphus_croptop.png in Resources */,
+				60045D061748BF4C00A4990F /* Titian_Sisyphus.png in Resources */,
+				60045D091748D39A00A4990F /* vanGogh_SkullWithBurningCigarette_croptop.png in Resources */,
+				60045D0A1748D39A00A4990F /* vanGogh_SkullWithBurningCigarette.png in Resources */,
+				60045D0D1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png in Resources */,
+				60045D0E1748F60000A4990F /* ToulouseLautrec_TheDance.png in Resources */,
+				60CDFE35174940680057DB81 /* Rozanova_Room_croptop.png in Resources */,
+				60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */,
+				60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */,
+				60CDFE3C174981040057DB81 /* Hokusai_FiveFans_croptop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
