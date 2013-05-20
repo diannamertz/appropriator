@@ -4,6 +4,102 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Nebuchadnezzar</string>
+		<key>image_top</key>
+		<string>Blake_Nebuchadnezzar_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/william-blake/nebuchadnezzar-1795</string>
+		<key>name</key>
+		<string>William Blake</string>
+		<key>image</key>
+		<string>Blake_Nebuchadnezzar.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Garden of Earthly Delights (detail)</string>
+		<key>image_top</key>
+		<string>Bosch_TheGarden_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/hieronymus-bosch/the-garden-of-earthly-delights-1516-11</string>
+		<key>name</key>
+		<string>Hieronymus Bosch</string>
+		<key>image</key>
+		<string>Bosch_TheGarden.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Primavera</string>
+		<key>image_top</key>
+		<string>Botticelli_Primavera_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/sandro-botticelli/primavera-1478</string>
+		<key>name</key>
+		<string>Sandro Botticelli</string>
+		<key>image</key>
+		<string>Botticelli_Primavera.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Boy with a Basket of Fruit</string>
+		<key>image_top</key>
+		<string>Caravaggio_Fanciullo_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/caravaggio/boy-with-a-basket-of-fruit-1593-1</string>
+		<key>name</key>
+		<string>Caravaggio</string>
+		<key>image</key>
+		<string>Caravaggio_Fanciullo.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Medusa</string>
+		<key>image_top</key>
+		<string>Caravaggio_Medusa_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/caravaggio/medusa-1597-1</string>
+		<key>name</key>
+		<string>Caravaggio</string>
+		<key>image</key>
+		<string>Caravaggio_Medusa.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Adam and Eve</string>
+		<key>image_top</key>
+		<string>Cranach_AdamEve_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/lucas-cranach-the-elder/adam-and-eve-1531-1</string>
+		<key>name</key>
+		<string>Lucas Cranach the Elder</string>
+		<key>image</key>
+		<string>Cranach_AdamEve.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Lobster</string>
+		<key>image_top</key>
+		<string>Durer_Lobster_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/albrecht-durer/lobster-1495-1</string>
+		<key>name</key>
+		<string>Albrecht Durer</string>
+		<key>image</key>
+		<string>Durer_Lobster.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Anacreon</string>
+		<key>image_top</key>
+		<string>Gerome_Anacreon_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/jean-leon-gerome/anacreon</string>
+		<key>name</key>
+		<string>Jean-Leon Gerome</string>
+		<key>image</key>
+		<string>Gerome_Anacreon.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Five Fans</string>
 		<key>image_top</key>
 		<string>Hokusai_FiveFans_croptop.png</string>
@@ -16,6 +112,126 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>The Ambassadors</string>
+		<key>image_top</key>
+		<string>Holbein_Ambassadors_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/hans-holbein-the-younger/the-ambassadors-1533</string>
+		<key>name</key>
+		<string>Hans Holbein the Younger</string>
+		<key>image</key>
+		<string>Holbein_Ambassadors.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Death and Life</string>
+		<key>image_top</key>
+		<string>Klimt_LifeAndDeath_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/gustav-klimt/death-and-life-1916-1</string>
+		<key>name</key>
+		<string>Gustav Klimt</string>
+		<key>image</key>
+		<string>Klimt_LifeAndDeath.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Kanadehon Chūshingura</string>
+		<key>image_top</key>
+		<string>Kunisada_KanadehonChūshingura_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/utagawa-kunisada/not_detected_240363</string>
+		<key>name</key>
+		<string>Utagawa Kunisada</string>
+		<key>image</key>
+		<string>Kunisada_KanadehonChūshingura.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Aeroplane Flying</string>
+		<key>image_top</key>
+		<string>Malevich_AeroplaneFlying_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/kazimir-malevich/aeroplane-flying-1915</string>
+		<key>name</key>
+		<string>Kazimir Malevich</string>
+		<key>image</key>
+		<string>Malevich_AeroplaneFlying.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Zebra</string>
+		<key>image_top</key>
+		<string>Mansur_Zebra_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/ustad-mansur/zebra-1621</string>
+		<key>name</key>
+		<string>Ustad Mansur</string>
+		<key>image</key>
+		<string>Mansur_Zebra.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Creation of Adam</string>
+		<key>image_top</key>
+		<string>Michelangelo_CreationAdam_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/michelangelo/sistine-chapel-ceiling-creation-of-adam-1510</string>
+		<key>name</key>
+		<string>Michelangelo</string>
+		<key>image</key>
+		<string>Michelangelo_CreationAdam.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Luncheon on the Grass</string>
+		<key>image_top</key>
+		<string>Manet_Dejeuner_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/edouard-manet/the-luncheon-on-the-grass-1863</string>
+		<key>name</key>
+		<string>Édouard Manet </string>
+		<key>image</key>
+		<string>Manet_Dejeuner.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Still Life with Pears and Grapes</string>
+		<key>image_top</key>
+		<string>Monet_StillLifewithPearsandGrapes_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/claude-monet/still-life-with-pears-and-grapes</string>
+		<key>name</key>
+		<string>Claude Monet</string>
+		<key>image</key>
+		<string>Monet_StillLifewithPearsandGrapes.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Allegory of Victory</string>
+		<key>image_top</key>
+		<string>LeNainBrothers_AllegoryOfVictory_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/le-nain-brothers/allegory-of-victory</string>
+		<key>name</key>
+		<string>Le Nain Brothers</string>
+		<key>image</key>
+		<string>LeNainBrothers_AllegoryofVictory.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Flor Imperiale, Coral Snake and Spider, Brazil</string>
+		<key>image_top</key>
+		<string>North_Flor_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/marianne-north/flor-imperiale-coral-snake-and-spider-brazil-1873</string>
+		<key>name</key>
+		<string>Marianne North</string>
+		<key>image</key>
+		<string>North_Flor.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Room</string>
 		<key>image_top</key>
 		<string>Rozanova_Room_croptop.png</string>
@@ -25,6 +241,42 @@
 		<string>Olga Rozanova</string>
 		<key>image</key>
 		<string>Rozanova_Room.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Claude Monet Painting by the Edge of a Wood</string>
+		<key>image_top</key>
+		<string>Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/john-singer-sargent/claude-monet-painting-by-the-edge-of-a-wood-1885</string>
+		<key>name</key>
+		<string>John Singer Sargent</string>
+		<key>image</key>
+		<string>Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Portrait of Friederike Maria Beer</string>
+		<key>image_top</key>
+		<string>Shiele_PortraitFriederikeBeer_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/egon-schiele/portrait-of-friederike-maria-beer-1914</string>
+		<key>name</key>
+		<string>Egon Schiele</string>
+		<key>image</key>
+		<string>Shiele_PortraitFriederikeBeer.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Sisyphus</string>
+		<key>image_top</key>
+		<string>Titian_Sisyphus_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/titian/sisyphus-1549</string>
+		<key>name</key>
+		<string>Titian</string>
+		<key>image</key>
+		<string>Titian_Sisyphus.png</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -49,258 +301,6 @@
 		<string>Vincent van Gogh</string>
 		<key>image</key>
 		<string>vanGogh_SkullWithBurningCigarette.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Sisyphus</string>
-		<key>image_top</key>
-		<string>Titian_Sisyphus_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/titian/sisyphus-1549</string>
-		<key>name</key>
-		<string>Titian</string>
-		<key>image</key>
-		<string>Titian_Sisyphus.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Still Life with Pears and Grapes</string>
-		<key>image_top</key>
-		<string>Monet_StillLifewithPearsandGrapes_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/claude-monet/still-life-with-pears-and-grapes</string>
-		<key>name</key>
-		<string>Claude Monet</string>
-		<key>image</key>
-		<string>Monet_StillLifewithPearsandGrapes.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Nebuchadnezzar</string>
-		<key>image_top</key>
-		<string>Blake_Nebuchadnezzar_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/william-blake/nebuchadnezzar-1795</string>
-		<key>name</key>
-		<string>William Blake</string>
-		<key>image</key>
-		<string>Blake_Nebuchadnezzar.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Aeroplane Flying</string>
-		<key>image_top</key>
-		<string>Malevich_AeroplaneFlying_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/kazimir-malevich/aeroplane-flying-1915</string>
-		<key>name</key>
-		<string>Kazimir Malevich</string>
-		<key>image</key>
-		<string>Malevich_AeroplaneFlying.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Lobster</string>
-		<key>image_top</key>
-		<string>Durer_Lobster_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/albrecht-durer/lobster-1495-1</string>
-		<key>name</key>
-		<string>Albrecht Durer</string>
-		<key>image</key>
-		<string>Durer_Lobster.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>The Garden of Earthly Delights (detail)</string>
-		<key>image_top</key>
-		<string>Bosch_TheGarden_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/hieronymus-bosch/the-garden-of-earthly-delights-1516-11</string>
-		<key>name</key>
-		<string>Hieronymus Bosch</string>
-		<key>image</key>
-		<string>Bosch_TheGarden.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Flor Imperiale, Coral Snake and Spider, Brazil</string>
-		<key>image_top</key>
-		<string>North_Flor_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/marianne-north/flor-imperiale-coral-snake-and-spider-brazil-1873</string>
-		<key>name</key>
-		<string>Marianne North</string>
-		<key>image</key>
-		<string>North_Flor.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Allegory of Victory</string>
-		<key>image_top</key>
-		<string>LeNainBrothers_AllegoryOfVictory_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/le-nain-brothers/allegory-of-victory</string>
-		<key>name</key>
-		<string>Le Nain Brothers</string>
-		<key>image</key>
-		<string>LeNainBrothers_AllegoryofVictory.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Death and Life</string>
-		<key>image_top</key>
-		<string>Klimt_LifeAndDeath_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/gustav-klimt/death-and-life-1916-1</string>
-		<key>name</key>
-		<string>Gustav Klimt</string>
-		<key>image</key>
-		<string>Klimt_LifeAndDeath.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Anacreon</string>
-		<key>image_top</key>
-		<string>Gerome_Anacreon_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/jean-leon-gerome/anacreon</string>
-		<key>name</key>
-		<string>Jean-Leon Gerome</string>
-		<key>image</key>
-		<string>Gerome_Anacreon.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Primavera</string>
-		<key>image_top</key>
-		<string>Botticelli_Primavera_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/sandro-botticelli/primavera-1478</string>
-		<key>name</key>
-		<string>Sandro Botticelli</string>
-		<key>image</key>
-		<string>Botticelli_Primavera.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Kanadehon Chūshingura</string>
-		<key>image_top</key>
-		<string>Kunisada_KanadehonChūshingura_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/utagawa-kunisada/not_detected_240363</string>
-		<key>name</key>
-		<string>Utagawa Kunisada</string>
-		<key>image</key>
-		<string>Kunisada_KanadehonChūshingura.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Zebra</string>
-		<key>image_top</key>
-		<string>Mansur_Zebra_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/ustad-mansur/zebra-1621</string>
-		<key>name</key>
-		<string>Ustad Mansur</string>
-		<key>image</key>
-		<string>Mansur_Zebra.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Portrait of Friederike Maria Beer</string>
-		<key>image_top</key>
-		<string>Shiele_PortraitFriederikeBeer_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/egon-schiele/portrait-of-friederike-maria-beer-1914</string>
-		<key>name</key>
-		<string>Egon Schiele</string>
-		<key>image</key>
-		<string>Shiele_PortraitFriederikeBeer.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Claude Monet Painting by the Edge of a Wood</string>
-		<key>image_top</key>
-		<string>Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/john-singer-sargent/claude-monet-painting-by-the-edge-of-a-wood-1885</string>
-		<key>name</key>
-		<string>John Singer Sargent</string>
-		<key>image</key>
-		<string>Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Medusa</string>
-		<key>image_top</key>
-		<string>Caravaggio_Medusa_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/caravaggio/medusa-1597-1</string>
-		<key>name</key>
-		<string>Caravaggio</string>
-		<key>image</key>
-		<string>Caravaggio_Medusa.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Boy with a Basket of Fruit</string>
-		<key>image_top</key>
-		<string>Caravaggio_Fanciullo_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/caravaggio/boy-with-a-basket-of-fruit-1593-1</string>
-		<key>name</key>
-		<string>Caravaggio</string>
-		<key>image</key>
-		<string>Caravaggio_Fanciullo.jpg</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Adam and Eve</string>
-		<key>image_top</key>
-		<string>Cranach_AdamEve_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/lucas-cranach-the-elder/adam-and-eve-1531-1</string>
-		<key>name</key>
-		<string>Lucas Cranach the Elder</string>
-		<key>image</key>
-		<string>Cranach_AdamEve.jpg</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>The Ambassadors</string>
-		<key>image_top</key>
-		<string>Holbein_Ambassadors_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/hans-holbein-the-younger/the-ambassadors-1533</string>
-		<key>name</key>
-		<string>Hans Holbein the Younger</string>
-		<key>image</key>
-		<string>Holbein_Ambassadors.jpg</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Luncheon on the Grass</string>
-		<key>image_top</key>
-		<string>Manet_Dejeuner_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/edouard-manet/the-luncheon-on-the-grass-1863</string>
-		<key>name</key>
-		<string>Édouard Manet </string>
-		<key>image</key>
-		<string>Manet_Dejeuner.jpg</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>The Creation of Adam</string>
-		<key>image_top</key>
-		<string>Michelangelo_CreationAdam_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/michelangelo/sistine-chapel-ceiling-creation-of-adam-1510</string>
-		<key>name</key>
-		<string>Michelangelo Buonarroti</string>
-		<key>image</key>
-		<string>Michelangelo_CreationAdam.png</string>
 	</dict>
 </array>
 </plist>

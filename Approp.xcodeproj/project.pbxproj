@@ -39,6 +39,10 @@
 		604D7F441747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F421747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png */; };
 		604D7F451747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */; };
 		6052979F1727E8A900B832AC /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6052979E1727E8A900B832AC /* InfoController.m */; };
+		60650C04174A654000FC2281 /* Caravaggio_Fanciullo.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C03174A654000FC2281 /* Caravaggio_Fanciullo.png */; };
+		60650C06174A67FD00FC2281 /* Cranach_AdamEve.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C05174A67FD00FC2281 /* Cranach_AdamEve.png */; };
+		60650C08174A6B0400FC2281 /* Holbein_Ambassadors.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C07174A6B0400FC2281 /* Holbein_Ambassadors.png */; };
+		60650C0A174A708F00FC2281 /* Manet_Dejeuner.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C09174A708F00FC2281 /* Manet_Dejeuner.png */; };
 		60760FA51742E3E9007B728E /* Caravaggio_Medusa.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */; };
 		60760FA81742E5B4007B728E /* Caravaggio_Medusa_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */; };
 		608A54EF17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */; };
@@ -74,10 +78,6 @@
 		60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE34174940680057DB81 /* Rozanova_Room.png */; };
 		60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */; };
 		60CDFE3C174981040057DB81 /* Hokusai_FiveFans_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */; };
-		60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */; };
-		60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */; };
-		60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */; };
-		60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */; };
 		60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */; };
 		60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FBA1635A17D00BFB6D0 /* paintings.plist */; };
 		60EE9DB61743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */; };
@@ -142,6 +142,10 @@
 		604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blake_Nebuchadnezzar.png; sourceTree = "<group>"; };
 		6052979D1727E8A800B832AC /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		6052979E1727E8A900B832AC /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
+		60650C03174A654000FC2281 /* Caravaggio_Fanciullo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Fanciullo.png; sourceTree = "<group>"; };
+		60650C05174A67FD00FC2281 /* Cranach_AdamEve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cranach_AdamEve.png; sourceTree = "<group>"; };
+		60650C07174A6B0400FC2281 /* Holbein_Ambassadors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors.png; sourceTree = "<group>"; };
+		60650C09174A708F00FC2281 /* Manet_Dejeuner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner.png; sourceTree = "<group>"; };
 		60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa.png; sourceTree = "<group>"; };
 		60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa_croptop.png; sourceTree = "<group>"; };
 		608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeNainBrothers_AllegoryOfVictory_croptop.png; sourceTree = "<group>"; };
@@ -184,10 +188,6 @@
 		60CDFE34174940680057DB81 /* Rozanova_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room.png; sourceTree = "<group>"; };
 		60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans.png; sourceTree = "<group>"; };
 		60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans_croptop.png; sourceTree = "<group>"; };
-		60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Caravaggio_Fanciullo.jpg; sourceTree = "<group>"; };
-		60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cranach_AdamEve.jpg; sourceTree = "<group>"; };
-		60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holbein_Ambassadors.jpg; sourceTree = "<group>"; };
-		60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manet_Dejeuner.jpg; sourceTree = "<group>"; };
 		60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam.png; sourceTree = "<group>"; };
 		60E06FBA1635A17D00BFB6D0 /* paintings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paintings.plist; sourceTree = "<group>"; };
 		60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png; sourceTree = "<group>"; };
@@ -337,11 +337,11 @@
 				604D7F371747752B00BCAB40 /* Bosch_TheGarden.png */,
 				60FB54951744FA5000A82CEE /* Botticelli_Primavera_croptop.png */,
 				60FB54961744FA5000A82CEE /* Botticelli_Primavera.png */,
-				60E06FB51635A17C00BFB6D0 /* Caravaggio_Fanciullo.jpg */,
+				60650C03174A654000FC2281 /* Caravaggio_Fanciullo.png */,
 				6047424D1660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png */,
 				60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */,
 				60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */,
-				60E06FB61635A17C00BFB6D0 /* Cranach_AdamEve.jpg */,
+				60650C05174A67FD00FC2281 /* Cranach_AdamEve.png */,
 				6047424E1660E6A700329F03 /* Cranach_AdamEve_croptop.png */,
 				6041F4D21729B34000C999AF /* Default-568h@2x.png */,
 				6041F4D31729B34000C999AF /* Default.png */,
@@ -354,7 +354,7 @@
 				60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */,
 				60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */,
 				6047424F1660E6A700329F03 /* Holbein_Ambassadors_croptop.png */,
-				60E06FB71635A17C00BFB6D0 /* Holbein_Ambassadors.jpg */,
+				60650C07174A6B0400FC2281 /* Holbein_Ambassadors.png */,
 				608C6EC4172AB022001ACB6E /* info.png */,
 				604624E61725539900D00179 /* icon-camera.png */,
 				60921D3B1733E216007F34E8 /* icon-contact.png */,
@@ -369,7 +369,7 @@
 				608A54EE17463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png */,
 				604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */,
 				604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */,
-				60E06FB81635A17C00BFB6D0 /* Manet_Dejeuner.jpg */,
+				60650C09174A708F00FC2281 /* Manet_Dejeuner.png */,
 				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
 				60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */,
 				60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */,
@@ -472,10 +472,6 @@
 			files = (
 				609D0FBF1632949800E08660 /* InfoPlist.strings in Resources */,
 				609D0FCE1632949800E08660 /* MainStoryboard_iPhone.storyboard in Resources */,
-				60E06FBD1635A17D00BFB6D0 /* Caravaggio_Fanciullo.jpg in Resources */,
-				60E06FBE1635A17D00BFB6D0 /* Cranach_AdamEve.jpg in Resources */,
-				60E06FBF1635A17D00BFB6D0 /* Holbein_Ambassadors.jpg in Resources */,
-				60E06FC01635A17D00BFB6D0 /* Manet_Dejeuner.jpg in Resources */,
 				60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */,
 				60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */,
 				604742521660E6A700329F03 /* Caravaggio_Fanciullo_croptop.png in Resources */,
@@ -534,6 +530,10 @@
 				60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */,
 				60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */,
 				60CDFE3C174981040057DB81 /* Hokusai_FiveFans_croptop.png in Resources */,
+				60650C04174A654000FC2281 /* Caravaggio_Fanciullo.png in Resources */,
+				60650C06174A67FD00FC2281 /* Cranach_AdamEve.png in Resources */,
+				60650C08174A6B0400FC2281 /* Holbein_Ambassadors.png in Resources */,
+				60650C0A174A708F00FC2281 /* Manet_Dejeuner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
