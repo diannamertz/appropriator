@@ -9,7 +9,7 @@
             <objects>
                 <viewController storyboardIdentifier="canvasViewController" title="canvasViewController" modalTransitionStyle="flipHorizontal" id="kQS-c5-iu3" customClass="CanvasViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bOH-ex-mMv" userLabel="MainView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zem-a8-u5Q" userLabel="ToolboxView">
@@ -225,7 +225,7 @@
             <objects>
                 <viewController storyboardIdentifier="infoController" title="infoController" id="5qk-db-Gc2" customClass="InfoController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="InfoController" id="b2N-6d-McU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Design &amp; Development © Dianna Mertz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="9yy-Rb-7am">
@@ -364,7 +364,7 @@
             <objects>
                 <viewController storyboardIdentifier="LicenseControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wku-Gc-6g4" customClass="LicenseController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oeJ-ql-p8o">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22z-pt-WpY">
@@ -448,7 +448,6 @@
                             <constraint firstItem="22z-pt-WpY" firstAttribute="leading" secondItem="oeJ-ql-p8o" secondAttribute="leading" type="default" id="H4D-IV-kk1"/>
                             <constraint firstItem="MEl-Zt-NOb" firstAttribute="leading" secondItem="oeJ-ql-p8o" secondAttribute="leading" type="default" id="ObO-OO-Mtu"/>
                             <constraint firstItem="MEl-Zt-NOb" firstAttribute="trailing" secondItem="oeJ-ql-p8o" secondAttribute="trailing" type="default" id="Qhd-6h-gHq"/>
-                            <constraint firstItem="MEl-Zt-NOb" firstAttribute="top" secondItem="oeJ-ql-p8o" secondAttribute="top" constant="50" id="S3x-nU-FRp"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -489,9 +488,57 @@
         <image name="info.png" width="295" height="153"/>
         <image name="pattern.png" width="640" height="1136"/>
     </resources>
+    <classes>
+        <class className="CanvasViewController" superclassName="ToolboxViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CanvasViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="camera:"/>
+                <relationship kind="action" name="cameraRoll:"/>
+                <relationship kind="action" name="useShareButton:"/>
+                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="cameraRollButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="patternView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tapMeImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="InfoController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressedLicenseButton:"/>
+                <relationship kind="action" name="sendEmailButtonPressed:"/>
+                <relationship kind="action" name="sendToDoubledi:"/>
+                <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="LicenseController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LicenseController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonWasPressed:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ToolboxViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="theNewPaintingView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="toolboxTopView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

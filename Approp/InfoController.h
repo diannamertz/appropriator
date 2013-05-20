@@ -19,9 +19,7 @@
 @interface InfoController : UIViewController
 
 @property (assign) id<InfoControllerDelegate> delegate;
-
 @property (assign) id<LicenseDelegate> licenseDelegate;
-
 @property (strong, nonatomic) IBOutlet UIView *infoView;
 
 -(IBAction)sendToDoubledi:(id)sender;

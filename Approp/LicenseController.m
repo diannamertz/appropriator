@@ -37,6 +37,16 @@
     self.titleLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:20];
 }
 
+-(void)dealloc
+{
+    self.delegate = nil;
+    self.backButton = nil;
+    self.paintingsArray = nil;
+    self.tableView = nil;
+    self.titleView = nil;
+    self.titleLabel = nil;
+}
+
 - (IBAction)backButtonWasPressed:(id)sender {
     [self.delegate dismissLicenseInfo];
 }

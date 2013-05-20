@@ -26,7 +26,9 @@
 {
     [super viewDidLoad];
     
-    self.canvasView.backgroundColor = [UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1];
+    //self.canvasView.backgroundColor = [UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1];
+    
+    //self.canvasView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
     
 	// add slide gesture recognizer to show underlying toolbox view
 	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
@@ -62,6 +64,8 @@
     self.cameraButton = nil;
     self.cameraRollButton = nil;
     self.excludedActivityTypes = nil;
+    self.patternView = nil;
+    self.tapMeImage = nil;
 }
 
 -(void)animateTapMeImage:(UIView *)view {

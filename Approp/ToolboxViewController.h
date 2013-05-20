@@ -37,8 +37,8 @@
 - (void)handleRotation:(UIRotationGestureRecognizer*)recognizer;
 - (void)handleLongPress:(UILongPressGestureRecognizer*)recognizer;
 - (void)returnAndSendMail;
--(void)fetchLicenseInfo;
--(void)dismissLicenseInfo;
+- (void)fetchLicenseInfo;
+- (void)dismissLicenseInfo;
 
 @end
 
