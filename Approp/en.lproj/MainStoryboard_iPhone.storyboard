@@ -408,9 +408,6 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MEl-Zt-NOb">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="518" id="YTa-t4-yBM"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LicenseCell" textLabel="Z54-lG-6AA" detailTextLabel="Q5v-eP-3i6" style="IBUITableViewCellStyleSubtitle" id="CJi-lb-h1H">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -443,11 +440,12 @@
                         <color key="backgroundColor" red="0.83529418710000003" green="0.34901961679999999" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="22z-pt-WpY" firstAttribute="trailing" secondItem="oeJ-ql-p8o" secondAttribute="trailing" type="default" id="3ju-3U-Z9I"/>
-                            <constraint firstItem="MEl-Zt-NOb" firstAttribute="bottom" secondItem="oeJ-ql-p8o" secondAttribute="bottom" priority="532" type="user" id="CA3-i5-pca"/>
+                            <constraint firstItem="MEl-Zt-NOb" firstAttribute="bottom" secondItem="oeJ-ql-p8o" secondAttribute="bottom" priority="336" type="user" id="CA3-i5-pca"/>
                             <constraint firstItem="22z-pt-WpY" firstAttribute="top" secondItem="oeJ-ql-p8o" secondAttribute="top" type="user" id="FXF-S9-ScJ"/>
                             <constraint firstItem="22z-pt-WpY" firstAttribute="leading" secondItem="oeJ-ql-p8o" secondAttribute="leading" type="default" id="H4D-IV-kk1"/>
                             <constraint firstItem="MEl-Zt-NOb" firstAttribute="leading" secondItem="oeJ-ql-p8o" secondAttribute="leading" type="default" id="ObO-OO-Mtu"/>
                             <constraint firstItem="MEl-Zt-NOb" firstAttribute="trailing" secondItem="oeJ-ql-p8o" secondAttribute="trailing" type="default" id="Qhd-6h-gHq"/>
+                            <constraint firstItem="MEl-Zt-NOb" firstAttribute="top" secondItem="oeJ-ql-p8o" secondAttribute="top" constant="50" type="user" id="ktR-st-Jek"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>

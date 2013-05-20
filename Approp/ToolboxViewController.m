@@ -84,6 +84,15 @@
     
     cell.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue: 245.0/255.0 alpha:1.0];
     
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    
+    UIView *bgColorView                 = [[UIView alloc] initWithFrame:cell.frame];
+    bgColorView.backgroundColor         = [UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1.0];
+    //setting some gradients here
+    //should not be relevant for the question
+    [cell setSelectedBackgroundView:bgColorView];
+    
+    
     [tableView setSeparatorColor:[UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue: 81.0/255.0 alpha:1.0]];
     
     // Call the info from the paintings.plist and distribute to cells
