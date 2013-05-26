@@ -155,22 +155,22 @@
 		608C6EC4172AB022001ACB6E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		60907AD9166BAF090080B835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		60921D3B1733E216007F34E8 /* icon-contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-contact.png"; sourceTree = "<group>"; };
-		609D0FB01632949700E08660 /* Approp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Approp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		609D0FB01632949700E08660 /* Appropriator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appropriator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609D0FB41632949700E08660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		609D0FB61632949700E08660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		609D0FB81632949800E08660 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		609D0FBC1632949800E08660 /* Approp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Approp-Info.plist"; sourceTree = "<group>"; };
+		609D0FBC1632949800E08660 /* Appropriator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Appropriator-Info.plist"; sourceTree = "<group>"; };
 		609D0FBE1632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		609D0FC01632949800E08660 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		609D0FC21632949800E08660 /* Approp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Approp-Prefix.pch"; sourceTree = "<group>"; };
+		609D0FC21632949800E08660 /* Appropriator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Appropriator-Prefix.pch"; sourceTree = "<group>"; };
 		609D0FC31632949800E08660 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		609D0FC41632949800E08660 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		609D0FCD1632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		609D0FD21632949800E08660 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		609D0FD31632949800E08660 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
-		609D0FDD1632949800E08660 /* AppropTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppropTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		609D0FDD1632949800E08660 /* AppropriatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppropriatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		609D0FDE1632949800E08660 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		609D0FE61632949800E08660 /* AppropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppropTests-Info.plist"; sourceTree = "<group>"; };
+		609D0FE61632949800E08660 /* AppropriatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppropriatorTests-Info.plist"; sourceTree = "<group>"; };
 		609D0FE81632949800E08660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		609D0FEA1632949800E08660 /* AppropTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppropTests.h; sourceTree = "<group>"; };
 		609D0FEB1632949800E08660 /* AppropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppropTests.m; sourceTree = "<group>"; };
@@ -254,8 +254,8 @@
 		609D0FB11632949700E08660 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				609D0FB01632949700E08660 /* Approp.app */,
-				609D0FDD1632949800E08660 /* AppropTests.octest */,
+				609D0FB01632949700E08660 /* Appropriator.app */,
+				609D0FDD1632949800E08660 /* AppropriatorTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,10 +303,10 @@
 		609D0FBB1632949800E08660 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				609D0FBC1632949800E08660 /* Approp-Info.plist */,
+				609D0FBC1632949800E08660 /* Appropriator-Info.plist */,
 				609D0FBD1632949800E08660 /* InfoPlist.strings */,
 				609D0FC01632949800E08660 /* main.m */,
-				609D0FC21632949800E08660 /* Approp-Prefix.pch */,
+				609D0FC21632949800E08660 /* Appropriator-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 		609D0FE51632949800E08660 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				609D0FE61632949800E08660 /* AppropTests-Info.plist */,
+				609D0FE61632949800E08660 /* AppropriatorTests-Info.plist */,
 				609D0FE71632949800E08660 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -403,9 +403,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		609D0FAF1632949700E08660 /* Approp */ = {
+		609D0FAF1632949700E08660 /* Appropriator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 609D0FEF1632949800E08660 /* Build configuration list for PBXNativeTarget "Approp" */;
+			buildConfigurationList = 609D0FEF1632949800E08660 /* Build configuration list for PBXNativeTarget "Appropriator" */;
 			buildPhases = (
 				609D0FAC1632949700E08660 /* Sources */,
 				609D0FAD1632949700E08660 /* Frameworks */,
@@ -416,14 +416,14 @@
 			);
 			dependencies = (
 			);
-			name = Approp;
+			name = Appropriator;
 			productName = Approp;
-			productReference = 609D0FB01632949700E08660 /* Approp.app */;
+			productReference = 609D0FB01632949700E08660 /* Appropriator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		609D0FDC1632949800E08660 /* AppropTests */ = {
+		609D0FDC1632949800E08660 /* AppropriatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 609D0FF21632949800E08660 /* Build configuration list for PBXNativeTarget "AppropTests" */;
+			buildConfigurationList = 609D0FF21632949800E08660 /* Build configuration list for PBXNativeTarget "AppropriatorTests" */;
 			buildPhases = (
 				609D0FD81632949800E08660 /* Sources */,
 				609D0FD91632949800E08660 /* Frameworks */,
@@ -435,9 +435,9 @@
 			dependencies = (
 				609D0FE31632949800E08660 /* PBXTargetDependency */,
 			);
-			name = AppropTests;
+			name = AppropriatorTests;
 			productName = AppropTests;
-			productReference = 609D0FDD1632949800E08660 /* AppropTests.octest */;
+			productReference = 609D0FDD1632949800E08660 /* AppropriatorTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -450,7 +450,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Dianna Mertz";
 			};
-			buildConfigurationList = 609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Approp" */;
+			buildConfigurationList = 609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Appropriator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -462,8 +462,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				609D0FAF1632949700E08660 /* Approp */,
-				609D0FDC1632949800E08660 /* AppropTests */,
+				609D0FAF1632949700E08660 /* Appropriator */,
+				609D0FDC1632949800E08660 /* AppropriatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -610,7 +610,7 @@
 /* Begin PBXTargetDependency section */
 		609D0FE31632949800E08660 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 609D0FAF1632949700E08660 /* Approp */;
+			target = 609D0FAF1632949700E08660 /* Appropriator */;
 			targetProxy = 609D0FE21632949800E08660 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -699,14 +699,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
-				INFOPLIST_FILE = "Approp/Approp-Info.plist";
+				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
+				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Appropriator;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
@@ -717,14 +717,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
-				INFOPLIST_FILE = "Approp/Approp-Info.plist";
+				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
+				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Appropriator;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
@@ -741,8 +741,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
-				INFOPLIST_FILE = "AppropTests/AppropTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AppropTests/AppropriatorTests-Info.plist";
+				PRODUCT_NAME = AppropriatorTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -758,8 +758,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Approp-Prefix.pch";
-				INFOPLIST_FILE = "AppropTests/AppropTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AppropTests/AppropriatorTests-Info.plist";
+				PRODUCT_NAME = AppropriatorTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -768,7 +768,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Approp" */ = {
+		609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Appropriator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				609D0FED1632949800E08660 /* Debug */,
@@ -777,7 +777,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		609D0FEF1632949800E08660 /* Build configuration list for PBXNativeTarget "Approp" */ = {
+		609D0FEF1632949800E08660 /* Build configuration list for PBXNativeTarget "Appropriator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				609D0FF01632949800E08660 /* Debug */,
@@ -786,7 +786,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		609D0FF21632949800E08660 /* Build configuration list for PBXNativeTarget "AppropTests" */ = {
+		609D0FF21632949800E08660 /* Build configuration list for PBXNativeTarget "AppropriatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				609D0FF31632949800E08660 /* Debug */,
