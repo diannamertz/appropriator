@@ -16,7 +16,6 @@
 		60045D0D1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D0B1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png */; };
 		60045D0E1748F60000A4990F /* ToulouseLautrec_TheDance.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */; };
 		6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017CFD11644256400F9F4FB /* ToolboxViewController.m */; };
-		602D297D17400C65006475A9 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 602D297C17400C65006475A9 /* pattern.png */; };
 		602D298017401F72006475A9 /* LicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D297F17401F72006475A9 /* LicenseController.m */; };
 		6041F4D51729B34000C999AF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6041F4D21729B34000C999AF /* Default-568h@2x.png */; };
 		6041F4D61729B34000C999AF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6041F4D31729B34000C999AF /* Default.png */; };
@@ -34,8 +33,6 @@
 		604D7F391747752B00BCAB40 /* Bosch_TheGarden.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F371747752B00BCAB40 /* Bosch_TheGarden.png */; };
 		604D7F3C174792E400BCAB40 /* Durer_Lobster_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3A174792E400BCAB40 /* Durer_Lobster_croptop.png */; };
 		604D7F3D174792E400BCAB40 /* Durer_Lobster.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3B174792E400BCAB40 /* Durer_Lobster.png */; };
-		604D7F4017479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */; };
-		604D7F4117479B0000BCAB40 /* Malevich_AeroplaneFlying.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */; };
 		604D7F441747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F421747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png */; };
 		604D7F451747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */; };
 		6052979F1727E8A900B832AC /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6052979E1727E8A900B832AC /* InfoController.m */; };
@@ -43,6 +40,8 @@
 		60650C06174A67FD00FC2281 /* Cranach_AdamEve.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C05174A67FD00FC2281 /* Cranach_AdamEve.png */; };
 		60650C08174A6B0400FC2281 /* Holbein_Ambassadors.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C07174A6B0400FC2281 /* Holbein_Ambassadors.png */; };
 		60650C0A174A708F00FC2281 /* Manet_Dejeuner.png in Resources */ = {isa = PBXBuildFile; fileRef = 60650C09174A708F00FC2281 /* Manet_Dejeuner.png */; };
+		6065970E17528AE40072B8D6 /* Rousseau_Mandrill_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6065970C17528AE30072B8D6 /* Rousseau_Mandrill_croptop.png */; };
+		6065970F17528AE40072B8D6 /* Rousseau_Mandrill.png in Resources */ = {isa = PBXBuildFile; fileRef = 6065970D17528AE30072B8D6 /* Rousseau_Mandrill.png */; };
 		60760FA51742E3E9007B728E /* Caravaggio_Medusa.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */; };
 		60760FA81742E5B4007B728E /* Caravaggio_Medusa_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */; };
 		608A54EF17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */; };
@@ -73,13 +72,15 @@
 		609D1002163298F900E08660 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D1001163298F900E08660 /* Security.framework */; };
 		609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D10031632990500E08660 /* SystemConfiguration.framework */; };
 		60C5D620172EC5F000D85EFD /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */; };
-		60C9EA30173F99D80080E9FA /* front_center.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C9EA2F173F99D80080E9FA /* front_center.png */; };
 		60CDFE35174940680057DB81 /* Rozanova_Room_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */; };
 		60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE34174940680057DB81 /* Rozanova_Room.png */; };
 		60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */; };
 		60CDFE3C174981040057DB81 /* Hokusai_FiveFans_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */; };
 		60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */; };
 		60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FBA1635A17D00BFB6D0 /* paintings.plist */; };
+		60EB3383174D381A00F3F600 /* pattern-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EB3380174D381A00F3F600 /* pattern-568@2x.png */; };
+		60EB3384174D381A00F3F600 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EB3381174D381A00F3F600 /* pattern.png */; };
+		60EB3385174D381A00F3F600 /* pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EB3382174D381A00F3F600 /* pattern@2x.png */; };
 		60EE9DB61743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */; };
 		60EE9DB71743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */; };
 		60EE9DBA1743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */; };
@@ -117,7 +118,6 @@
 		60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToulouseLautrec_TheDance.png; sourceTree = "<group>"; };
 		6017CFD01644256400F9F4FB /* ToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxViewController.h; sourceTree = "<group>"; };
 		6017CFD11644256400F9F4FB /* ToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxViewController.m; sourceTree = "<group>"; };
-		602D297C17400C65006475A9 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
 		602D297E17401F72006475A9 /* LicenseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseController.h; sourceTree = "<group>"; };
 		602D297F17401F72006475A9 /* LicenseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseController.m; sourceTree = "<group>"; };
 		6041F4D21729B34000C999AF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -136,8 +136,6 @@
 		604D7F371747752B00BCAB40 /* Bosch_TheGarden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bosch_TheGarden.png; sourceTree = "<group>"; };
 		604D7F3A174792E400BCAB40 /* Durer_Lobster_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Durer_Lobster_croptop.png; sourceTree = "<group>"; };
 		604D7F3B174792E400BCAB40 /* Durer_Lobster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Durer_Lobster.png; sourceTree = "<group>"; };
-		604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Malevich_AeroplaneFlying_croptop.png; sourceTree = "<group>"; };
-		604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Malevich_AeroplaneFlying.png; sourceTree = "<group>"; };
 		604D7F421747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blake_Nebuchadnezzar_croptop.png; sourceTree = "<group>"; };
 		604D7F431747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blake_Nebuchadnezzar.png; sourceTree = "<group>"; };
 		6052979D1727E8A800B832AC /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
@@ -146,6 +144,8 @@
 		60650C05174A67FD00FC2281 /* Cranach_AdamEve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cranach_AdamEve.png; sourceTree = "<group>"; };
 		60650C07174A6B0400FC2281 /* Holbein_Ambassadors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holbein_Ambassadors.png; sourceTree = "<group>"; };
 		60650C09174A708F00FC2281 /* Manet_Dejeuner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manet_Dejeuner.png; sourceTree = "<group>"; };
+		6065970C17528AE30072B8D6 /* Rousseau_Mandrill_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rousseau_Mandrill_croptop.png; sourceTree = "<group>"; };
+		6065970D17528AE30072B8D6 /* Rousseau_Mandrill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rousseau_Mandrill.png; sourceTree = "<group>"; };
 		60760FA31742E3E9007B728E /* Caravaggio_Medusa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa.png; sourceTree = "<group>"; };
 		60760FA71742E5B4007B728E /* Caravaggio_Medusa_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caravaggio_Medusa_croptop.png; sourceTree = "<group>"; };
 		608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeNainBrothers_AllegoryOfVictory_croptop.png; sourceTree = "<group>"; };
@@ -183,13 +183,15 @@
 		609D10031632990500E08660 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		60C5D61E172EC5F000D85EFD /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
-		60C9EA2F173F99D80080E9FA /* front_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = front_center.png; sourceTree = "<group>"; };
 		60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room_croptop.png; sourceTree = "<group>"; };
 		60CDFE34174940680057DB81 /* Rozanova_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room.png; sourceTree = "<group>"; };
 		60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans.png; sourceTree = "<group>"; };
 		60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans_croptop.png; sourceTree = "<group>"; };
 		60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam.png; sourceTree = "<group>"; };
 		60E06FBA1635A17D00BFB6D0 /* paintings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paintings.plist; sourceTree = "<group>"; };
+		60EB3380174D381A00F3F600 /* pattern-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pattern-568@2x.png"; sourceTree = "<group>"; };
+		60EB3381174D381A00F3F600 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
+		60EB3382174D381A00F3F600 /* pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pattern@2x.png"; sourceTree = "<group>"; };
 		60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png; sourceTree = "<group>"; };
 		60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png"; sourceTree = "<group>"; };
 		60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer_croptop.png; sourceTree = "<group>"; };
@@ -348,7 +350,6 @@
 				6041F4D41729B34000C999AF /* Default@2x.png */,
 				604D7F3A174792E400BCAB40 /* Durer_Lobster_croptop.png */,
 				604D7F3B174792E400BCAB40 /* Durer_Lobster.png */,
-				60C9EA2F173F99D80080E9FA /* front_center.png */,
 				60FB549917451F1600A82CEE /* Gerome_Anacreon_croptop.png */,
 				60FB549A17451F1600A82CEE /* Gerome_Anacreon.png */,
 				60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */,
@@ -367,8 +368,6 @@
 				60FB54921744D4CC00A82CEE /* Kunisada_KanadehonChūshingura.png */,
 				608A54ED17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png */,
 				608A54EE17463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png */,
-				604D7F3E17479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png */,
-				604D7F3F17479B0000BCAB40 /* Malevich_AeroplaneFlying.png */,
 				60650C09174A708F00FC2281 /* Manet_Dejeuner.png */,
 				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
 				60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */,
@@ -384,7 +383,11 @@
 				608A54F917465FA900A5E746 /* North_Flor.png */,
 				608A54F5174649B700A5E746 /* North_Flor_croptop.png */,
 				60E06FBA1635A17D00BFB6D0 /* paintings.plist */,
-				602D297C17400C65006475A9 /* pattern.png */,
+				60EB3380174D381A00F3F600 /* pattern-568@2x.png */,
+				60EB3381174D381A00F3F600 /* pattern.png */,
+				60EB3382174D381A00F3F600 /* pattern@2x.png */,
+				6065970C17528AE30072B8D6 /* Rousseau_Mandrill_croptop.png */,
+				6065970D17528AE30072B8D6 /* Rousseau_Mandrill.png */,
 				60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */,
 				60CDFE34174940680057DB81 /* Rozanova_Room.png */,
 				60045D031748BF4C00A4990F /* Titian_Sisyphus_croptop.png */,
@@ -488,8 +491,6 @@
 				6041F4D71729B34000C999AF /* Default@2x.png in Resources */,
 				608C6EC5172AB022001ACB6E /* info.png in Resources */,
 				60921D3C1733E216007F34E8 /* icon-contact.png in Resources */,
-				60C9EA30173F99D80080E9FA /* front_center.png in Resources */,
-				602D297D17400C65006475A9 /* pattern.png in Resources */,
 				60760FA51742E3E9007B728E /* Caravaggio_Medusa.png in Resources */,
 				60760FA81742E5B4007B728E /* Caravaggio_Medusa_croptop.png in Resources */,
 				60EE9DB61743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png in Resources */,
@@ -514,8 +515,6 @@
 				604D7F391747752B00BCAB40 /* Bosch_TheGarden.png in Resources */,
 				604D7F3C174792E400BCAB40 /* Durer_Lobster_croptop.png in Resources */,
 				604D7F3D174792E400BCAB40 /* Durer_Lobster.png in Resources */,
-				604D7F4017479B0000BCAB40 /* Malevich_AeroplaneFlying_croptop.png in Resources */,
-				604D7F4117479B0000BCAB40 /* Malevich_AeroplaneFlying.png in Resources */,
 				604D7F441747BF8B00BCAB40 /* Blake_Nebuchadnezzar_croptop.png in Resources */,
 				604D7F451747BF8B00BCAB40 /* Blake_Nebuchadnezzar.png in Resources */,
 				60045D011748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png in Resources */,
@@ -534,6 +533,11 @@
 				60650C06174A67FD00FC2281 /* Cranach_AdamEve.png in Resources */,
 				60650C08174A6B0400FC2281 /* Holbein_Ambassadors.png in Resources */,
 				60650C0A174A708F00FC2281 /* Manet_Dejeuner.png in Resources */,
+				60EB3383174D381A00F3F600 /* pattern-568@2x.png in Resources */,
+				60EB3384174D381A00F3F600 /* pattern.png in Resources */,
+				60EB3385174D381A00F3F600 /* pattern@2x.png in Resources */,
+				6065970E17528AE40072B8D6 /* Rousseau_Mandrill_croptop.png in Resources */,
+				6065970F17528AE40072B8D6 /* Rousseau_Mandrill.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

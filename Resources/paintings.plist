@@ -148,18 +148,6 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Aeroplane Flying</string>
-		<key>image_top</key>
-		<string>Malevich_AeroplaneFlying_croptop.png</string>
-		<key>link</key>
-		<string>http://www.wikipaintings.org/en/kazimir-malevich/aeroplane-flying-1915</string>
-		<key>name</key>
-		<string>Kazimir Malevich</string>
-		<key>image</key>
-		<string>Malevich_AeroplaneFlying.png</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>Zebra</string>
 		<key>image_top</key>
 		<string>Mansur_Zebra_croptop.png</string>
@@ -229,6 +217,18 @@
 		<string>Marianne North</string>
 		<key>image</key>
 		<string>North_Flor.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mandrill in the Jungle</string>
+		<key>image_top</key>
+		<string>Rousseau_Mandrill_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/henri-rousseau/mandrill-in-the-jungle-1909#close</string>
+		<key>name</key>
+		<string>Henri Rousseau</string>
+		<key>image</key>
+		<string>Rousseau_Mandrill.png</string>
 	</dict>
 	<dict>
 		<key>title</key>

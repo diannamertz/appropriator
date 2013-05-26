@@ -48,7 +48,6 @@
     self.toolboxTopView = nil;
 }
 
-
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -59,7 +58,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
     return self.paintingsArray.count;
 }
 
@@ -86,10 +84,8 @@
     
     cell.selectionStyle = UITableViewCellSelectionStyleGray;
     
-    UIView *bgColorView                 = [[UIView alloc] initWithFrame:cell.frame];
-    bgColorView.backgroundColor         = [UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1.0];
-    //setting some gradients here
-    //should not be relevant for the question
+    UIView *bgColorView = [[UIView alloc] initWithFrame:cell.frame];
+    bgColorView.backgroundColor = [UIColor colorWithRed:212.0/255.0 green:212.0/255.0 blue:212.0/255.0 alpha:1.0];
     [cell setSelectedBackgroundView:bgColorView];
     
     

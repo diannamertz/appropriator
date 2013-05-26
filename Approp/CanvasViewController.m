@@ -26,9 +26,13 @@
 {
     [super viewDidLoad];
     
-    //self.canvasView.backgroundColor = [UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1];
-    
-    //self.canvasView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    if (IS_IPHONE5) {
+        self.patternView.image = [UIImage imageNamed:@"pattern-568@2x.png"];
+        self.patternView.contentMode = UIViewContentModeScaleAspectFit;
+    } else {
+        self.patternView.image = [UIImage imageNamed:@"pattern@2x.png"];
+        self.patternView.contentMode = UIViewContentModeScaleAspectFit;
+    }
     
 	// add slide gesture recognizer to show underlying toolbox view
 	UITapGestureRecognizer *slideCanvasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideCanvas:)];
@@ -48,11 +52,8 @@
     
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
-    
-    [self animateTapMeImage:self.tapMeImage];
 }
 
-    
 - (void)dealloc {
     self.infoButton = nil;
     self.canvasView = nil;
@@ -65,23 +66,6 @@
     self.cameraRollButton = nil;
     self.excludedActivityTypes = nil;
     self.patternView = nil;
-    self.tapMeImage = nil;
-}
-
--(void)animateTapMeImage:(UIView *)view {
-    [UIView animateWithDuration:1.0
-                          delay:0.0
-                        options:UIViewAnimationCurveEaseInOut 
-                     animations:(void (^)(void)) ^{
-                                self.tapMeImage.transform=CGAffineTransformMakeScale(1.2, 1.2);
-    }
-                     completion:^(BOOL finished){
-                         [UIView animateWithDuration:2.0
-                                          animations:^(void) {
-                                              self.tapMeImage.transform=CGAffineTransformMakeScale(1.0, 1.0);
-                                          }];
-    
-                     }];
 }
 
 - (void)slideCanvas:(UITapGestureRecognizer*)tapGesture {
