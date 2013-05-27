@@ -467,7 +467,7 @@
 		609D0FA71632949700E08660 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = Approp;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Dianna Mertz";
 			};
