@@ -206,7 +206,7 @@
         sharingImage = [sharingImage imageRotatedByDegrees:-90.0];
     }  
     
-    self.sharingText = @"Check out what I made with Appropriator!";
+    self.sharingText = @"Check out what I made with #Appropriator !";
     
     NSArray *activityItems = [[NSArray alloc] init];
     

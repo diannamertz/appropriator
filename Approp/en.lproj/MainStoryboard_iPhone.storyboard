@@ -475,53 +475,6 @@
         <image name="icon-contact.png" width="512" height="512"/>
         <image name="info.png" width="295" height="153"/>
     </resources>
-    <classes>
-        <class className="CanvasViewController" superclassName="ToolboxViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CanvasViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="camera:"/>
-                <relationship kind="action" name="cameraRoll:"/>
-                <relationship kind="action" name="useShareButton:"/>
-                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cameraRollButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="patternView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="InfoController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoController.h"/>
-            <relationships>
-                <relationship kind="action" name="pressedLicenseButton:"/>
-                <relationship kind="action" name="sendEmailButtonPressed:"/>
-                <relationship kind="action" name="sendToDoubledi:"/>
-                <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="LicenseController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LicenseController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButtonWasPressed:"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ToolboxViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ToolboxViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="theNewPaintingView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="toolboxTopView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

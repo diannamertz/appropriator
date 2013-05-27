@@ -72,6 +72,13 @@
 		609D1002163298F900E08660 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D1001163298F900E08660 /* Security.framework */; };
 		609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D10031632990500E08660 /* SystemConfiguration.framework */; };
 		60C5D620172EC5F000D85EFD /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */; };
+		60C5EFEA175365E3004F30CB /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFE6175365E3004F30CB /* Icon-Small.png */; };
+		60C5EFEB175365E3004F30CB /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFE7175365E3004F30CB /* Icon-Small@2x.png */; };
+		60C5EFEC175365E3004F30CB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFE8175365E3004F30CB /* Icon.png */; };
+		60C5EFED175365E3004F30CB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFE9175365E3004F30CB /* Icon@2x.png */; };
+		60C5EFEF1753662E004F30CB /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFEE1753662E004F30CB /* iTunesArtwork */; };
+		60C5EFF1175368C1004F30CB /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFF0175368C1004F30CB /* Icon-72.png */; };
+		60C5EFF3175368D0004F30CB /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFF2175368D0004F30CB /* Icon-Small-50.png */; };
 		60CDFE35174940680057DB81 /* Rozanova_Room_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */; };
 		60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE34174940680057DB81 /* Rozanova_Room.png */; };
 		60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */; };
@@ -183,6 +190,13 @@
 		609D10031632990500E08660 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		60C5D61E172EC5F000D85EFD /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		60C5EFE6175365E3004F30CB /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		60C5EFE7175365E3004F30CB /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		60C5EFE8175365E3004F30CB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		60C5EFE9175365E3004F30CB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		60C5EFEE1753662E004F30CB /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		60C5EFF0175368C1004F30CB /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		60C5EFF2175368D0004F30CB /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room_croptop.png; sourceTree = "<group>"; };
 		60CDFE34174940680057DB81 /* Rozanova_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room.png; sourceTree = "<group>"; };
 		60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans.png; sourceTree = "<group>"; };
@@ -362,6 +376,13 @@
 				604624EE17257FCB00D00179 /* icon-info.png */,
 				604624E71725539900D00179 /* icon-library.png */,
 				604624E91725539900D00179 /* icon-share.png */,
+				60C5EFE6175365E3004F30CB /* Icon-Small.png */,
+				60C5EFF2175368D0004F30CB /* Icon-Small-50.png */,
+				60C5EFF0175368C1004F30CB /* Icon-72.png */,
+				60C5EFE7175365E3004F30CB /* Icon-Small@2x.png */,
+				60C5EFE8175365E3004F30CB /* Icon.png */,
+				60C5EFE9175365E3004F30CB /* Icon@2x.png */,
+				60C5EFEE1753662E004F30CB /* iTunesArtwork */,
 				60FB549D17453C4600A82CEE /* Klimt_LifeAndDeath_croptop.png */,
 				60FB549E17453C4600A82CEE /* Klimt_LifeAndDeath.png */,
 				60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */,
@@ -372,10 +393,6 @@
 				604742501660E6A700329F03 /* Manet_Dejeuner_croptop.png */,
 				60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */,
 				60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */,
-				60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */,
-				60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */,
-				60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */,
-				60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */,
 				60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */,
 				604742511660E6A700329F03 /* Michelangelo_CreationAdam_croptop.png */,
 				60045CFF1748059600A4990F /* Monet_StillLifewithPearsandGrapes_croptop.png */,
@@ -390,6 +407,10 @@
 				6065970D17528AE30072B8D6 /* Rousseau_Mandrill.png */,
 				60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */,
 				60CDFE34174940680057DB81 /* Rozanova_Room.png */,
+				60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */,
+				60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */,
+				60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */,
+				60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */,
 				60045D031748BF4C00A4990F /* Titian_Sisyphus_croptop.png */,
 				60045D041748BF4C00A4990F /* Titian_Sisyphus.png */,
 				60045D0B1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png */,
@@ -538,6 +559,13 @@
 				60EB3385174D381A00F3F600 /* pattern@2x.png in Resources */,
 				6065970E17528AE40072B8D6 /* Rousseau_Mandrill_croptop.png in Resources */,
 				6065970F17528AE40072B8D6 /* Rousseau_Mandrill.png in Resources */,
+				60C5EFEA175365E3004F30CB /* Icon-Small.png in Resources */,
+				60C5EFEB175365E3004F30CB /* Icon-Small@2x.png in Resources */,
+				60C5EFEC175365E3004F30CB /* Icon.png in Resources */,
+				60C5EFED175365E3004F30CB /* Icon@2x.png in Resources */,
+				60C5EFEF1753662E004F30CB /* iTunesArtwork in Resources */,
+				60C5EFF1175368C1004F30CB /* Icon-72.png in Resources */,
+				60C5EFF3175368D0004F30CB /* Icon-Small-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
