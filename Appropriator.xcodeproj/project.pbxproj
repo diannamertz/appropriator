@@ -210,6 +210,7 @@
 		60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png"; sourceTree = "<group>"; };
 		60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer_croptop.png; sourceTree = "<group>"; };
 		60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer.png; sourceTree = "<group>"; };
+		60F4C1C11754BCA80047C43A /* Appropriator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Appropriator.entitlements; sourceTree = "<group>"; };
 		60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mansur_Zebra_croptop.png; sourceTree = "<group>"; };
 		60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mansur_Zebra.png; sourceTree = "<group>"; };
 		60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kunisada_KanadehonChūshingura_croptop.png"; sourceTree = "<group>"; };
@@ -257,6 +258,7 @@
 		609D0FA51632949700E08660 = {
 			isa = PBXGroup;
 			children = (
+				60F4C1C11754BCA80047C43A /* Appropriator.entitlements */,
 				609D0FBA1632949800E08660 /* Approp */,
 				609D0FE41632949800E08660 /* AppropTests */,
 				609D0FB31632949700E08660 /* Frameworks */,
@@ -726,6 +728,7 @@
 		609D0FF01632949800E08660 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Appropriator.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
@@ -744,6 +747,7 @@
 		609D0FF11632949800E08660 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Appropriator.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
