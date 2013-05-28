@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppStoreFileSize</key>
+	<integer>27498454</integer>
+	<key>AppStoreFileSizeValid</key>
+	<true/>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Appropriator.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.double.Approp</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>1.0</string>
+		<key>IconPaths</key>
+		<array>
+			<string>Applications/Appropriator.app/Icon.png</string>
+			<string>Applications/Appropriator.app/Icon@2x.png</string>
+			<string>Applications/Appropriator.app/Icon-72.png</string>
+			<string>Applications/Appropriator.app/Icon-Small-50.png</string>
+			<string>Applications/Appropriator.app/Icon-Small.png</string>
+			<string>Applications/Appropriator.app/Icon-Small@2x.png</string>
+		</array>
+		<key>SigningIdentity</key>
+		<string>iPhone Developer: Dianna Mertz (64QR4676M7)</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2013-05-28T12:48:24Z</date>
+	<key>Name</key>
+	<string>Approp</string>
+	<key>SchemeName</key>
+	<string>Approp</string>
+</dict>
+</plist>

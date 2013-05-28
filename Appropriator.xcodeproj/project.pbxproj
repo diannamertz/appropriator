@@ -210,7 +210,7 @@
 		60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png"; sourceTree = "<group>"; };
 		60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer_croptop.png; sourceTree = "<group>"; };
 		60EE9DB91743D59200DFA86F /* Shiele_PortraitFriederikeBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shiele_PortraitFriederikeBeer.png; sourceTree = "<group>"; };
-		60F4C1C11754BCA80047C43A /* Appropriator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Appropriator.entitlements; sourceTree = "<group>"; };
+		60F4C1C11754BCA80047C43A /* Appropriator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Appropriator.entitlements; sourceTree = SOURCE_ROOT; };
 		60FB548D1744D4BF00A82CEE /* Mansur_Zebra_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mansur_Zebra_croptop.png; sourceTree = "<group>"; };
 		60FB548E1744D4BF00A82CEE /* Mansur_Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mansur_Zebra.png; sourceTree = "<group>"; };
 		60FB54911744D4CC00A82CEE /* Kunisada_KanadehonChūshingura_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kunisada_KanadehonChūshingura_croptop.png"; sourceTree = "<group>"; };
@@ -258,7 +258,6 @@
 		609D0FA51632949700E08660 = {
 			isa = PBXGroup;
 			children = (
-				60F4C1C11754BCA80047C43A /* Appropriator.entitlements */,
 				609D0FBA1632949800E08660 /* Approp */,
 				609D0FE41632949800E08660 /* AppropTests */,
 				609D0FB31632949700E08660 /* Frameworks */,
@@ -323,6 +322,7 @@
 				609D0FBD1632949800E08660 /* InfoPlist.strings */,
 				609D0FC01632949800E08660 /* main.m */,
 				609D0FC21632949800E08660 /* Appropriator-Prefix.pch */,
+				60F4C1C11754BCA80047C43A /* Appropriator.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -682,6 +682,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dianna Mertz (64QR4676M7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -697,6 +698,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "75500767-4FBC-4BED-8557-FFAA8330B928";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -711,6 +713,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dianna Mertz (64QR4676M7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -719,6 +722,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "75500767-4FBC-4BED-8557-FFAA8330B928";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -748,6 +752,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Appropriator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dianna Mertz (P8983SLT4Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dianna Mertz (P8983SLT4Y)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
@@ -757,6 +763,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Appropriator;
+				PROVISIONING_PROFILE = "2C2D66DC-EE4F-497A-BB7C-0711069DF884";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C2D66DC-EE4F-497A-BB7C-0711069DF884";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
