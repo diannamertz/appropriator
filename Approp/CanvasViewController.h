@@ -29,13 +29,13 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIView *canvasView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UIButton *shareButton;
-@property (nonatomic) NSString *sharingText;
-@property (nonatomic) UIImage *rotateImage;
+@property (nonatomic, weak) NSString *sharingText;
+@property (nonatomic, weak) UIImage *rotateImage;
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
 @property (nonatomic, copy) NSArray *excludedActivityTypes;
-@property (weak, nonatomic) IBOutlet UIImageView *patternView;
+@property (nonatomic, weak) IBOutlet UIImageView *patternView;
 
 - (IBAction)camera:(id)sender;
 - (IBAction)cameraRoll:(id)sender;

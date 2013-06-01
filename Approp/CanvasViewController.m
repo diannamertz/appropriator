@@ -52,6 +52,7 @@
     
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
+    [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
 }
 
 - (void)dealloc {
