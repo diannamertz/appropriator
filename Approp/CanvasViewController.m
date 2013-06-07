@@ -15,8 +15,6 @@
 
 @implementation CanvasViewController
 
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -61,8 +59,6 @@
     self.imageView = nil;
     self.shareButton = nil;
     self.sharingText = nil;
-    self.rotateImage = nil;
-    self.popover = nil;
     self.cameraButton = nil;
     self.cameraRollButton = nil;
     self.excludedActivityTypes = nil;
@@ -75,35 +71,35 @@
     
     CGRect canvasRight = self.canvasView.frame;
     canvasRight.origin.x = self.canvasView.bounds.size.width - 40;
-
+    
     if (self.canvasView.center.x == super.view.center.x) {
         
-    [UIView animateWithDuration:0.5
-                          delay:0.0
-                        options: UIViewAnimationCurveEaseOut
-                     animations:^{
-                         self.canvasView.frame = canvasRight;
-                         
-                         UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.canvasView.bounds];
-                         self.canvasView.layer.masksToBounds = NO;
-                         self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
-                         self.canvasView.layer.shadowOffset = CGSizeMake(-2.0f, 2.0f);
-                         self.canvasView.layer.shadowOpacity = 0.6f;
-                         self.canvasView.layer.shadowPath = shadowPath.CGPath;
-                         
-                     }
-                     completion:^(BOOL finished){
-                     }];
+        [UIView animateWithDuration:0.5
+                              delay:0.0
+                            options: UIViewAnimationCurveEaseOut
+                         animations:^{
+                             self.canvasView.frame = canvasRight;
+                             
+                             UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.canvasView.bounds];
+                             self.canvasView.layer.masksToBounds = NO;
+                             self.canvasView.layer.shadowColor = [UIColor blackColor].CGColor;
+                             self.canvasView.layer.shadowOffset = CGSizeMake(-2.0f, 2.0f);
+                             self.canvasView.layer.shadowOpacity = 0.6f;
+                             self.canvasView.layer.shadowPath = shadowPath.CGPath;
+                             
+                         }
+                         completion:^(BOOL finished){
+                         }];
     } else {
-     [UIView animateWithDuration:0.5
-                           delay:0.0
-                         options: UIViewAnimationCurveEaseOut
-                      animations:^{
-                          self.canvasView.center = canvasCenter;
-                      }
-                      completion:^(BOOL finished){
-                      }];
-    }    
+        [UIView animateWithDuration:0.5
+                              delay:0.0
+                            options: UIViewAnimationCurveEaseOut
+                         animations:^{
+                             self.canvasView.center = canvasCenter;
+                         }
+                         completion:^(BOOL finished){
+                         }];
+    }
 }
 
 #pragma mark - Camera and Photo Buttons
@@ -124,28 +120,28 @@
 
 - (IBAction)cameraRoll:(id)sender;
 {
-        if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary])
-        {
-            UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-            imagePicker.delegate = self;
-            imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-            imagePicker.allowsEditing = NO;
-            [self presentViewController:imagePicker animated:YES completion:nil];
-            newMedia = NO;
-        } else if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
-            UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-            imagePicker.delegate = self;
-            imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-            imagePicker.allowsEditing = NO;
-            [self presentViewController:imagePicker animated:YES completion:nil];
-            newMedia = NO;
+    if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypePhotoLibrary])
+    {
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        imagePicker.delegate = self;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        imagePicker.allowsEditing = NO;
+        [self presentViewController:imagePicker animated:YES completion:nil];
+        newMedia = NO;
+    } else if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        imagePicker.delegate = self;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        imagePicker.allowsEditing = NO;
+        [self presentViewController:imagePicker animated:YES completion:nil];
+        newMedia = NO;
     }
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
-   
+    
     // Keep aspect ration in tact between iPhone and iPad
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
@@ -158,7 +154,7 @@
                                        self,
                                        @selector(image:finishedSavingWithError:contextInfo:),
                                        nil);
-
+    
     portraitImage = [portraitImage fixOrientation];
     
     // But if not portrait mode, turn to landscape
@@ -184,28 +180,38 @@
 }
 
 #pragma mark - Share Button
+// from http://stackoverflow.com/questions/11104042/how-to-get-a-rotated-zoomed-and-panned-image-from-an-uiimageview-at-its-full-re
 
 - (UIImage*)screenshot
 {
-    CGRect rect = [self.canvasView bounds];
+    float effectiveScale = 0.5;
+    if (self.imageView.image == portraitImage) {
+        effectiveScale = 0.6;
+    }
     
-    UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
+    CGSize captureSize = CGSizeMake((self.canvasView.bounds.size.width / effectiveScale), (self.canvasView.bounds.size.height / effectiveScale));
+    
+    NSLog(@"effectiveScale = %0.2f, captureSize = %@", effectiveScale, NSStringFromCGSize(captureSize));
+    
+    UIGraphicsBeginImageContextWithOptions(captureSize, YES, 0.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextScaleCTM(context, 1/effectiveScale, 1/effectiveScale);
     [self.canvasView.layer renderInContext:context];
-    UIImage *imageToShare = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    return imageToShare;
+    
+    return img;
 }
 
 - (IBAction) useShareButton: (id) sender
 {
     sharingImage = self.screenshot;
-
+    
     if (self.imageView.image == NULL) {
         
     } else if (self.imageView.image == landscapeImage) {
-        sharingImage = [sharingImage imageRotatedByDegrees:-90.0];
-    }  
+        sharingImage = [self.screenshot imageRotatedByDegrees:-90.0];
+    }
     
     self.sharingText = @"Check out what I made with #Appropriator !";
     

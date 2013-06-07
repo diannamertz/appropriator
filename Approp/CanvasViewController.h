@@ -30,8 +30,6 @@ UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UIButton *shareButton;
 @property (nonatomic, weak) NSString *sharingText;
-@property (nonatomic, weak) UIImage *rotateImage;
-@property (nonatomic, strong) UIPopoverController *popover;
 @property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 @property (nonatomic, strong) IBOutlet UIButton *cameraRollButton;
 @property (nonatomic, copy) NSArray *excludedActivityTypes;
