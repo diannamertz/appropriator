@@ -11,6 +11,7 @@
 #import "ToolboxViewController.h"
 #import "UIImage+fixOrientation.h"
 #import <QuartzCore/QuartzCore.h>
+#import <dispatch/dispatch.h>
 
 
 @interface CanvasViewController : ToolboxViewController 
@@ -23,6 +24,7 @@ UIImagePickerControllerDelegate>
     UIImage *portraitImage;
     UIImage *landscapeImage;
     UIImage *sharingImage;
+    dispatch_queue_t backgroundQueue;
 }
 
 @property (nonatomic, weak) IBOutlet UIButton *infoButton;

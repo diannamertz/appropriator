@@ -220,6 +220,18 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>Head of a Dog</string>
+		<key>image_top</key>
+		<string>Renoir_Dog_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/pierre-auguste-renoir/head-of-a-dog-1870</string>
+		<key>name</key>
+		<string>Pierre-Auguste Renoir</string>
+		<key>image</key>
+		<string>Renoir_Dog.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Mandrill in the Jungle</string>
 		<key>image_top</key>
 		<string>Rousseau_Mandrill_croptop.png</string>
@@ -241,6 +253,18 @@
 		<string>Olga Rozanova</string>
 		<key>image</key>
 		<string>Rozanova_Room.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Lion of St. Marc</string>
+		<key>image_top</key>
+		<string>Rublev_Lion_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/andrei-rublev/the-lion-of-st-marc</string>
+		<key>name</key>
+		<string>Andrei Rublev</string>
+		<key>image</key>
+		<string>Rublev_Lion.png</string>
 	</dict>
 	<dict>
 		<key>title</key>

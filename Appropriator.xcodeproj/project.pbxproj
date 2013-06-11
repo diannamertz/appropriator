@@ -83,6 +83,10 @@
 		60CDFE36174940680057DB81 /* Rozanova_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE34174940680057DB81 /* Rozanova_Room.png */; };
 		60CDFE3A174980CD0057DB81 /* Hokusai_FiveFans.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */; };
 		60CDFE3C174981040057DB81 /* Hokusai_FiveFans_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */; };
+		60CF1C2517638AEC0064E522 /* Rublev_Lion_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CF1C2317638AEC0064E522 /* Rublev_Lion_croptop.png */; };
+		60CF1C2617638AEC0064E522 /* Rublev_Lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CF1C2417638AEC0064E522 /* Rublev_Lion.png */; };
+		60CF1C291763D9990064E522 /* Renoir_Dog_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CF1C271763D9990064E522 /* Renoir_Dog_croptop.png */; };
+		60CF1C2A1763D9990064E522 /* Renoir_Dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CF1C281763D9990064E522 /* Renoir_Dog.png */; };
 		60E06FC11635A17D00BFB6D0 /* Michelangelo_CreationAdam.png in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */; };
 		60E06FC21635A17D00BFB6D0 /* paintings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E06FBA1635A17D00BFB6D0 /* paintings.plist */; };
 		60EB3383174D381A00F3F600 /* pattern-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EB3380174D381A00F3F600 /* pattern-568@2x.png */; };
@@ -201,6 +205,10 @@
 		60CDFE34174940680057DB81 /* Rozanova_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rozanova_Room.png; sourceTree = "<group>"; };
 		60CDFE38174980CD0057DB81 /* Hokusai_FiveFans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans.png; sourceTree = "<group>"; };
 		60CDFE3B174981040057DB81 /* Hokusai_FiveFans_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hokusai_FiveFans_croptop.png; sourceTree = "<group>"; };
+		60CF1C2317638AEC0064E522 /* Rublev_Lion_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rublev_Lion_croptop.png; sourceTree = "<group>"; };
+		60CF1C2417638AEC0064E522 /* Rublev_Lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rublev_Lion.png; sourceTree = "<group>"; };
+		60CF1C271763D9990064E522 /* Renoir_Dog_croptop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Renoir_Dog_croptop.png; sourceTree = "<group>"; };
+		60CF1C281763D9990064E522 /* Renoir_Dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Renoir_Dog.png; sourceTree = "<group>"; };
 		60E06FB91635A17C00BFB6D0 /* Michelangelo_CreationAdam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Michelangelo_CreationAdam.png; sourceTree = "<group>"; };
 		60E06FBA1635A17D00BFB6D0 /* paintings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paintings.plist; sourceTree = "<group>"; };
 		60EB3380174D381A00F3F600 /* pattern-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pattern-568@2x.png"; sourceTree = "<group>"; };
@@ -405,10 +413,14 @@
 				60EB3380174D381A00F3F600 /* pattern-568@2x.png */,
 				60EB3381174D381A00F3F600 /* pattern.png */,
 				60EB3382174D381A00F3F600 /* pattern@2x.png */,
+				60CF1C271763D9990064E522 /* Renoir_Dog_croptop.png */,
+				60CF1C281763D9990064E522 /* Renoir_Dog.png */,
 				6065970C17528AE30072B8D6 /* Rousseau_Mandrill_croptop.png */,
 				6065970D17528AE30072B8D6 /* Rousseau_Mandrill.png */,
 				60CDFE33174940680057DB81 /* Rozanova_Room_croptop.png */,
 				60CDFE34174940680057DB81 /* Rozanova_Room.png */,
+				60CF1C2317638AEC0064E522 /* Rublev_Lion_croptop.png */,
+				60CF1C2417638AEC0064E522 /* Rublev_Lion.png */,
 				60EE9DB41743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood.png */,
 				60EE9DB51743AC4800DFA86F /* Sargent_ClaudeMonetPaintingByTheEdgeOfAWood+croptop.png */,
 				60EE9DB81743D59200DFA86F /* Shiele_PortraitFriederikeBeer_croptop.png */,
@@ -568,6 +580,10 @@
 				60C5EFEF1753662E004F30CB /* iTunesArtwork in Resources */,
 				60C5EFF1175368C1004F30CB /* Icon-72.png in Resources */,
 				60C5EFF3175368D0004F30CB /* Icon-Small-50.png in Resources */,
+				60CF1C2517638AEC0064E522 /* Rublev_Lion_croptop.png in Resources */,
+				60CF1C2617638AEC0064E522 /* Rublev_Lion.png in Resources */,
+				60CF1C291763D9990064E522 /* Renoir_Dog_croptop.png in Resources */,
+				60CF1C2A1763D9990064E522 /* Renoir_Dog.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

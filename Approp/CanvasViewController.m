@@ -51,6 +51,8 @@
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
+    
+    backgroundQueue = dispatch_queue_create("com.doubledi.approp.bgqueue", NULL);   
 }
 
 - (void)dealloc {
@@ -184,14 +186,16 @@
 
 - (UIImage*)screenshot
 {
-    float effectiveScale = 0.5;
+    float effectiveScale = .55;
     if (self.imageView.image == portraitImage) {
         effectiveScale = 0.6;
+    } else if (self.imageView.image == landscapeImage) {
+        effectiveScale = 0.5;
     }
     
     CGSize captureSize = CGSizeMake((self.canvasView.bounds.size.width / effectiveScale), (self.canvasView.bounds.size.height / effectiveScale));
     
-    NSLog(@"effectiveScale = %0.2f, captureSize = %@", effectiveScale, NSStringFromCGSize(captureSize));
+    //NSLog(@"effectiveScale = %0.2f, captureSize = %@", effectiveScale, NSStringFromCGSize(captureSize));
     
     UIGraphicsBeginImageContextWithOptions(captureSize, YES, 0.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -201,16 +205,15 @@
     UIGraphicsEndImageContext();
     
     return img;
+     
 }
 
 - (IBAction) useShareButton: (id) sender
 {
-    sharingImage = self.screenshot;
-    
-    if (self.imageView.image == NULL) {
-        
-    } else if (self.imageView.image == landscapeImage) {
+    if (self.imageView.image == landscapeImage) {
         sharingImage = [self.screenshot imageRotatedByDegrees:-90.0];
+    } else if (self.imageView.image == portraitImage) {
+        sharingImage = self.screenshot;
     }
     
     self.sharingText = @"Check out what I made with #Appropriator !";
