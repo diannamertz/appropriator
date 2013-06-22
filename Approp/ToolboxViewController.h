@@ -23,7 +23,7 @@
                                                         DismissLicenseControllerDelegate
                                                         >
 {
-    BOOL newMedia;
+    
 }
 
 @property (nonatomic, weak) IBOutlet UIView *theNewPaintingView;

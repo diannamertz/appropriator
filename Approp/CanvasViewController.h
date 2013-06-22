@@ -25,6 +25,7 @@ UIImagePickerControllerDelegate>
     UIImage *landscapeImage;
     UIImage *sharingImage;
     dispatch_queue_t backgroundQueue;
+    BOOL newMedia;
 }
 
 @property (nonatomic, weak) IBOutlet UIButton *infoButton;

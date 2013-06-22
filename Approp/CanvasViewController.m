@@ -148,9 +148,9 @@
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     // Assume the image is in portrait mode
-    portraitImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    portraitImage = (UIImage*)[info objectForKey:UIImagePickerControllerOriginalImage];
     
-    // Save original image to Photo Library, in the original orientation
+    // Save original image to Photo Library, in the original orientation (but only if image is a new image taken from the camera -- not camera roll)
     if (newMedia)
         UIImageWriteToSavedPhotosAlbum(portraitImage,
                                        self,
@@ -185,7 +185,7 @@
 // from http://stackoverflow.com/questions/11104042/how-to-get-a-rotated-zoomed-and-panned-image-from-an-uiimageview-at-its-full-re
 
 - (UIImage*)screenshot
-{
+{    
     float effectiveScale = .55;
     if (self.imageView.image == portraitImage) {
         effectiveScale = 0.6;
@@ -205,7 +205,7 @@
     UIGraphicsEndImageContext();
     
     return img;
-     
+    
 }
 
 - (IBAction) useShareButton: (id) sender
