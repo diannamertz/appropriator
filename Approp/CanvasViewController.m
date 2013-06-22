@@ -151,7 +151,7 @@
     portraitImage = (UIImage*)[info objectForKey:UIImagePickerControllerOriginalImage];
     
     // Save original image to Photo Library, in the original orientation (but only if image is a new image taken from the camera -- not camera roll)
-    if (newMedia)
+    if (portraitImage && newMedia)
         UIImageWriteToSavedPhotosAlbum(portraitImage,
                                        self,
                                        @selector(image:finishedSavingWithError:contextInfo:),
@@ -207,7 +207,7 @@
     return img;
     
 }
-
+/*
 - (IBAction) useShareButton: (id) sender
 {
     if (self.imageView.image == landscapeImage) {
@@ -231,6 +231,34 @@
     activityController.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeMessage];
     
     [self presentViewController:activityController animated:YES completion:^{ activityController.excludedActivityTypes=nil; activityController=nil;}];
+}
+ */
+
+- (IBAction) useShareButton: (id) sender
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        if (self.imageView.image == landscapeImage) {
+            sharingImage = [self.screenshot imageRotatedByDegrees:-90.0];
+        } else if (self.imageView.image == portraitImage) {
+            sharingImage = self.screenshot;
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            self.sharingText = @"Check out what I made with #Appropriator !";
+            
+            NSArray *activityItems;
+            if (sharingImage != nil) {
+                activityItems = @[self.sharingText, sharingImage];
+            } else {
+                activityItems = @[self.sharingText];
+            }
+            
+            UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+            activityController.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeMessage];
+            [self presentViewController:activityController animated:YES completion:NULL];   // you really don't want to release the activity items while the activity controller is active. the completion block is executed when the activity controller _PRENSENTATION_ is completed, that means, as soon as it's fully on screen! All these vars are local, so just leave it to arc to release them.
+            
+        });
+    });
 }
 
 @end

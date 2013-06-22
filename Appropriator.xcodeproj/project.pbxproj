@@ -66,10 +66,8 @@
 		609D0FEC1632949800E08660 /* AppropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 609D0FEB1632949800E08660 /* AppropTests.m */; };
 		609D0FF6163298C400E08660 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FF5163298C400E08660 /* MobileCoreServices.framework */; };
 		609D0FF8163298CC00E08660 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FF7163298CC00E08660 /* CoreFoundation.framework */; };
-		609D0FFC163298DB00E08660 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFB163298DB00E08660 /* CoreLocation.framework */; };
 		609D0FFE163298E400E08660 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFD163298E400E08660 /* CFNetwork.framework */; };
 		609D1000163298F000E08660 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D0FFF163298F000E08660 /* MessageUI.framework */; };
-		609D1002163298F900E08660 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D1001163298F900E08660 /* Security.framework */; };
 		609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D10031632990500E08660 /* SystemConfiguration.framework */; };
 		60C5D620172EC5F000D85EFD /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D61F172EC5F000D85EFD /* UIImage+fixOrientation.m */; };
 		60C5EFEA175365E3004F30CB /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C5EFE6175365E3004F30CB /* Icon-Small.png */; };
@@ -242,9 +240,7 @@
 				609D0FB71632949800E08660 /* Foundation.framework in Frameworks */,
 				609D0FB51632949700E08660 /* UIKit.framework in Frameworks */,
 				609D10041632990500E08660 /* SystemConfiguration.framework in Frameworks */,
-				609D1002163298F900E08660 /* Security.framework in Frameworks */,
 				609D0FFE163298E400E08660 /* CFNetwork.framework in Frameworks */,
-				609D0FFC163298DB00E08660 /* CoreLocation.framework in Frameworks */,
 				609D0FF8163298CC00E08660 /* CoreFoundation.framework in Frameworks */,
 				609D0FF6163298C400E08660 /* MobileCoreServices.framework in Frameworks */,
 			);
