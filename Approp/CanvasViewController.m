@@ -236,15 +236,16 @@
 
 - (IBAction) useShareButton: (id) sender
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         if (self.imageView.image == landscapeImage) {
             sharingImage = [self.screenshot imageRotatedByDegrees:-90.0];
         } else if (self.imageView.image == portraitImage) {
             sharingImage = self.screenshot;
         }
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             
-            self.sharingText = @"Check out what I made with #Appropriator !";
+            self.sharingText = @"Made with #Appropriator\nhttp://doubledi.com/appropriator.html";
             
             NSArray *activityItems;
             if (sharingImage != nil) {

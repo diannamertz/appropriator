@@ -4,6 +4,18 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Still Life of a Roast Chicken, a Ham and Olives on Pewter Plates with a Bread Roll, an Orange, Wineglasses and a Rose on a Wooden Table</string>
+		<key>image_top</key>
+		<string>Beert_StillLife_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/osias-beert/still-life-of-a-roast-chicken-a-ham-and-olives-on-pewter-plates-with-a-bread-roll-an-orange</string>
+		<key>name</key>
+		<string>Osias Beert</string>
+		<key>image</key>
+		<string>Beert_StillLife.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Nebuchadnezzar</string>
 		<key>image_top</key>
 		<string>Blake_Nebuchadnezzar_croptop.png</string>
@@ -313,6 +325,18 @@
 		<string>Henri de Toulouse-Lautrec</string>
 		<key>image</key>
 		<string>ToulouseLautrec_TheDance.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Arnolfini Wedding</string>
+		<key>image_top</key>
+		<string>vanEyck_Arnolfini_croptop.png</string>
+		<key>link</key>
+		<string>http://www.wikipaintings.org/en/jan-van-eyck/the-arnolfini-wedding-the-portrait-of-giovanni-arnolfini-and-his-wife-giovanna-cenami-the-1434</string>
+		<key>name</key>
+		<string>Jan van Eyck</string>
+		<key>image</key>
+		<string>vanEyck_Arnolfini.png</string>
 	</dict>
 	<dict>
 		<key>title</key>
