@@ -24,6 +24,15 @@
 {
     [super viewDidLoad];
     
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        // iOS 7
+        [self prefersStatusBarHidden];
+        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    } else {
+        // iOS 6
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    }
+    
     if (IS_IPHONE5) {
         self.patternView.image = [UIImage imageNamed:@"pattern-568@2x.png"];
         self.patternView.contentMode = UIViewContentModeScaleAspectFit;
@@ -53,6 +62,11 @@
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     
     backgroundQueue = dispatch_queue_create("com.doubledi.approp.bgqueue", NULL);   
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)dealloc {
@@ -142,6 +156,12 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    // for iOS7
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        
+        [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    }
+    
     [picker dismissViewControllerAnimated:YES completion:nil];
     
     // Keep aspect ration in tact between iPhone and iPad
@@ -167,6 +187,17 @@
     } else {
         self.imageView.image = portraitImage;
     }
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    // for iOS7
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        
+        [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    }
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)image:(UIImage *)image finishedSavingWithError:(NSError *)error contextInfo:(void *)contextInfo

@@ -488,6 +488,11 @@
 				CLASSPREFIX = "";
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Dianna Mertz";
+				TargetAttributes = {
+					609D0FAF1632949700E08660 = {
+						DevelopmentTeam = P8983SLT4Y;
+					};
+				};
 			};
 			buildConfigurationList = 609D0FAA1632949700E08660 /* Build configuration list for PBXProject "Appropriator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -757,6 +762,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Appropriator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
@@ -766,6 +773,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Appropriator;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
@@ -776,8 +784,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Appropriator.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Dianna Mertz (P8983SLT4Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dianna Mertz (P8983SLT4Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Approp/Appropriator-Prefix.pch";
 				INFOPLIST_FILE = "Approp/Appropriator-Info.plist";
@@ -787,7 +795,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Appropriator;
-				PROVISIONING_PROFILE = "2C2D66DC-EE4F-497A-BB7C-0711069DF884";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C2D66DC-EE4F-497A-BB7C-0711069DF884";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "Submodules/**";

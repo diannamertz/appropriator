@@ -31,10 +31,25 @@
 {
     [self loadPaintings];
     [super viewDidLoad];
+    
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        // iOS 7
+        [self prefersStatusBarHidden];
+        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    } else {
+        // iOS 6
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    }
+    
     self.titleView.backgroundColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
     self.titleLabel.textColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1];
     [self.backButton setTitleColor:[UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1] forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:20];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 -(void)dealloc
