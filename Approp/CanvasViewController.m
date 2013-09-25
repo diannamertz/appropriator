@@ -61,7 +61,7 @@
     [self.infoButton setBackgroundImage:[UIImage imageNamed:@"icon-info.png"] forState:UIControlStateNormal];
     [[self.infoButton imageView] setContentMode:UIViewContentModeScaleAspectFit];
     
-    backgroundQueue = dispatch_queue_create("com.doubledi.approp.bgqueue", NULL);   
+    backgroundQueue = dispatch_queue_create("com.doubledi.approp.bgqueue", NULL);
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -152,6 +152,11 @@
         [self presentViewController:imagePicker animated:YES completion:nil];
         newMedia = NO;
     }
+}
+
+-(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

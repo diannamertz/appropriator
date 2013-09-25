@@ -29,8 +29,8 @@
 
 - (void)viewDidLoad
 {
-    [self loadPaintings];
     [super viewDidLoad];
+    [self loadPaintings];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
         // iOS 7
@@ -45,6 +45,7 @@
     self.titleLabel.textColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1];
     [self.backButton setTitleColor:[UIColor colorWithRed:241.0/255.0 green:101.0/255.0 blue:76.0/255.0 alpha:1] forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:20];
+
 }
 
 - (BOOL)prefersStatusBarHidden

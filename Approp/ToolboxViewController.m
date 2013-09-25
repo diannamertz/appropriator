@@ -32,9 +32,10 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     // Load the data from the plist
     [self loadPaintings];
-    [super viewDidLoad];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
         // iOS 7
@@ -48,6 +49,7 @@
     self.theNewPaintingView.layer.masksToBounds = YES;
     
     self.toolboxTopView.backgroundColor = [UIColor colorWithRed:62.0/255.0 green:70.0/255.0 blue:81.0/255.0 alpha:1];
+    
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -282,9 +284,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	if([segue.identifier isEqualToString:@"infoControllerSegue"]) {
+
 		InfoController *infoController = (InfoController*)segue.destinationViewController;
 		infoController.delegate = self;		// important!
         infoController.licenseDelegate = self;
+
+        
 	}
 }
 
@@ -311,7 +316,6 @@
         licenseController.delegate = self;
         licenseController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         [self presentViewController:licenseController animated:YES completion:nil];
-        
     }];
 }
 
