@@ -319,6 +319,7 @@
     }];
 }
 
+// See this thread: https://devforums.apple.com/message/860232#860232
 -(void)dismissLicenseInfo {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

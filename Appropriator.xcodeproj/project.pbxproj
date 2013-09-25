@@ -16,6 +16,8 @@
 		60045D0D1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D0B1748F60000A4990F /* ToulouseLautrec_TheDance_croptop.png */; };
 		60045D0E1748F60000A4990F /* ToulouseLautrec_TheDance.png in Resources */ = {isa = PBXBuildFile; fileRef = 60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */; };
 		6017CFD21644256400F9F4FB /* ToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6017CFD11644256400F9F4FB /* ToolboxViewController.m */; };
+		6028A20617F27B19006916AF /* Icon-120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6028A20517F27B19006916AF /* Icon-120@2x.png */; };
+		6028A20817F27B45006916AF /* Icon-80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6028A20717F27B45006916AF /* Icon-80@2x.png */; };
 		602D298017401F72006475A9 /* LicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602D297F17401F72006475A9 /* LicenseController.m */; };
 		6041F4D51729B34000C999AF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6041F4D21729B34000C999AF /* Default-568h@2x.png */; };
 		6041F4D61729B34000C999AF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6041F4D31729B34000C999AF /* Default.png */; };
@@ -131,6 +133,8 @@
 		60045D0C1748F60000A4990F /* ToulouseLautrec_TheDance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToulouseLautrec_TheDance.png; sourceTree = "<group>"; };
 		6017CFD01644256400F9F4FB /* ToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolboxViewController.h; sourceTree = "<group>"; };
 		6017CFD11644256400F9F4FB /* ToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolboxViewController.m; sourceTree = "<group>"; };
+		6028A20517F27B19006916AF /* Icon-120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120@2x.png"; sourceTree = "<group>"; };
+		6028A20717F27B45006916AF /* Icon-80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80@2x.png"; sourceTree = "<group>"; };
 		602D297E17401F72006475A9 /* LicenseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseController.h; sourceTree = "<group>"; };
 		602D297F17401F72006475A9 /* LicenseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseController.m; sourceTree = "<group>"; };
 		6041F4D21729B34000C999AF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -385,6 +389,8 @@
 				608C6EC4172AB022001ACB6E /* info.png */,
 				604624E61725539900D00179 /* icon-camera.png */,
 				60921D3B1733E216007F34E8 /* icon-contact.png */,
+				6028A20717F27B45006916AF /* Icon-80@2x.png */,
+				6028A20517F27B19006916AF /* Icon-120@2x.png */,
 				604624EE17257FCB00D00179 /* icon-info.png */,
 				604624E71725539900D00179 /* icon-library.png */,
 				604624E91725539900D00179 /* icon-share.png */,
@@ -550,6 +556,7 @@
 				60FB549B17451F1700A82CEE /* Gerome_Anacreon_croptop.png in Resources */,
 				60FB549C17451F1700A82CEE /* Gerome_Anacreon.png in Resources */,
 				60FB549F17453C4700A82CEE /* Klimt_LifeAndDeath_croptop.png in Resources */,
+				6028A20817F27B45006916AF /* Icon-80@2x.png in Resources */,
 				60FB54A017453C4700A82CEE /* Klimt_LifeAndDeath.png in Resources */,
 				608A54EF17463C5300A5E746 /* LeNainBrothers_AllegoryOfVictory_croptop.png in Resources */,
 				608A54F017463C5300A5E746 /* LeNainBrothers_AllegoryofVictory.png in Resources */,
@@ -582,6 +589,7 @@
 				60EB3385174D381A00F3F600 /* pattern@2x.png in Resources */,
 				6065970E17528AE40072B8D6 /* Rousseau_Mandrill_croptop.png in Resources */,
 				6065970F17528AE40072B8D6 /* Rousseau_Mandrill.png in Resources */,
+				6028A20617F27B19006916AF /* Icon-120@2x.png in Resources */,
 				60C5EFEA175365E3004F30CB /* Icon-Small.png in Resources */,
 				60C5EFEB175365E3004F30CB /* Icon-Small@2x.png in Resources */,
 				60C5EFEC175365E3004F30CB /* Icon.png in Resources */,

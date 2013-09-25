@@ -231,8 +231,6 @@
     
     CGSize captureSize = CGSizeMake((self.canvasView.bounds.size.width / effectiveScale), (self.canvasView.bounds.size.height / effectiveScale));
     
-    //NSLog(@"effectiveScale = %0.2f, captureSize = %@", effectiveScale, NSStringFromCGSize(captureSize));
-    
     UIGraphicsBeginImageContextWithOptions(captureSize, YES, 0.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextScaleCTM(context, 1/effectiveScale, 1/effectiveScale);
@@ -243,32 +241,6 @@
     return img;
     
 }
-/*
-- (IBAction) useShareButton: (id) sender
-{
-    if (self.imageView.image == landscapeImage) {
-        sharingImage = [self.screenshot imageRotatedByDegrees:-90.0];
-    } else if (self.imageView.image == portraitImage) {
-        sharingImage = self.screenshot;
-    }
-    
-    self.sharingText = @"Check out what I made with #Appropriator !";
-    
-    NSArray *activityItems = [[NSArray alloc] init];
-    
-    if (sharingImage != nil) {
-        activityItems = @[self.sharingText, sharingImage];
-    } else {
-        activityItems = @[self.sharingText];
-    }
-    
-    __block UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-    
-    activityController.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeMessage];
-    
-    [self presentViewController:activityController animated:YES completion:^{ activityController.excludedActivityTypes=nil; activityController=nil;}];
-}
- */
 
 - (IBAction) useShareButton: (id) sender
 {
