@@ -239,7 +239,6 @@
     UIGraphicsEndImageContext();
     
     return img;
-    
 }
 
 - (IBAction) useShareButton: (id) sender
