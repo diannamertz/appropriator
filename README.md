@@ -1,4 +1,3 @@
 Approp
-======
 
-My first iOS app -- Storyboard version# This is my README
+My first iOS app -- Storyboard version#
